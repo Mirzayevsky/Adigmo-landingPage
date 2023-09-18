@@ -35,3 +35,9 @@ flex-direction: row;
 justify-content: space-between;
 background-color: gray;
 `
+export const Title = styled.div`
+color: #000;
+font-size: 32px;
+font-weight: 500;
+font-family: sans-serif;
+`
