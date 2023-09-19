@@ -6,11 +6,11 @@ import {
   SecondWrapper,
   Title,
 } from "./portfolioPage.styles";
-import img1 from "../../source/assets/images/a.png";
-import img2 from "../../source/assets/images/a2.png";
-import img3 from "../../source/assets/images/img3.png";
-import img4 from "../../source/assets/images/img4.png";
-import img5 from "../../source/assets/images/img5.png";
+import img1 from "../../../source/assets/images/a.png";
+import img2 from "../../../source/assets/images/a2.png";
+import img3 from "../../../source/assets/images/img3.png";
+import img4 from "../../../source/assets/images/img4.png";
+import img5 from "../../../source/assets/images/img5.png";
 
 const PortfolioPage = () => {
   return (

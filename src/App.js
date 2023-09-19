@@ -1,8 +1,8 @@
 import { AppWrapper } from "./App.styles";
-import { CarouselPage } from "./app/corourselPages/corouselPage";
-import Header from "./app/header/header";
-import PortfolioPage from "./app/portfolioPage/portfolioPage";
-import SecondPage from "./app/secondPages/SecondPage";
+import CarouselMain from "./app/HomePage/carouselSection/corouselPage";
+import Header from "./components/header/header";
+import PortfolioPage from "./app/HomePage/portfolioSection/portfolioPage";
+import SecondPage from "./app/HomePage/ShowcaseSection/SecondPage";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
        <Header/>
        <SecondPage/>
        <PortfolioPage/>
-       <CarouselPage/>
+       <CarouselMain/>
       </AppWrapper>
   )
 }
