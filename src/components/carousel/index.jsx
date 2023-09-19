@@ -10,12 +10,16 @@ import { CarouselTitle } from "./index.styles";
 const CarouselNative = () => {
   return (
     <div>
-        <Carousel>
+        <Carousel axis="horizontal"  showThumbs={false}  autoPlay={true} infiniteLoop={true} emulateTouch={true}   verticalSwipe={"natural"} showStatus={false}>
                 <div className="carousel-card">
                   <CarouselTitle>
                   Bizning Xizmatlar 
                   </CarouselTitle>
-                  <img src={car1} alt="" />
+                  <img src={car1}  alt="profile"
+                       objectFit="cover"
+                       fill
+                       className="w-full h-full top-0 left-0 object-cover rounded-2xl "/>
+
                 </div>
                 <div className="carousel-card">
                   <img src={car2} alt="" />
