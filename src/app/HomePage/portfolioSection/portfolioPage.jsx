@@ -50,7 +50,7 @@ const PortfolioPage = () => {
           </div>
         </FirstWrapper>
 
-        <FirstWrapper>
+        <FirstWrapper className={"second"}>
           <div className="text text-2">
             Diamond Bedding companiyasi uchun 12x ROAS natija. Buyuk Britaniyada
             ko‘rpa va yostiqlar sotuvchi Diamond Bedding o‘zining onlayn
@@ -70,8 +70,9 @@ const PortfolioPage = () => {
           </div>
           <div className="text text-2 text-3">
             <div>Svetsiyaning “Ark of Sweden” kompaniyasi uchun 17X ROAS!</div>
-            Ark of
+
             <div>
+              Ark of
               Sweden, yangi avlod qo'shimchalari bo'yicha yetakchi, elektron
               tijorat orqali savdo hajmini oshirmoqchi edi.
             </div>

@@ -1,11 +1,12 @@
 import styled from "styled-components";
 export const SecondWrapper = styled.div`
   height: 100vh;
-  width: 100vw;
+  width: 100%;
 `;
 export const Container = styled.div`
-  width: 80%;
+  width: 90%;
   margin: auto;
+
 `;
 export const ShowInform = styled.div`
   width: 100%;
@@ -14,6 +15,9 @@ export const ShowInform = styled.div`
   box-shadow: 0px 4px 4px 0px #00000040;
   border-radius: 15px;
   padding: 30px 30px;
+  @media screen and (max-width: 600px) {
+    padding:0;
+  }
 `;
 export const TopWrapper = styled.div`
   width: 100%;
@@ -22,6 +26,10 @@ export const TopWrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  @media screen and (max-width: 600px) {
+   flex-direction: column;
+    padding: 0;
+  }
   .result {
     font-family: Roboto;
     font-size: 54px;
@@ -29,6 +37,15 @@ export const TopWrapper = styled.div`
     line-height: 75px;
     letter-spacing: 1.5px;
     text-align: left;
+    @media screen and (max-width: 600px) {
+      font-size: 25px;
+      font-weight: 600;
+      line-height: 32px;
+      text-align: center;
+      letter-spacing: 0;
+      padding: 20px 0;
+      
+    }
   }
   .sales {
     font-family: Roboto;
@@ -48,6 +65,16 @@ export const TopWrapper = styled.div`
     margin-right: 10px;
     text-align: left;
     margin-top: 70px;
+    @media screen and (max-width: 600px) {
+      width: 80%;
+      height: fit-content;
+      margin: 10px auto;
+      font-size: 18px;
+      font-weight: 500px;
+      text-align: center;
+      letter-spacing: 0;
+
+    }
     .inner-text {
     }
   }
@@ -72,6 +99,7 @@ export const AmongWrapper = styled.div`
     #f1eb91 19.27%,
     #d5b758 57.81%,
     #b89843 100%
+      
   );
 
   -webkit-background-clip: text;
@@ -96,10 +124,21 @@ export const AmongWrapper = styled.div`
           #b89843 100%
         );
       }
+        
+      }
+    }
+    .sales-up{
+      @media screen and (max-width: 600px) {
     }
     .spends {
       margin-top: 20px;
       margin-left: 20px;
+      @media screen and (max-width: 600px) {
+        margin-top: 5px;
+      }
+    }
+    @media screen and (max-width: 600px) {
+       font-size: 23px;
     }
   }
   .bottom-title {
@@ -111,6 +150,9 @@ export const AmongWrapper = styled.div`
     text-align: left;
     padding-left: 40px;
     margin-top: 37px;
+    @media screen and (max-width: 600px) {
+      font-size: 23px;
+    }
     
   }
   .bottom-text {
@@ -124,7 +166,15 @@ export const AmongWrapper = styled.div`
     margin-left: 40px;
     color: #000000B2;
     padding-top: 15px;
+    @media screen and (max-width: 600px) {
+      font-size:16px;
+      line-height: 24px;
+    }
 
+  }
+
+  @media screen and (max-width: 600px) {
+    
   }
 `;
 

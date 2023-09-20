@@ -1,7 +1,7 @@
 import styled from "styled-components";
 export const HeaderWrapper = styled.div`
   height: 100vh;
-  width: 100vw;
+  width: 100%;
 `;
 export const Container = styled.div`
   width: 80%;
@@ -17,13 +17,13 @@ export const HeaderTop = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 50px;
+  padding-top: 100px;
 `;
 export const Title = styled.div`
   font-family: Roboto;
-  font-size: 54px;
+  font-size: 64px;
   font-weight: 900;
-  line-height: 64px;
+  line-height: 84px;
   text-align: left;
   letter-spacing: 1.5px;
   margin-top: 90px;
@@ -41,8 +41,6 @@ export const HearderInner = styled.div`
 export const HeaderButton = styled.div`
   width: 383px;
   height: 86px;
-  top: 470px;
-  left: 168px;
   border-radius: 24px;
   display: flex;
   align-items: center;
@@ -68,10 +66,9 @@ export const LangButton = styled.div`
   font-weight: 700;
   line-height: 42px;
   letter-spacing: 0em;
-  width: 69px;
-  height: 35px;
-  top: 61px;
-  left: 1077px;
+  width: fit-content;
+  height: fit-content;
+  padding: 3px 35px;
   border-radius: 70px;
   display: flex;
   align-items: center;
@@ -93,31 +90,30 @@ export const LangSecondBnt = styled.div`
   text-align: left;
   font-weight: 700;
   line-height: 42px;
-  width: 69px;
-  height: 35px;
-  top: 61px;
-  left: 1211px;
+  width: fit-content;
+  height: fit-content;
+  padding: 3px 35px;
+  border-radius: 70px;
   border-radius: 70px;
   background: #ffffff;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-right: 50px;
+  
 `;
 
 export const RightWrapper = styled.div`
 
 `
 export const LeftImgWrapper = styled.div`
-width: 439px;
-height: 618px;
-top: 128px;
-left: 883px;
-border-radius: 175.5px;
-margin-top: 30px;
-img {
-  width: 90%;
-  height: 80%;
-}
+//width: 439px;
+//height: 718px;
+  margin-right: 20px;
+//img {
+//  width: 90%;
+//  height: 80%;
+//}
 `
 export const MainWrapper = styled.div`
 display: flex;

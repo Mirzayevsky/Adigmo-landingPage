@@ -7,18 +7,20 @@ import Service from "./app/HomePage/ServiceSection/Service";
 import Roas from "./app/HomePage/RoasSection/Roas";
 import Customer from "./app/HomePage/Customers/Customer";
 import Advice from "./app/HomePage/AdviceSection/Advice";
+import Footer from "./components/footer";
 
 function App() {
   return (
     <AppWrapper>
-       <Header/>
+       {/*<Header/>*/}
        <SecondPage/>
        <PortfolioPage/>
-       <CarouselMain/>
-        <Service/>
-        <Roas/>
-        <Customer/>
-        <Advice/>
+       {/*<CarouselMain/>*/}
+       {/* <Service/>*/}
+       {/* <Roas/>*/}
+       {/* <Customer/>*/}
+       {/* <Advice/>*/}
+       {/* <Footer/>*/}
       </AppWrapper>
   )
 }

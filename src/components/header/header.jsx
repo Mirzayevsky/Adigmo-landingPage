@@ -41,9 +41,9 @@ const Header = () => {
             <HearderInner>Bepul Maslaxat!</HearderInner>
           </HeaderButton>
          </RightWrapper>
-         {/* <LeftImgWrapper> */}
-          {/* <img alt="ceoimg" src={ceoImg}/> */}
-         {/* </LeftImgWrapper> */}
+          <LeftImgWrapper>
+           <img alt="ceoimg" src={ceoImg}/>
+          </LeftImgWrapper>
         </MainWrapper>
       </Container>
     </HeaderWrapper>

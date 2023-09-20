@@ -27,7 +27,7 @@ const SecondPage = () => {
               <div>ROAST =</div>
               <div>
                 <div>
-                  <div>SOTUVLAR ($3000)</div>
+                  <div className={'sales-up'}>SOTUVLAR ($3000)</div>
                   <div className="sale-up"></div>
                 </div>
                 <div className="spends">HARJAT ($600)</div>
