@@ -1,12 +1,14 @@
 import styled from "styled-components";
 export const ServiceWrapper = styled.div`
 height: fit-content;
-width: 100%;
+width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 40px 0;
+  overflow-x: hidden;
+
 `;
 export const Wrapper = styled.div`
 
@@ -15,7 +17,20 @@ export  const FirstCarouselWrapper = styled.div`
   width: 100%;
   height: auto;
   margin-top: 30px;
-  .keen-slider__slide {
+  @media screen and (max-width: 700px) {
+    .keen-slider {
+      min-width: 1700px !important;
+      margin-right: 40px !important;
+    }
+
+    .keen-slider_slide {
+      min-width: 378px;
+      height: 230px;
+
+    }
+  }
+  
+    .keen-slider__slide {
       //background-color: #fff;
     display: flex;
     //align-items: center;
@@ -26,8 +41,30 @@ export  const FirstCarouselWrapper = styled.div`
       flex-direction: row;
       align-items: center;
       justify-content: space-around;
+      padding: 25px 50px ;
+      font-size: 20px;
+      font-weight: 600;
+      svg{
+        height: 32px;
+        margin: 0 12px;
+      }
+      @media screen  and (max-width:600px){
+        width: 300px !important;
+        min-width: 290px !important;
+        min-height: 60px;
+        justify-content: center;
+        align-items: center;
+        z-index: 99999999999999999 !important;
+       padding: 0;
+        svg{
+          height: 24px;
+        }
+       
+      };
       
+     
     }
+    
     div{
       background-color: #fff;
       width: fit-content;
@@ -39,7 +76,6 @@ export  const FirstCarouselWrapper = styled.div`
     }
     }
   .slide-2{
-    background-color: blanchedalmond;
   }
   .number-slide1{
     background: #EFEFEF;
@@ -63,6 +99,17 @@ export  const ServiceTitle = styled.div`
   letter-spacing: 1px;
 margin-right: auto;
   padding: 30px 0;
-  
   padding-left: 210px;
+  @media screen and (max-width:600px){
+    font-size: 28px;
+    font-weight: 600px;
+    width: fit-content;
+    margin: auto;
+    line-height: 38px;
+    padding: 0;
+    text-align: center;
+    br{
+      display: none;
+    }
+  }
 `;

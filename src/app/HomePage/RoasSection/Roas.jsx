@@ -30,8 +30,8 @@ const Roas = () => {
        <Content>
            <RoasHeader>
                <p className={'title'}>
-                   5x  ROAS qanday <br/>
-                   ishlaydi?
+                   5x  ROAS QANDAY <br/>
+                   ISHLAYDI ?
                </p>
                <div className={'show'}>
                    <p className={'mini-title'}>100+ mijoz <br/>
