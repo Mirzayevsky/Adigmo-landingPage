@@ -54,6 +54,7 @@ export  const FirstCarouselWrapper = styled.div`
         min-height: 60px;
         justify-content: center;
         align-items: center;
+        font-size: 18px;
         z-index: 99999999999999999 !important;
        padding: 0;
         svg{
@@ -80,11 +81,6 @@ export  const FirstCarouselWrapper = styled.div`
   .number-slide1{
     background: #EFEFEF;
     text-align: center;
-  }
-  .svg-touch{
-    height: 15px;
-    width: fit-content;
-    margin: auto 5px;
   }
     
 `;

@@ -1,12 +1,50 @@
-import React from "react";
-import {CarouselWrapper, Title} from "./corouselPage.style";
-import CarouselNative from "../../../components/carousel";
+import React,{useState} from "react";
+import {
+    CarouselWrapper,
+    ChangeContent,
+    Container,
+    Content,
+    ContentWrapper, Tab,
+    TabWrapper,
+    Title
+} from "./corouselPage.style";
+
 
 const CarouselMain = () => {
+    const [active:string, setActive] = useState();
+
 return(
    <CarouselWrapper>
     <Title>5x  ROASdan Foydalanish</Title>
-    <CarouselNative/>
+       <Container>
+        <ChangeContent>
+            sdsd
+        </ChangeContent>
+
+           <ContentWrapper>
+               <TabWrapper>
+                   <Tab>
+                       <div>Reklama
+                           Google & Yandex </div>
+                   </Tab>
+                   <Tab>
+                       <div>
+                           Target Reklama
+                           Meta Instagram & Facebook
+                       </div>
+                   </Tab>
+                   <Tab>
+                       <div>
+                           Sotuvchi Sayt
+                           (Landing Page)
+                       </div>
+                   </Tab>
+               </TabWrapper>
+               <Content>
+               </Content>
+           </ContentWrapper>
+       </Container>
+
    </CarouselWrapper>
 )
 }

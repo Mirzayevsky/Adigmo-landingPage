@@ -108,7 +108,7 @@ export const RoasCarouselWrapper =styled.div`
       min-width: 1200px !important;
     }
     .keen-slider_slide{
-     min-width: 348px;
+      min-width: 348px;
       height: 230px;
       
     }
