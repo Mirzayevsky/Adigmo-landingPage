@@ -16,7 +16,7 @@ function App() {
        <SecondPage/>
        <PortfolioPage/>
        <CarouselMain/>
-       {/* <Service/>*/}
+       <Service/>
        {/* <Roas/>*/}
        {/* <Customer/>*/}
        {/* <Advice/>*/}
