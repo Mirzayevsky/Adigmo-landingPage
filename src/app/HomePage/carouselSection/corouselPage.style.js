@@ -7,6 +7,10 @@ align-items: center;
 flex-direction: column;
 justify-content: center;
 height: 100vh;
+  @media screen and (max-width: 600px ){
+    padding: 0;
+    height: fit-content;
+  }
 
 .carousel-card{
     height: 80%;
@@ -23,8 +27,7 @@ height: 100vh;
 export const Title = styled.div`
 width: 387px;
 height: 66px;
-top: 3787px;
-left: 476px;
+
 border-radius: 24px;
 padding: 40px 0;
 margin: 40px 0;
@@ -37,5 +40,11 @@ text-align: center;
 margin: 120px 0;
 color: #fff;
 background: linear-gradient(93.12deg, #1F5AFF 1.37%, #392ED6 54.75%, #1A2032 119.16%);
-
+ @media screen and (max-width: 600px){
+   height: fit-content;
+   width: fit-content;
+   line-height: 30px;
+   font-size: 20px;
+   padding: 15px 20px;
+ }
 `;

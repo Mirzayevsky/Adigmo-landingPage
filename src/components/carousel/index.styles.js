@@ -8,4 +8,12 @@ letter-spacing: 0em;
 position: absolute;
 top: 0px;
 left: 41%;
+  @media screen and (max-width: 600px){
+    line-height: 30px;
+    font-size: 16px;
+    width: fit-content;
+    br{
+      display: none;
+    }
+  }
 `;
