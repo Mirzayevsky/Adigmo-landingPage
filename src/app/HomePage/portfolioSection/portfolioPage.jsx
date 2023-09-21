@@ -16,37 +16,18 @@ const PortfolioPage = () => {
   return (
     <PortfolioWrapper>
       <Container>
-        <Title>Portfolio </Title>
+        <Title>PORTFOLIO </Title>
         <FirstWrapper>
           <div className="img-wrapper">
             <img src={img1} alt="" />
           </div>
           <div className="text">
-            <div>
-              <span>Kompaniya:</span> Seamosstransformation.com seamoss gel
-              qo'shimchalari bo'yicha yetakchi hisoblanadi.
-            </div>
-            <div>
-              <span> Muammo:</span> Raqobat oshayotgan oziq-ovqat qo'shimchalari
-              bozorida reklama investitsiyalaridan barqaror daromad olishga
-              erishish.
-            </div>
-
-            <div>
-              <span>Amalga oshirildi:</span> Google Ads matnli reklamasidan
-              foydalanilgan holda maqsadli auditoriyani to’gri target qilindi va
-              turli xil kreativlar va e’lonlar sinab ko'rildi.
-            </div>
-            <div>
-              <span> Natija: </span>30 kunda 5X ROASga erishildi, reklamaga 88
-              000 AQSh dollar sarflab, 449 000 dollarlik savdo qilindi. <br />
-            </div>
-
-            <div>
-              {" "}
-              <span>Xulosa:</span> To'g'ri strategiya va hamkorlik bilan
-              barqaror va ajoyib natijalarga erishish mumkin.
-            </div>
+            <span>Kompaniya: </span>
+            Seamosstransformation.com seamoss gel qo'shimchalari bo'yicha yetakchi hisoblanadi. <br/>
+            <span>Muammo:</span> Raqobat oshayotgan oziq-ovqat qo'shimchalari bozorida reklama investitsiyalaridan barqaror daromad olishga erishish. <br/>
+            <span>Amalga oshirildi:</span> Google Ads matnli reklamasidan foydalanilgan holda maqsadli auditoriyani to’gri target qilindi va turli xil kreativlar va e’lonlar sinab ko'rildi.<br/>
+           <span> Natija: </span> 30 kunda 5X ROASga erishildi, reklamaga 88 000 AQSh dollar sarflab, 449 000 dollarlik savdo qilindi. <br/>
+             <span>Xulosa: </span> To'g'ri strategiya va hamkorlik bilan barqaror va ajoyib natijalarga erishish mumkin. <br/>
           </div>
         </FirstWrapper>
 
@@ -69,39 +50,31 @@ const PortfolioPage = () => {
             <img src={img3} alt="" className="wrapper-2" />
           </div>
           <div className="text text-2 text-3">
-            <div>Svetsiyaning “Ark of Sweden” kompaniyasi uchun 17X ROAS!</div>
-
-            <div>
-              Ark of
-              Sweden, yangi avlod qo'shimchalari bo'yicha yetakchi, elektron
-              tijorat orqali savdo hajmini oshirmoqchi edi.
-            </div>
-            <div>
-              Bizoogle Ads orqali 7 090 kr Gona sarflab, atigi 90 kun ichida bu
-              kompaniya uchun
-            </div>
-            126823 kronalik savdo hajmiga erishdik. <br /> Bu 17 barobar ROAS
-            deganidir!
+            Svetsiyaning “Ark of Sweden” kompaniyasi uchun 17X ROAS!
+            Ark of Sweden, yangi avlod qo'shimchalari bo'yicha yetakchi, elektron tijorat orqali savdo hajmini oshirmoqchi edi.
+            Biz Google Ads orqali 7 090 krona sarflab, atigi 90
+            kun ichida bu kompaniya uchun
+            126823 kronalik savdo hajmiga erishdik.
+            Bu 17 barobar ROAS deganidir!
           </div>
         </FirstWrapper>
         <SecondWrapper>
           <div className="second-wrapper-text">
-            <div> Buyuk Britaniyaning “RDX” kompaniyasi uchun 18X ROAS! </div>
+            Buyuk Britaniyaning “RDX” kompaniyasi uchun
+            18X ROAS! <br/>
 
-            <div>
-              "RDX" Kampaniyasi Bok va UFC va boshqa Sport kiyimlari sotadigan
-              yetakchi onlayn do'kon hisoblanadi, elektron tijorat orqali savdo
-              hajmini oshirmoqchi edi.
-            </div>
+            "RDX" Kampaniyasi Bok va UFC va boshqa Sport
+            kiyimlari sotadigan yetakchi onlayn do'kon hisoblanadi,
+            elektron tijorat orqali savdo hajmini oshirmoqchi edi.
 
-            <div>
-              Biz Facebook Ads orqali 3 oy ichida 9 barobar savdo hajmiga
-              erishdik. Oxirgi 15 kun ichida bu ko'rsatkich 20 barbobarga oshdi!
-            </div>
+            Biz Facebook Ads orqali 3 oy ichida 9 barobar  savdo
+            hajmiga erishdik.<br/>
+            Oxirgi  15 kun ichida bu ko'rsatkich
+            20 barbobarga oshdi!
           </div>
           <div className="img-wrapper">
-            <img src={img4} alt="" className="img-top" />
-            <img src={img5} alt="" className="img-bottom" />
+            <img src={img5} alt="" className="img-top" />
+            <img src={img4} alt="" className="img-bottom" />
           </div>
         </SecondWrapper>
       </Container>

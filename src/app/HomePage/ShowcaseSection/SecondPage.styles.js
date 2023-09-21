@@ -1,11 +1,17 @@
 import styled from "styled-components";
 export const SecondWrapper = styled.div`
-  height: 100vh;
   width: 100%;
+  padding: 70px 0;
+  @media screen and (max-width: 600px){
+    padding: 0;
+  }
 `;
 export const Container = styled.div`
-  width: 90%;
+  width: 80%;
   margin: auto;
+  @media screen and (max-width: 600px) {
+    width: 90%;
+  }
 
 `;
 export const ShowInform = styled.div`
@@ -14,18 +20,18 @@ export const ShowInform = styled.div`
   background: #ffffff;
   box-shadow: 0px 4px 4px 0px #00000040;
   border-radius: 15px;
-  padding: 30px 30px;
+  padding: 100px 30px;
   @media screen and (max-width: 600px) {
-    padding:0;
+    padding: 30px 0;
   }
 `;
 export const TopWrapper = styled.div`
-  width: 100%;
+  width: 95%;
   margin: auto;
   padding-bottom: 30px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   @media screen and (max-width: 600px) {
    flex-direction: column;
     padding: 0;
@@ -43,8 +49,8 @@ export const TopWrapper = styled.div`
       line-height: 32px;
       text-align: center;
       letter-spacing: 0;
-      padding: 20px 0;
-      
+      //padding: 10px 0;
+      margin-bottom: 20px;
     }
   }
   .sales {
@@ -64,13 +70,12 @@ export const TopWrapper = styled.div`
     justify-content: center;
     margin-right: 10px;
     text-align: left;
-    margin-top: 70px;
     @media screen and (max-width: 600px) {
       width: 80%;
       height: fit-content;
       margin: 10px auto;
       font-size: 18px;
-      font-weight: 500px;
+      font-weight: 500;
       text-align: center;
       letter-spacing: 0;
 
@@ -90,7 +95,7 @@ export const AmongWrapper = styled.div`
     font-size: 50px;
     font-weight: 900;
     line-height: 52px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     margin-top: 30px;
     text-align: left;
     background: -webkit-linear-gradient(
@@ -104,7 +109,6 @@ export const AmongWrapper = styled.div`
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-    
   
     .sale-up {
       position: relative;
@@ -112,10 +116,10 @@ export const AmongWrapper = styled.div`
       &::after {
         content: "";
         position: absolute;
-        width: 90%;
+        width: 95%;
         height: 4px;
-        top: 10px;
-        left: 20px;
+        top: 15px;
+        left: 5px;
         background: linear-gradient(
           180deg,
           #e2c25d 0%,
@@ -123,24 +127,44 @@ export const AmongWrapper = styled.div`
           #d5b758 57.81%,
           #b89843 100%
         );
+        @media screen and (max-width: 600px) {
+          top: 2px;
+          left: 0;
+        }
       }
         
       }
-    }
-    .sales-up{
-      @media screen and (max-width: 600px) {
-    }
     .spends {
-      margin-top: 20px;
-      margin-left: 20px;
+      padding-left: 20px;
       @media screen and (max-width: 600px) {
         margin-top: 5px;
+        font-size: 18px;
+        padding-left: 5px;
       }
     }
     @media screen and (max-width: 600px) {
-       font-size: 23px;
+     font-size: 18px;
+      line-height: 25px;
+    }
+    }
+  
+  
+  
+  .among-content{
+    //background: red;
+    margin-bottom: 30px;
+    padding-left: 15px;
+    @media screen and (max-width: 600px) {
+      margin: 10px 0;
+      padding-left: 5px;
     }
   }
+    .sales-up{
+  }
+  
+  
+  
+  
   .bottom-title {
     font-family: Roboto;
     font-size: 34px;
@@ -151,7 +175,9 @@ export const AmongWrapper = styled.div`
     padding-left: 40px;
     margin-top: 37px;
     @media screen and (max-width: 600px) {
-      font-size: 23px;
+      font-size: 20px;
+      text-align: center;
+      padding: 10px 0;
     }
     
   }
@@ -169,6 +195,11 @@ export const AmongWrapper = styled.div`
     @media screen and (max-width: 600px) {
       font-size:16px;
       line-height: 24px;
+      width: 80%;
+      margin: auto;
+      br{
+        display: none;
+      }
     }
 
   }

@@ -31,6 +31,7 @@ const Header = () => {
             <LangSecondBnt>RU</LangSecondBnt>
           </LangButtonWrapper>
         </HeaderTop>
+
         <MainWrapper>
          <RightWrapper>
          <Title>

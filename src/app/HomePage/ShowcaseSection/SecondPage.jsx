@@ -24,16 +24,21 @@ const SecondPage = () => {
 
           <AmongWrapper>
             <div className="inner-wrap">
-              <div>ROAST =</div>
+              <div>ROAS =</div>
               <div>
-                <div>
+
+                <div className={"among-content"}>
                   <div className={'sales-up'}>SOTUVLAR ($3000)</div>
                   <div className="sale-up"></div>
                 </div>
+
                 <div className="spends">HARJAT ($600)</div>
               </div>
-              <div>= 5</div>
+              <div> = 5</div>
             </div>
+
+
+
             <div className="bottom-title">5x ROAS nima?</div>
             <div className="bottom-text">
               Masalan har bir sarflangan $1 uchun $5 gacha Sotuv olib kelinadi. <br />
@@ -41,6 +46,7 @@ const SecondPage = () => {
               foydalaniladi.
             </div>
           </AmongWrapper>
+
         </ShowInform>
       </Container>
     </SecondWrapper>
