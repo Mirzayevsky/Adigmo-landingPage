@@ -42,7 +42,7 @@ export const Title = styled.div`
     margin: auto;
     height: fit-content;
     padding: 100px 0;
-    padding-bottom: 0px;
+    padding-bottom: 25px;
     
     
   }

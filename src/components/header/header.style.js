@@ -2,7 +2,10 @@ import styled from "styled-components";
 export const HeaderWrapper = styled.div`
   height: 100vh;
   width: 100%;
-`;
+  @media screen and (max-width: 700px){
+    height: 95vh;
+  }
+  `;
 export const Container = styled.div`
   width: 80%;
   margin: auto;
@@ -18,6 +21,7 @@ export const Logo = styled.div`
   @media screen and (max-width: 600px) {
     height: 70px;
     width: 200px;
+    
     svg{
       width: 120px;
       height: 80px;
@@ -55,7 +59,7 @@ export const Title = styled.div`
     line-height: 29px;
     width: 90%;
     margin:  auto;
-    padding: 30px 0;
+    padding: 10px 0;
     padding-top: 80px;
     br{
       display: none;
@@ -165,18 +169,12 @@ export const LangSecondBnt = styled.div`
 export const RightWrapper = styled.div`
 `
 export const LeftImgWrapper = styled.div`
-//width: 439px;
-//height: 718px;
   margin-right: 20px;
-//img {
-//  width: 90%;
-//  height: 80%;
-//}
   @media screen and (max-width: 600px) {
     //display:none;
-    margin: 30px auto;
+    margin: 0 auto;
     padding-right: 30px;
-    
+    margin-top: 20px;
     img{
       height: 280px;
       width: 220px;
@@ -187,9 +185,11 @@ export const MainWrapper = styled.div`
 display: flex;
 justify-content: space-between;
 margin: 0 30px;
+margin-top: 120px;
   @media screen and (max-width: 600px) {
     flex-direction: column-reverse;
     width: 100%;
     margin: 0;
+    margin-top: 70px;
   }
 `
