@@ -15,11 +15,12 @@ const  Footer = ()=> {
                         Chilonzor tumani, Zuhur palvon 3-uy
                     </div>
                 </Header>
+
                 <Header>
-                   <div className={"past-foot"}>
+                   <div className={"past-foot mini-text"}>
                        Digital Marketing Agency
                    </div>
-                    <div className={"past-foot"}>
+                    <div className={"past-foot mini-text-2"}>
                         Telefon: +998 (97) 753 14 01
                     </div>
 

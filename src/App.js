@@ -20,7 +20,7 @@ function App() {
        <Roas/>
         <Customer/>
         <Advice/>
-        {/*<Footer/>*/}
+        <Footer/>
       </AppWrapper>
   )
 }
