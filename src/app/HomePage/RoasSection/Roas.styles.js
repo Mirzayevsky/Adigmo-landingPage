@@ -4,14 +4,13 @@ padding: 100px 0;
   @media screen and (max-width: 700px){
     padding: 40px 0;
     width: 100vw;
-    overflow-x: hidden;
+    //overflow-x: hidden;
     
     
   }
 `;
 export const Content =styled.div`
   width: 75%;
-  height: 70vh;
   margin: 0 auto;
   border-radius: 21px;
   box-shadow: 0px 4px 4px 0px #00000040;
@@ -20,11 +19,12 @@ export const Content =styled.div`
   fill: #FFF;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   @media screen and (max-width: 700px){
-    padding: 20px 0;
+    padding: 20px 1px;
     width: 90% !important;
     margin: auto;
     height: fit-content;
-    //overflow-x: hidden;
+    overflow-x: hidden;
+    
     
   }
 
@@ -67,8 +67,10 @@ export const RoasHeader =styled.div`
     width: fit-content;
     padding: 22px 35px;
     border-radius: 13px;
-   
 
+    @media screen and (max-width: 700px){
+      padding: 15px 20px;
+    }
 
     .mini-title{
      font-family: Roboto;
@@ -80,6 +82,7 @@ export const RoasHeader =styled.div`
      color: #303DE4;
       @media screen and (max-width: 700px){
           font-size: 18px;
+        
       }
    }
 .text{

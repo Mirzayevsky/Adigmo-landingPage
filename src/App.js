@@ -18,9 +18,9 @@ function App() {
        <CarouselMain/>
        <Service/>
        <Roas/>
-       {/* <Customer/>*/}
-       {/* <Advice/>*/}
-       {/* <Footer/>*/}
+        <Customer/>
+        {/*<Advice/>*/}
+        {/*<Footer/>*/}
       </AppWrapper>
   )
 }

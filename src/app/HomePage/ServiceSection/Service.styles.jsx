@@ -1,13 +1,15 @@
 import styled from "styled-components";
 export const ServiceWrapper = styled.div`
 height: fit-content;
-width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 40px 0;
   overflow-x: hidden;
+  @media screen and (max-width: 700px){
+    //width: 100vw;
+  }
 
 `;
 export const Wrapper = styled.div`
@@ -42,7 +44,7 @@ export  const FirstCarouselWrapper = styled.div`
       align-items: center;
       justify-content: space-around;
       padding: 25px 50px ;
-      font-size: 20px;
+      font-size:17px;
       font-weight: 600;
       svg{
         height: 32px;
@@ -54,7 +56,7 @@ export  const FirstCarouselWrapper = styled.div`
         min-height: 60px;
         justify-content: center;
         align-items: center;
-        font-size: 18px;
+        font-size: 16px;
         z-index: 99999999999999999 !important;
        padding: 0;
         svg{
@@ -98,7 +100,7 @@ margin-right: auto;
   padding-left: 210px;
   @media screen and (max-width:600px){
     font-size: 28px;
-    font-weight: 600px;
+    font-weight: 600;
     width: fit-content;
     margin: auto;
     line-height: 38px;

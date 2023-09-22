@@ -16,7 +16,7 @@ import img5 from "../../../source/assets/customers/logo 2.png"
 import img6 from "../../../source/assets/customers/logo 3.png"
 import img7 from "../../../source/assets/customers/Concordia_Logo_HORIZ 1.png"
 import img8 from "../../../source/assets/customers/Final_LL_Logo_715d5aca-af44-40d7-8460-6b4f24a63ed2_160x 1.png"
-import img9 from "../../../source/assets/customers/logo-cedreus-residence2x 1.png"
+import img9 from "../../../source/assets/customers/qwe.png"
 import ImgDirector from "../../../source/assets/customers/compdir.png"
 import imgRec from  "../../../source/assets/customers/Rectangle 1611.png"
 
@@ -54,8 +54,8 @@ const Customer = () => {
                         <div className={'svg-wrapper'}>
                             <img src={img7}/>
                         </div>
-                        <div className={'svg-wrapper'}>
-                            <img src={img7}/>
+                        <div className={'svg-wrapper cl-1'}>
+                            <img src={img9}/>
                         </div>
                         <div className={'svg-wrapper'}>
                             <img src={img8}/>
@@ -63,6 +63,7 @@ const Customer = () => {
                     </div>
                 </Container>
             </MainCustomerWrapper>
+
             <CompanyShowcaseWrapper>
                <Header>
                    <MainTitle>SHAXBOZ <br/>
