@@ -51,7 +51,8 @@ export const RoasHeader =styled.div`
     @media screen and (max-width: 700px){
      font-size: 24px;
       line-height: 30px;
-      padding: 20px 0;
+      padding: 0px 0;
+      padding-bottom: 40px;
       br{
         display: none;
       }
@@ -187,7 +188,7 @@ export const RoasButton = styled.div`
     font-size: 18px;
     font-weight: 500;
     line-height: 24px;
-    padding: 13px 40px;
+    padding: 13px 55px;
   }
 
 

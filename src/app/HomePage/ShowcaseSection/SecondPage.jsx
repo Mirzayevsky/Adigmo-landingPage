@@ -6,6 +6,7 @@ import {
   TopWrapper,
   AmongWrapper,
 } from "./SecondPage.styles";
+import Text from "../../../language/langManager";
 
 const SecondPage = () => {
   return (
@@ -14,11 +15,11 @@ const SecondPage = () => {
         <ShowInform>
           <TopWrapper>
             <div className="result">
-              Natijaga yo`naltirilgan <br />
-              17 yillik tajriba
+              <Text id={"natijagayonaltirilgan"}/> <br />
+              <Text id={"tajriba"}/>
             </div>
             <div className="sales">
-              Sotuvlar = $3000 <br /> Marketing Harajati = $600
+              <Text id={"spSales"}/> <br /> <Text id={"salesDown"}/>
             </div>
           </TopWrapper>
 
@@ -28,22 +29,28 @@ const SecondPage = () => {
               <div>
 
                 <div className={"among-content"}>
-                  <div className={'sales-up'}>SOTUVLAR ($3000)</div>
+                  <div className={'sales-up'}>
+                    <Text id={"slUp"}/>
+                  </div>
                   <div className="sale-up"></div>
                 </div>
 
-                <div className="spends">HARJAT ($600)</div>
+                <div className="spends">
+                  <Text id={"outCome"}/>
+                </div>
               </div>
               <div> = 5</div>
             </div>
 
 
 
-            <div className="bottom-title">5x ROAS nima?</div>
+            <div className="bottom-title">
+              <Text id={"whatRoas"}/>
+            </div>
             <div className="bottom-text">
-              Masalan har bir sarflangan $1 uchun $5 gacha Sotuv olib kelinadi. <br />
-              Ushbu jarayonda web-analitika, CRM va boshqa tegishli tizimlardan
-              foydalaniladi.
+              <Text id={"roasTextOne"}/> <br/>
+              <Text id={"roasTextTwo"}/>
+
             </div>
           </AmongWrapper>
 

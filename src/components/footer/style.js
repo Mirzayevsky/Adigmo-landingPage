@@ -15,15 +15,22 @@ export const FooterWrapper = styled.div`
   background: linear-gradient(180deg, #7FFFF2 2.29%, rgba(239, 239, 239, 0.33) 38.3%, rgba(150, 175, 246, 0.84) 59.69%, rgba(31, 90, 255, 0.78) 91.98%, #392ED6 100%);
    background:url("${img}"),url("${img2}"),url("${img3}"),url("${img3}");
   background: url("${imgMain}");
-  background-position: center;
+  background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 1;
+  //position: relative;
+  
+  @media screen and (max-width: 1700px){
+    height: fit-content;
+   background-size: contain;
+    background-position: bottom;
+  }
 @media screen and (max-width: 700px){
   background-size: 150%;
   height: fit-content;
   background-position: bottom;
-  
+  margin-top: 150px;
 }
 
 `;
@@ -120,7 +127,10 @@ export const FooterBottom = styled.div`
   letter-spacing: 0em;
   padding-top: initial;
   width: fit-content;
-padding-top: 130px;
+  padding-top: 250px;
+  @media screen and (max-width: 1700px){
+    padding: 50px 0;
+  }
   @media screen and (max-width: 700px){
     font-size: 14px;
     font-weight: 500;

@@ -13,6 +13,7 @@ import {ReactComponent as SvgSeven} from "../../../source/assets/services items/
 import {ReactComponent as SvgNine} from "../../../source/assets/services items/🦆 icon _shopping cart_.svg";
 import {ReactComponent as SvgTen} from "../../../source/assets/services items/🦆 icon _star_.svg";
 import {ReactComponent as SvgVerify} from "../../../source/assets/services items/🦆 icon _verify_.svg";
+import Text from "../../../language/langManager";
 
 
 
@@ -73,153 +74,154 @@ const Service = () => {
     return(
         
 <ServiceWrapper>
-    <ServiceTitle>Sotuvingizni Oshrishga <br/> Tayyormisiz?</ServiceTitle>
+
+    <ServiceTitle> <Text id="serviceTitle"/><br/> <Text id="serviceTitleOne"/></ServiceTitle>
         <FirstCarouselWrapper>
             <div ref={sliderRef} className="keen-slider">
                 <div className="keen-slider__slide number-slide1 `">
                     <div className="child-mini ">
                         <Svgfifth className={"svg-touch"}/>
-                            Googleda Reklama Joylash
+                          <Text id="googleText"/>
                     </div>
                     <div className="child-mini">
                         <SvgOne className={"svg-touch"}/>
-                        Yandexda Reklama Joylash
+                        <Text id="yandexText"/>
                     </div>
                     <div className="child-mini">
                         <Svgthird className={"svg-touch"}/>
-                        Raqobatchilarni O'rganish
+                        <Text id="oponentText"/>
                         </div>
                     <div className="child-mini">
                         <SvgSeven className={"svg-touch"}/>
-                        Reklamani Optimizatsiya Qilish</div>
+                        <Text id="optimization"/> </div>
                     <div className="child-mini">
                         <Svgfifth className={"svg-touch"}/>
-                        Googleda Reklama Joylash
+                       <Text id="googleText"/>
                     </div>
 
                 </div>
                 <div className="keen-slider__slide number-slide1 slide-2 `">
                     <div className="child-mini dp-none">
                         <Svgfifth className={"svg-touch"}/>
-                        Instagram va Facebook reklama joylash
+                        <Text id="googleText"/>
                     </div>
                     <div className="child-mini">
                         <SvgOne className={"svg-touch"}/>
-                        Reklama Bannerlarini Yaratish
+                        <Text id="yandexText"/>
                     </div>
                     <div className="child-mini">
                         <Svgthird className={"svg-touch"}/>
-                        Sotuvni 2-3 barobarga oshirish
+                        <Text id="oponentText"/>
                     </div>
                     <div className="child-mini">
                         <SvgSeven className={"svg-touch"}/>
-                        Web analitika qilish
-                    </div>
+                        <Text id="optimization"/> </div>
                     <div className="child-mini">
                         <SvgOne className={"svg-touch"}/>
-                        Raqobatchilarni O'rganish
+                        <Text id="yandexText"/>
                     </div>
                 </div>
 
             </div>
         </FirstCarouselWrapper>
-        <FirstCarouselWrapper>
-            <div ref={sliderRef2} className="keen-slider">
-                <div className="keen-slider__slide number-slide1 `">
-                    <div className="child-mini ">
-                        <SvgSix className={"svg-touch"}/>
-                        Instagram va Facebook reklama joylash
-                    </div>
-                    <div className="child-mini">
-                        <SvgTen className={"svg-touch"}/>
-                        Reklama Bannerlarini Yaratish
-                    </div>
-                    <div className="child-mini">
-                        <SvgNine  className={"svg-touch"}/>
-                        Sotuvni 2-3 barobarga oshirish
-                    </div>
-                    <div className="child-mini">
-                        <Svgfourth  className={"svg-touch"}/>
-                        Web analitika qilish
-                    </div>
-                    <div className="child-mini">
-                        <Svgfifth className={"svg-touch"}/>
-                        Googleda Reklama Joylash
-                    </div>
-                </div>
-                <div className="keen-slider__slide number-slide1 `">
-                    <div className="child-mini ">
-                        <SvgSix className={"svg-touch"}/>
-                        Instagram va Facebook reklama joylash
-                    </div>
-                    <div className="child-mini">
-                        <SvgTen className={"svg-touch"}/>
-                        Reklama Bannerlarini Yaratish
-                    </div>
-                    <div className="child-mini">
-                        <SvgNine  className={"svg-touch"}/>
-                        Sotuvni 2-3 barobarga oshirish
-                    </div>
-                    <div className="child-mini">
-                        <Svgfourth  className={"svg-touch"}/>
-                        Web analitika qilish
-                    </div>
-                    <div className="child-mini">
-                        <Svgfifth className={"svg-touch"}/>
-                        Googleda Reklama Joylash
-                    </div>
-                </div>
 
-            </div>
-        </FirstCarouselWrapper>
-        <FirstCarouselWrapper>
-            <div ref={sliderRefRight} className="keen-slider">
-                <div className="keen-slider__slide number-slide1 `">
-                    <div className="child-mini ">
-                        <Svgfifth className={"svg-touch"}/>
-                        Raqobatchilarni O'rganish
-                    </div>
-                    <div className="child-mini">
-                        <SvgOne className={"svg-touch"}/>
-                        Reklamani Optimizatsiya Qilish
-                    </div>
-                    <div className="child-mini">
-                        <SvgVerify className={"svg-touch"}/>
-                        Sotuvchi sayt yaratish
-                    </div>
-                    <div className="child-mini">
-                        <SvgSeven className={"svg-touch"}/>
-                        Reklamani Optimizatsiya Qilish</div>
-                    <div className="child-mini">
-                        <Svgfifth className={"svg-touch"}/>
-                        Yandexda Reklama Joylash
-                    </div>
-                </div>
-                <div className="keen-slider__slide number-slide1 `">
-                    <div className="child-mini ">
-                        <Svgfifth className={"svg-touch"}/>
-                        Raqobatchilarni O'rganish
-                    </div>
-                    <div className="child-mini">
-                        <SvgOne className={"svg-touch"}/>
-                        Reklamani Optimizatsiya Qilish
-                    </div>
-                    <div className="child-mini">
-                        <SvgVerify className={"svg-touch"}/>
-                        Sotuvchi sayt yaratish
-                    </div>
-                    <div className="child-mini">
-                        <SvgSeven className={"svg-touch"}/>
-                        Reklamani Optimizatsiya Qilish</div>
-                    <div className="child-mini">
-                        <Svgfifth className={"svg-touch"}/>
-                        Yandexda Reklama Joylash
-                    </div>
-                </div>
+        {/*<FirstCarouselWrapper>*/}
+        {/*    <div ref={sliderRef2} className="keen-slider">*/}
+        {/*        <div className="keen-slider__slide number-slide1 `">*/}
+        {/*            <div className="child-mini ">*/}
+        {/*                <SvgSix className={"svg-touch"}/>*/}
+        {/*                <Text id="reklame"/>*/}
+        {/*            </div>*/}
+        {/*            <div className="child-mini">*/}
+        {/*                <SvgTen className={"svg-touch"}/>*/}
+        {/*                <Text id="reklamaBanner"/>*/}
+        {/*            </div>*/}
+        {/*            <div className="child-mini">*/}
+        {/*                <SvgNine  className={"svg-touch"}/>*/}
+        {/*               <Text id="salesUpService"/>*/}
+        {/*            </div>*/}
+        {/*            <div className="child-mini">*/}
+        {/*                <Svgfourth  className={"svg-touch"}/>*/}
+        {/*               <Text id="webAnalyse"/>*/}
+        {/*            </div>*/}
+        {/*            <div className="child-mini">*/}
+        {/*                <Svgfifth className={"svg-touch"}/>*/}
+        {/*               <Text id="googleText"/>*/}
+        {/*            </div>*/}
+        {/*        </div>*/}
+        {/*        <div className="keen-slider__slide number-slide1 `">*/}
+        {/*            <div className="child-mini ">*/}
+        {/*                <SvgSix className={"svg-touch"}/>*/}
+        {/*                <Text id="reklame"/>*/}
+        {/*            </div>*/}
+        {/*            <div className="child-mini">*/}
+        {/*                <SvgTen className={"svg-touch"}/>*/}
+        {/*                <Text id="reklamaBanner"/>*/}
+        {/*            </div>*/}
+        {/*            <div className="child-mini">*/}
+        {/*                <SvgNine  className={"svg-touch"}/>*/}
+        {/*                <Text id="salesUpService"/>*/}
+        {/*            </div>*/}
+        {/*            <div className="child-mini">*/}
+        {/*                <Svgfourth  className={"svg-touch"}/>*/}
+        {/*                <Text id="webAnalyse"/>*/}
+        {/*            </div>*/}
+        {/*            <div className="child-mini">*/}
+        {/*                <Svgfifth className={"svg-touch"}/>*/}
+        {/*                <Text id="googleText"/>*/}
+        {/*            </div>*/}
+        {/*        </div>*/}
+
+        {/*    </div>*/}
+        {/*</FirstCarouselWrapper>*/}
+        {/*<FirstCarouselWrapper>*/}
+        {/*    <div ref={sliderRefRight} className="keen-slider">*/}
+        {/*        <div className="keen-slider__slide number-slide1 `">*/}
+        {/*            <div className="child-mini ">*/}
+        {/*                <Svgfifth className={"svg-touch"}/>*/}
+        {/*               <Text id="oponentText"/>*/}
+        {/*            </div>*/}
+        {/*            <div className="child-mini">*/}
+        {/*                <SvgOne className={"svg-touch"}/>*/}
+        {/*               <Text id="reklamaBanner"/>*/}
+        {/*            </div>*/}
+        {/*            <div className="child-mini">*/}
+        {/*                <SvgVerify className={"svg-touch"}/>*/}
+        {/*                <Text id="salesSite"/>*/}
+        {/*            </div>*/}
+        {/*            <div className="child-mini">*/}
+        {/*                <SvgSeven className={"svg-touch"}/>*/}
+        {/*                <Text id="reklamaBanner"/> </div>*/}
+        {/*            <div className="child-mini">*/}
+        {/*                <Svgfifth className={"svg-touch"}/>*/}
+        {/*                 <Text id="yandexText"/>*/}
+        {/*            </div>*/}
+        {/*        </div>*/}
+        {/*        <div className="keen-slider__slide number-slide1 `">*/}
+        {/*            <div className="child-mini ">*/}
+        {/*                <Svgfifth className={"svg-touch"}/>*/}
+        {/*                <Text id="oponentText"/>*/}
+        {/*            </div>*/}
+        {/*            <div className="child-mini">*/}
+        {/*                <SvgOne className={"svg-touch"}/>*/}
+        {/*                <Text id="reklamaBanner"/>*/}
+        {/*            </div>*/}
+        {/*            <div className="child-mini">*/}
+        {/*                <SvgVerify className={"svg-touch"}/>*/}
+        {/*                <Text id="salesSite"/>*/}
+        {/*            </div>*/}
+        {/*            <div className="child-mini">*/}
+        {/*                <SvgSeven className={"svg-touch"}/>*/}
+        {/*                <Text id="reklamaBanner"/> </div>*/}
+        {/*            <div className="child-mini">*/}
+        {/*                <Svgfifth className={"svg-touch"}/>*/}
+        {/*                <Text id="yandexText"/>*/}
+        {/*            </div>*/}
+        {/*        </div>*/}
 
 
-            </div>
-        </FirstCarouselWrapper>
+        {/*    </div>*/}
+        {/*</FirstCarouselWrapper>*/}
 
 
 

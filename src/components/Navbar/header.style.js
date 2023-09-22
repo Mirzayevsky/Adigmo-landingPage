@@ -54,6 +54,7 @@ export const Title = styled.div`
   letter-spacing: 1.5px;
   margin-top: 90px;
   color: #1a2032;
+  text-transform: uppercase;
   @media screen and (max-width: 600px) {
     font-size: 24px;
     line-height: 29px;
@@ -123,6 +124,7 @@ export const LangButton = styled.div`
   align-items: center;
   justify-content: center;
   margin-right: 30px;
+  cursor: pointer;
   background: linear-gradient(
     94.24deg,
     #1f5aff -32.1%,
@@ -148,6 +150,7 @@ export const LangSecondBnt = styled.div`
   line-height: 42px;
   width: fit-content;
   height: fit-content;
+  cursor: pointer;
   padding: 3px 35px;
   border-radius: 70px;
   border-radius: 70px;

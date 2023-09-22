@@ -124,6 +124,7 @@ export const FirstWrapper = styled.div`
     span {
       color: #000;
       font-weight: 600;
+      padding-right: 4px;
     }
   }
   .wrapper-2 {

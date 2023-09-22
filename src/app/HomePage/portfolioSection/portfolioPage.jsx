@@ -11,34 +11,34 @@ import img2 from "../../../source/assets/images/a2.png";
 import img3 from "../../../source/assets/images/img3.png";
 import img4 from "../../../source/assets/images/img4.png";
 import img5 from "../../../source/assets/images/img5.png";
+import Text from "../../../language/langManager";
 
 const PortfolioPage = () => {
   return (
     <PortfolioWrapper>
       <Container>
-        <Title>PORTFOLIO </Title>
+        <Title>
+          <Text id={"portfolio"}/>
+        </Title>
         <FirstWrapper>
           <div className="img-wrapper">
             <img src={img1} alt="" />
           </div>
           <div className="text">
-            <span>Kompaniya: </span>
-            Seamosstransformation.com seamoss gel qo'shimchalari bo'yicha yetakchi hisoblanadi. <br/>
-            <span>Muammo:</span> Raqobat oshayotgan oziq-ovqat qo'shimchalari bozorida reklama investitsiyalaridan barqaror daromad olishga erishish. <br/>
-            <span>Amalga oshirildi:</span> Google Ads matnli reklamasidan foydalanilgan holda maqsadli auditoriyani to’gri target qilindi va turli xil kreativlar va e’lonlar sinab ko'rildi.<br/>
-           <span> Natija: </span> 30 kunda 5X ROASga erishildi, reklamaga 88 000 AQSh dollar sarflab, 449 000 dollarlik savdo qilindi. <br/>
-             <span>Xulosa: </span> To'g'ri strategiya va hamkorlik bilan barqaror va ajoyib natijalarga erishish mumkin. <br/>
+            <span>
+              <Text id={"company"}/> :
+            </span>
+            <Text id={"companyOne"}/> :<br/>
+            <span><Text id={"problem"}/> :</span><Text id={"problemText"}/> <br/>
+            <span><Text id={"carryOut"}/> :</span> <Text id={"carryOutText"}/><br/>
+           <span> <Text id={"result"}/> :</span> <Text id={"resultText"}/> <br/>
+             <span><Text id={"conclusion"}/>:</span><Text id={"conclusionText"}/> <br/>
           </div>
         </FirstWrapper>
 
         <FirstWrapper className={"second"}>
           <div className="text text-2">
-            Diamond Bedding companiyasi uchun 12x ROAS natija. Buyuk Britaniyada
-            ko‘rpa va yostiqlar sotuvchi Diamond Bedding o‘zining onlayn
-            savdosini oshirishga intilmoqda. Tajribamizdan foydalanib, biz 30
-            kun ichida 5000 funt sterlinglik Google Ads sarfini 61 000 funt
-            sterlingga aylantirdik va reklama qaytimi ROASni 11 baravar
-            oshirishga erishdik.
+            <Text id={"diamondRoas"}/>
           </div>
           <div className="img-wrapper">
             <img src={img2} alt="" />
@@ -50,27 +50,13 @@ const PortfolioPage = () => {
             <img src={img3} alt="" className="wrapper-2" />
           </div>
           <div className="text text-2 text-3">
-            Svetsiyaning “Ark of Sweden” kompaniyasi uchun 17X ROAS!
-            Ark of Sweden, yangi avlod qo'shimchalari bo'yicha yetakchi, elektron tijorat orqali savdo hajmini oshirmoqchi edi.
-            Biz Google Ads orqali 7 090 krona sarflab, atigi 90
-            kun ichida bu kompaniya uchun
-            126823 kronalik savdo hajmiga erishdik.
-            Bu 17 barobar ROAS deganidir!
+            <Text id={"swedin"}/>
           </div>
         </FirstWrapper>
         <SecondWrapper>
           <div className="second-wrapper-text">
-            Buyuk Britaniyaning “RDX” kompaniyasi uchun
-            18X ROAS! <br/>
+            <Text id={"gratBritain"}/>
 
-            "RDX" Kampaniyasi Bok va UFC va boshqa Sport
-            kiyimlari sotadigan yetakchi onlayn do'kon hisoblanadi,
-            elektron tijorat orqali savdo hajmini oshirmoqchi edi.
-
-            Biz Facebook Ads orqali 3 oy ichida 9 barobar  savdo
-            hajmiga erishdik.<br/>
-            Oxirgi  15 kun ichida bu ko'rsatkich
-            20 barbobarga oshdi!
           </div>
           <div className="img-wrapper">
             <img src={img5} alt="" className="img-top" />

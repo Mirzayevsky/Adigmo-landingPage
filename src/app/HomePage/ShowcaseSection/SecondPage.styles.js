@@ -43,6 +43,7 @@ export const TopWrapper = styled.div`
     line-height: 75px;
     letter-spacing: 1.5px;
     text-align: left;
+    text-transform: uppercase;
     @media screen and (max-width: 600px) {
       font-size: 25px;
       font-weight: 600;

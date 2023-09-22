@@ -6,9 +6,10 @@ height: fit-content;
   align-items: center;
   justify-content: center;
   padding: 40px 0;
-  overflow-x: hidden;
-  @media screen and (max-width: 700px){
-    //width: 100vw;
+  overflow-x: hidden !important;
+  @media screen and (max-width: 1500px){
+    max-width: 100vw;
+    background-color: red;
   }
 
 `;
@@ -19,15 +20,25 @@ export  const FirstCarouselWrapper = styled.div`
   width: 100%;
   height: auto;
   margin-top: 30px;
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 1500px) {
     .keen-slider {
-      min-width: 1700px !important;
+      min-width: 2030px !important;
       margin-right: 40px !important;
+      background-color: rebeccapurple !important;
     }
-
     .keen-slider_slide {
       min-width: 378px;
-      height: 230px;
+      height: 190px;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .keen-slider {
+      //min-width: 1700px !important;
+      //margin-right: 40px !important;
+    }
+    .keen-slider_slide {
+      //min-width: 378px;
+      //height: 230px;
 
     }
   }
@@ -51,13 +62,13 @@ export  const FirstCarouselWrapper = styled.div`
         margin: 0 12px;
       }
       @media screen  and (max-width:600px){
-        width: 300px !important;
-        min-width: 290px !important;
+        //width: 300px !important;
+        //min-width: 290px !important;
         min-height: 60px;
         justify-content: center;
         align-items: center;
         font-size: 16px;
-        z-index: 99999999999999999 !important;
+        //z-index: 99999999999999999 !important;
        padding: 0;
         svg{
           height: 24px;
