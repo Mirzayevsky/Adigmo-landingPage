@@ -1,6 +1,9 @@
 import styled from "styled-components";
 export const  CustomerWrapper = styled.div`
     padding: 120px 0;
+  @media screen and (max-width: 700px) {
+    padding-bottom:40px;
+  }
 `;
 export const  MainCustomerWrapper = styled.div`
   width: 80%;

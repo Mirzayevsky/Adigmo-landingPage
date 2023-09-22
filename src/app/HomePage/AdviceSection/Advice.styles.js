@@ -8,6 +8,10 @@ export const AdviceWrapper = styled.div`
   box-shadow: 0px 4px 4px 0px #00000040;
   margin: 50px auto;
   padding: 20px 0;
+@media screen and (max-width: 700px){
+  width: 90%;
+  padding-bottom: 0;
+}
 
 `;
 export  const Container = styled.div`
@@ -17,6 +21,12 @@ export  const Container = styled.div`
   flex-direction: row;
   justify-content: space-between;
   margin-top:50px;
+  @media screen and (max-width: 700px){
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 15px;
+  }
   
 `;
 export const Title = styled.div`
@@ -27,6 +37,11 @@ export const Title = styled.div`
   letter-spacing: 2px;
   text-align: left;
   text-transform: uppercase;
+  @media screen and (max-width: 700px){
+    font-size: 28px;
+    line-height: 40px;
+    text-align:center;
+  }
 `;
 export const AdviceForm = styled.form`
   width: fit-content;
@@ -34,6 +49,11 @@ export const AdviceForm = styled.form`
   flex-direction: column;
   justify-content: center;
   margin-top: 70px;
+@media screen and (max-width: 700px){
+  width: 100%;
+  margin: auto;
+  margin-top: 50px;
+}
     input{
       width: 438px;
       height: 72px;
@@ -42,6 +62,16 @@ export const AdviceForm = styled.form`
       border-color: #3338DF !important;
       border: 1px solid #3338DF;
       margin:10px 0;
+      @media screen and (max-width: 700px){
+        font-size: 16px;
+        width: 80%;
+        height: 40px;
+        border-radius: 7px;
+        margin: 10px auto;
+        &:nth-child(1){
+          margin-top: 30px;
+        }
+      }
     }
   button{
     width: 438px;
@@ -58,9 +88,16 @@ export const AdviceForm = styled.form`
     text-align: center;
     color: #fff;
     margin-top: 40px;
-
-
-
+    cursor: pointer;
+    @media screen and (max-width: 700px){
+      width: 80%;
+      height: 60px;
+      font-size: 20px;
+      font-weight: 500;
+      margin: auto;
+      margin-top: 25px;
+    }
   }
+  
 
 `;

@@ -7,8 +7,8 @@ const Advice = () => {
             <Container>
                 <Title>5x  ROAS Bepul <br/> konsultatsiya</Title>
                 <AdviceForm>
-                        <input/>
-                        <input/>
+                        <input name={"Number"} type={"number"}/>
+                        <input name={"Text"}/>
                         <button>BEPUL MASLAXAT!</button>
                 </AdviceForm>
             </Container>

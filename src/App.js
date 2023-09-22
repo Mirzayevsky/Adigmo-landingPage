@@ -19,7 +19,7 @@ function App() {
        <Service/>
        <Roas/>
         <Customer/>
-        {/*<Advice/>*/}
+        <Advice/>
         {/*<Footer/>*/}
       </AppWrapper>
   )
