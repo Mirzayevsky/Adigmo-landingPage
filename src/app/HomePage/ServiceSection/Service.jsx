@@ -125,103 +125,103 @@ const Service = () => {
             </div>
         </FirstCarouselWrapper>
 
-        {/*<FirstCarouselWrapper>*/}
-        {/*    <div ref={sliderRef2} className="keen-slider">*/}
-        {/*        <div className="keen-slider__slide number-slide1 `">*/}
-        {/*            <div className="child-mini ">*/}
-        {/*                <SvgSix className={"svg-touch"}/>*/}
-        {/*                <Text id="reklame"/>*/}
-        {/*            </div>*/}
-        {/*            <div className="child-mini">*/}
-        {/*                <SvgTen className={"svg-touch"}/>*/}
-        {/*                <Text id="reklamaBanner"/>*/}
-        {/*            </div>*/}
-        {/*            <div className="child-mini">*/}
-        {/*                <SvgNine  className={"svg-touch"}/>*/}
-        {/*               <Text id="salesUpService"/>*/}
-        {/*            </div>*/}
-        {/*            <div className="child-mini">*/}
-        {/*                <Svgfourth  className={"svg-touch"}/>*/}
-        {/*               <Text id="webAnalyse"/>*/}
-        {/*            </div>*/}
-        {/*            <div className="child-mini">*/}
-        {/*                <Svgfifth className={"svg-touch"}/>*/}
-        {/*               <Text id="googleText"/>*/}
-        {/*            </div>*/}
-        {/*        </div>*/}
-        {/*        <div className="keen-slider__slide number-slide1 `">*/}
-        {/*            <div className="child-mini ">*/}
-        {/*                <SvgSix className={"svg-touch"}/>*/}
-        {/*                <Text id="reklame"/>*/}
-        {/*            </div>*/}
-        {/*            <div className="child-mini">*/}
-        {/*                <SvgTen className={"svg-touch"}/>*/}
-        {/*                <Text id="reklamaBanner"/>*/}
-        {/*            </div>*/}
-        {/*            <div className="child-mini">*/}
-        {/*                <SvgNine  className={"svg-touch"}/>*/}
-        {/*                <Text id="salesUpService"/>*/}
-        {/*            </div>*/}
-        {/*            <div className="child-mini">*/}
-        {/*                <Svgfourth  className={"svg-touch"}/>*/}
-        {/*                <Text id="webAnalyse"/>*/}
-        {/*            </div>*/}
-        {/*            <div className="child-mini">*/}
-        {/*                <Svgfifth className={"svg-touch"}/>*/}
-        {/*                <Text id="googleText"/>*/}
-        {/*            </div>*/}
-        {/*        </div>*/}
+        <FirstCarouselWrapper>
+            <div ref={sliderRef2} className="keen-slider">
+                <div className="keen-slider__slide number-slide1 `">
+                    <div className="child-mini ">
+                        <SvgSix className={"svg-touch"}/>
+                        <Text id="reklame"/>
+                    </div>
+                    <div className="child-mini">
+                        <SvgTen className={"svg-touch"}/>
+                        <Text id="reklamaBanner"/>
+                    </div>
+                    <div className="child-mini">
+                        <SvgNine  className={"svg-touch"}/>
+                       <Text id="salesUpService"/>
+                    </div>
+                    <div className="child-mini">
+                        <Svgfourth  className={"svg-touch"}/>
+                       <Text id="webAnalyse"/>
+                    </div>
+                    <div className="child-mini">
+                        <Svgfifth className={"svg-touch"}/>
+                       <Text id="googleText"/>
+                    </div>
+                </div>
+                <div className="keen-slider__slide number-slide1 `">
+                    <div className="child-mini ">
+                        <SvgSix className={"svg-touch"}/>
+                        <Text id="reklame"/>
+                    </div>
+                    <div className="child-mini">
+                        <SvgTen className={"svg-touch"}/>
+                        <Text id="reklamaBanner"/>
+                    </div>
+                    <div className="child-mini">
+                        <SvgNine  className={"svg-touch"}/>
+                        <Text id="salesUpService"/>
+                    </div>
+                    <div className="child-mini">
+                        <Svgfourth  className={"svg-touch"}/>
+                        <Text id="webAnalyse"/>
+                    </div>
+                    <div className="child-mini">
+                        <Svgfifth className={"svg-touch"}/>
+                        <Text id="googleText"/>
+                    </div>
+                </div>
 
-        {/*    </div>*/}
-        {/*</FirstCarouselWrapper>*/}
-        {/*<FirstCarouselWrapper>*/}
-        {/*    <div ref={sliderRefRight} className="keen-slider">*/}
-        {/*        <div className="keen-slider__slide number-slide1 `">*/}
-        {/*            <div className="child-mini ">*/}
-        {/*                <Svgfifth className={"svg-touch"}/>*/}
-        {/*               <Text id="oponentText"/>*/}
-        {/*            </div>*/}
-        {/*            <div className="child-mini">*/}
-        {/*                <SvgOne className={"svg-touch"}/>*/}
-        {/*               <Text id="reklamaBanner"/>*/}
-        {/*            </div>*/}
-        {/*            <div className="child-mini">*/}
-        {/*                <SvgVerify className={"svg-touch"}/>*/}
-        {/*                <Text id="salesSite"/>*/}
-        {/*            </div>*/}
-        {/*            <div className="child-mini">*/}
-        {/*                <SvgSeven className={"svg-touch"}/>*/}
-        {/*                <Text id="reklamaBanner"/> </div>*/}
-        {/*            <div className="child-mini">*/}
-        {/*                <Svgfifth className={"svg-touch"}/>*/}
-        {/*                 <Text id="yandexText"/>*/}
-        {/*            </div>*/}
-        {/*        </div>*/}
-        {/*        <div className="keen-slider__slide number-slide1 `">*/}
-        {/*            <div className="child-mini ">*/}
-        {/*                <Svgfifth className={"svg-touch"}/>*/}
-        {/*                <Text id="oponentText"/>*/}
-        {/*            </div>*/}
-        {/*            <div className="child-mini">*/}
-        {/*                <SvgOne className={"svg-touch"}/>*/}
-        {/*                <Text id="reklamaBanner"/>*/}
-        {/*            </div>*/}
-        {/*            <div className="child-mini">*/}
-        {/*                <SvgVerify className={"svg-touch"}/>*/}
-        {/*                <Text id="salesSite"/>*/}
-        {/*            </div>*/}
-        {/*            <div className="child-mini">*/}
-        {/*                <SvgSeven className={"svg-touch"}/>*/}
-        {/*                <Text id="reklamaBanner"/> </div>*/}
-        {/*            <div className="child-mini">*/}
-        {/*                <Svgfifth className={"svg-touch"}/>*/}
-        {/*                <Text id="yandexText"/>*/}
-        {/*            </div>*/}
-        {/*        </div>*/}
+            </div>
+        </FirstCarouselWrapper>
+        <FirstCarouselWrapper>
+            <div ref={sliderRefRight} className="keen-slider">
+                <div className="keen-slider__slide number-slide1 `">
+                    <div className="child-mini ">
+                        <Svgfifth className={"svg-touch"}/>
+                       <Text id="oponentText"/>
+                    </div>
+                    <div className="child-mini">
+                        <SvgOne className={"svg-touch"}/>
+                       <Text id="reklamaBanner"/>
+                    </div>
+                    <div className="child-mini">
+                        <SvgVerify className={"svg-touch"}/>
+                        <Text id="salesSite"/>
+                    </div>
+                    <div className="child-mini">
+                        <SvgSeven className={"svg-touch"}/>
+                        <Text id="reklamaBanner"/> </div>
+                    <div className="child-mini">
+                        <Svgfifth className={"svg-touch"}/>
+                         <Text id="yandexText"/>
+                    </div>
+                </div>
+                <div className="keen-slider__slide number-slide1 `">
+                    <div className="child-mini ">
+                        <Svgfifth className={"svg-touch"}/>
+                        <Text id="oponentText"/>
+                    </div>
+                    <div className="child-mini">
+                        <SvgOne className={"svg-touch"}/>
+                        <Text id="reklamaBanner"/>
+                    </div>
+                    <div className="child-mini">
+                        <SvgVerify className={"svg-touch"}/>
+                        <Text id="salesSite"/>
+                    </div>
+                    <div className="child-mini">
+                        <SvgSeven className={"svg-touch"}/>
+                        <Text id="reklamaBanner"/> </div>
+                    <div className="child-mini">
+                        <Svgfifth className={"svg-touch"}/>
+                        <Text id="yandexText"/>
+                    </div>
+                </div>
 
 
-        {/*    </div>*/}
-        {/*</FirstCarouselWrapper>*/}
+            </div>
+        </FirstCarouselWrapper>
 
 
 
