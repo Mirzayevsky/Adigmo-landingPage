@@ -24,7 +24,6 @@ export  const FirstCarouselWrapper = styled.div`
     .keen-slider {
       min-width: 2030px !important;
       margin-right: 40px !important;
-      background-color: rebeccapurple !important;
     }
     .keen-slider_slide {
       min-width: 378px;
@@ -64,12 +63,12 @@ export  const FirstCarouselWrapper = styled.div`
       @media screen  and (max-width:600px){
         //width: 300px !important;
         //min-width: 290px !important;
-        min-height: 60px;
+        min-height: 40px;
         justify-content: center;
         align-items: center;
         font-size: 16px;
         //z-index: 99999999999999999 !important;
-       padding: 0;
+       padding: 2px 15px;
         svg{
           height: 24px;
         }

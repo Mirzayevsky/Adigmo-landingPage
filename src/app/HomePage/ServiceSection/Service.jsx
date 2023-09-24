@@ -81,7 +81,7 @@ const Service = () => {
                 <div className="keen-slider__slide number-slide1 `">
                     <div className="child-mini ">
                         <Svgfifth className={"svg-touch"}/>
-                          <Text id="googleText"/>
+                       <Text id="googleText"/>
                     </div>
                     <div className="child-mini">
                         <SvgOne className={"svg-touch"}/>
