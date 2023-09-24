@@ -6,6 +6,7 @@ display: flex;
   @media screen and (max-width: 600px ){
     padding: 0;
     height: fit-content;
+   padding-bottom: 70px;
   }
 `;
 export  const TabWrapper = styled.div`
@@ -131,6 +132,10 @@ export  const  ImageSide = styled.div`
   display: flex;
   align-content: center;
   justify-content: center;
+ @media screen and (max-width: 700px){
+  width: 80%;
+  margin: auto;
+ }
  
 `;
 export  const  TabSide = styled.div`

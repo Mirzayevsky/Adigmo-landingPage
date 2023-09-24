@@ -9,6 +9,7 @@ height: fit-content;
   overflow-x: hidden !important;
   @media screen and (max-width: 1500px){
     max-width: 100vw;
+    padding-bottom: 70px;
     //background-color: red;
   }
 
@@ -63,7 +64,7 @@ export  const FirstCarouselWrapper = styled.div`
       @media screen  and (max-width:600px){
         //width: 300px !important;
         //min-width: 290px !important;
-        min-height: 40px;
+        min-height: 52px;
         justify-content: center;
         align-items: center;
         font-size: 16px;
@@ -109,13 +110,14 @@ margin-right: auto;
   padding: 30px 0;
   padding-left: 210px;
   @media screen and (max-width:600px){
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 600;
     width: fit-content;
     margin: auto;
     line-height: 38px;
     padding: 0;
     text-align: center;
+    padding-bottom: 20px;
     br{
       display: none;
     }
