@@ -9,7 +9,7 @@ height: fit-content;
   overflow-x: hidden !important;
   @media screen and (max-width: 1500px){
     max-width: 100vw;
-    background-color: red;
+    //background-color: red;
   }
 
 `;
