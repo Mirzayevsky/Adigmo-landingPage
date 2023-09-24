@@ -31,11 +31,14 @@ export const Content =styled.div`
 `;
 
 export const RoasHeader =styled.div`
-    display: flex;
+  display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   padding: 40px 0;
+  @media screen and (max-width: 1700px){
+    flex-direction: column;
+  }
   @media screen and (max-width: 700px){
     flex-direction: column;
     padding: 20px 0;
@@ -47,6 +50,12 @@ export const RoasHeader =styled.div`
     line-height: 75px;
     letter-spacing: 0em;
     text-align: left;
+    @media screen and (max-width: 1700px){
+      font-size: 50px;
+      br{
+        display: none;
+      }
+    }
         
     @media screen and (max-width: 700px){
      font-size: 24px;
@@ -59,7 +68,8 @@ export const RoasHeader =styled.div`
     }
 
   }
-  .show{
+  
+  .show {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -68,24 +78,42 @@ export const RoasHeader =styled.div`
     width: fit-content;
     padding: 22px 35px;
     border-radius: 13px;
+    @media screen and (max-width: 1700px) {
+      width: 40%;
+      margin-top: 30px;
 
+    }
     @media screen and (max-width: 700px){
       padding: 15px 20px;
+      width: 80%;
+      flex-direction: column;
+    }
+      .mini-title{
+        font-family: Roboto;
+        font-size: 25px;
+        font-weight: 900;
+        line-height: 29px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #303DE4;
+        @media screen and (max-width: 1700px){
+          br{
+            display: none;
+          }
+        }
+        
+        @media screen and (max-width: 700px){
+          font-size: 18px;
+          width: fit-content;
+          margin: 2px auto;
+        }
+      }
+        
     }
 
-    .mini-title{
-     font-family: Roboto;
-     font-size: 25px;
-     font-weight: 900;
-     line-height: 29px;
-     letter-spacing: 0em;
-     text-align: left;
-     color: #303DE4;
-      @media screen and (max-width: 700px){
-          font-size: 18px;
-        
-      }
-   }
+    
+
+   
 .text{
   font-family: Roboto;
   font-size: 16px;
@@ -95,10 +123,13 @@ export const RoasHeader =styled.div`
   text-align: right;
   color: #000000B2;
   margin-top: auto;
-
+  @media screen and (max-width: 700px){
+    width: fit-content;
+    margin: auto;
+  }
 
 }
-  }
+  
 `;
 export const RoasCarouselWrapper =styled.div`
     display: flex;
@@ -183,6 +214,11 @@ export const RoasButton = styled.div`
   margin-left: auto;
   margin-top: 160px;
   margin-right: 120px;
+  @media screen and (max-width: 1700px){
+    margin:30px auto;
+    font-size: 28px;
+    padding: 10px 60px;
+  }
   @media screen and (max-width: 700px){
     margin: 20px auto;
     font-size: 18px;

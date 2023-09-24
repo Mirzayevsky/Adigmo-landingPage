@@ -7,8 +7,10 @@ const Advice = () => {
             <Container>
                 <Title>5x  ROAS Bepul <br/> konsultatsiya</Title>
                 <AdviceForm>
-                        <input name={"Number"} type={"number"} maxLength={14} min={14}/>
-                        <input name={"Text"}/>
+                        <>
+                            <input name={"Number"} type={"number"} placeholder={"Number"} maxLength={14} min={14}/>
+                            <input name={"Text"} placeholder={"Enter your  question"}/>
+                        </>
                         <button>BEPUL MASLAXAT!</button>
                 </AdviceForm>
             </Container>

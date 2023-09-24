@@ -8,9 +8,12 @@ export const AdviceWrapper = styled.div`
   box-shadow: 0px 4px 4px 0px #00000040;
   margin: 50px auto;
   padding: 20px 0;
+  @media screen and (max-width: 1700px){
+    height: fit-content;
+    padding: 50px 0;
+  }
 @media screen and (max-width: 700px){
   width: 90%;
-  padding-bottom: 0;
 }
 
 `;
@@ -21,11 +24,15 @@ export  const Container = styled.div`
   flex-direction: row;
   justify-content: space-between;
   margin-top:50px;
+  @media screen and (max-width: 1700px){
+   flex-direction: column;
+  }
   @media screen and (max-width: 700px){
     width: 100%;
     flex-direction: column;
     justify-content: center;
     padding-top: 15px;
+    margin:0;
   }
   
 `;
@@ -37,6 +44,14 @@ export const Title = styled.div`
   letter-spacing: 2px;
   text-align: left;
   text-transform: uppercase;
+  @media screen and (max-width: 1700px){
+    font-size: 50px;
+    line-height: 70px;
+    text-align:center;
+    br{
+      display: none;
+    }
+  }
   @media screen and (max-width: 700px){
     font-size: 28px;
     line-height: 40px;
@@ -49,10 +64,15 @@ export const AdviceForm = styled.form`
   flex-direction: column;
   justify-content: center;
   margin-top: 70px;
+  
+  @media screen and (max-width: 1700px){
+    margin: auto;
+    margin-top: 50px;
+  }
 @media screen and (max-width: 700px){
-  width: 100%;
+  width: 80%;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 30px;
 }
     input{
       width: 438px;
@@ -62,6 +82,10 @@ export const AdviceForm = styled.form`
       border-color: #3338DF !important;
       border: 1px solid #3338DF;
       margin:10px 0;
+      font-size:24px;
+      font-family: Roboto;
+      padding: 0 20px;
+      font-weight: 500;
       @media screen and (max-width: 700px){
         font-size: 16px;
         width: 80%;
@@ -90,12 +114,13 @@ export const AdviceForm = styled.form`
     margin-top: 40px;
     cursor: pointer;
     @media screen and (max-width: 700px){
-      width: 80%;
+      width: 93%;
       height: 60px;
       font-size: 20px;
       font-weight: 500;
       margin: auto;
       margin-top: 25px;
+      outline: none;
     }
   }
   
