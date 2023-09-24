@@ -80,8 +80,6 @@ justify-content: center;
   width: 100%;
   height: 90px;
   margin: 70px auto;
-  text-transform: uppercase;
-  font-weight: 600;
 
  }
  

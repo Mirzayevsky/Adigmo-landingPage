@@ -55,6 +55,11 @@ export const Title = styled.div`
   margin-top: 90px;
   color: #1a2032;
   text-transform: uppercase;
+  @media screen and (max-width: 1700px) {
+    font-size: 56px;
+    line-height: 70px;
+    width: 100%;
+  }
   @media screen and (max-width: 600px) {
     font-size: 24px;
     line-height: 29px;
@@ -70,11 +75,12 @@ export const Title = styled.div`
 export const HearderInner = styled.div`
   color: #fff;
   font-family: Roboto;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 700;
   line-height: 47px;
   letter-spacing: 0em;
   text-align: left;
+  cursor: pointer;
   @media screen and (max-width: 600px) {
     font-size: 16px;
     font-weight: 500;
@@ -173,6 +179,7 @@ export const RightWrapper = styled.div`
 `
 export const LeftImgWrapper = styled.div`
   margin-right: 20px;
+  
   @media screen and (max-width: 600px) {
     //display:none;
     margin: 0 auto;
@@ -188,7 +195,8 @@ export const MainWrapper = styled.div`
 display: flex;
 justify-content: space-between;
 margin: 0 30px;
-margin-top: 120px;
+//margin-top: 100px;
+  
   @media screen and (max-width: 600px) {
     flex-direction: column-reverse;
     width: 100%;

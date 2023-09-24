@@ -127,7 +127,7 @@ export const FooterBottom = styled.div`
   letter-spacing: 0em;
   padding-top: initial;
   width: fit-content;
-  padding-top: 250px;
+  padding-top: 120px;
   @media screen and (max-width: 1700px){
     padding: 50px 0;
   }
