@@ -31,6 +31,7 @@ export const  Container = styled.div`
     line-height: 75px;
     letter-spacing: 0em;
     text-align: left;
+    text-transform: uppercase;
     @media screen and (max-width: 700px) {
       font-size: 32px;
       font-weight: 600;
@@ -45,24 +46,29 @@ export const  Container = styled.div`
       align-items: center;
       justify-content: space-between;
       margin: 20px 0;
+     
       .cl-1{
         background:rgb(48,71,129);
         padding: 2px 5px;
         margin-left: 100px;
+        @media screen and (max-width: 700px){
+          margin: 0;
+        }
       }
-@media screen and (max-width: 700px) {
-  flex-direction: column;
-}
+
       .svg-wrapper{
         @media screen and (max-width: 700px) {
           height: fit-content;
-          width: 70%;
-          margin: 10px auto;
+          width: 40%;
+          margin: 15px auto;
           img{
             height: 100%;
             width: 100%;
           }
         }
+      }
+      @media screen and (max-width: 700px) {
+        flex-wrap: wrap;
       }
     }
 `;
@@ -110,8 +116,9 @@ export const  SubTitle = styled.div`
   padding-top: 120px;
   @media screen and (max-width: 700px){
     flex-direction: column;
-    padding: 20px 0;
-    font-size: 24px;
+    padding: 15px 0;
+    font-size: 18px;
+    line-height: 27px;
     width: 100%;
     text-align: center;
   }
@@ -161,10 +168,12 @@ export const  ShowcaseInfo = styled.div`
     color: #000000;
     padding-top: 40px;
     @media screen and (max-width: 700px){
-      width: 90%;
+      width: 100%;
       font-size: 16px;
       line-height: 25px;
+      margin:auto;
       margin-top: 100px;
+      text-align: left;
     }
   }
   .footer{
