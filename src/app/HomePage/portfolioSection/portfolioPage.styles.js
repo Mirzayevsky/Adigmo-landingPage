@@ -41,7 +41,7 @@ export const Title = styled.div`
     width: fit-content;
     margin: auto;
     height: fit-content;
-    padding: 100px 0;
+    padding: 30px 0;
     padding-bottom: 25px;
     
     

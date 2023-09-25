@@ -133,12 +133,8 @@ export const LangButton = styled.div`
   justify-content: center;
   margin-right: 30px;
   cursor: pointer;
-  background: linear-gradient(
-    94.24deg,
-    #1f5aff -32.1%,
-    #392ed6 52.24%,
-    #1a2032 136.58%
-  );
+  background: linear-gradient(94.24deg,#1f5aff -32.1%, #392ed6 52.24%, #1a2032 136.58%);
+  background: ${({ isRed }) => (isRed ? "linear-gradient(94.24deg,#1f5aff -32.1%, #392ed6 52.24%, #1a2032 136.58%)" : '#ccc')};
   @media screen and (max-width: 600px) {
     padding: 0px 15px;
     font-size: 17px;
@@ -162,11 +158,14 @@ export const LangSecondBnt = styled.div`
   padding: 3px 35px;
   border-radius: 70px;
   border-radius: 70px;
-  background: #ffffff;
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-right: 50px;
+  color: #fff;
+  background: ${({ blue}) => (blue ? "linear-gradient(94.24deg,#1f5aff -32.1%, #392ed6 52.24%, #1a2032 136.58%)" : '#ccc')};
+  
+  
   @media screen and (max-width: 600px) {
     padding: 0px 15px;
     font-size: 17px;
@@ -198,11 +197,10 @@ display: flex;
 justify-content: space-between;
 margin: 0 30px;
 //margin-top: 100px;
-  
   @media screen and (max-width: 600px) {
     flex-direction: column-reverse;
     width: 100%;
     margin: 0;
-    margin-top: 70px;
+    margin-top: 50px;
   }
 `

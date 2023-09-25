@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import {
   Container,
   HeaderButton,
@@ -24,10 +24,35 @@ import {switchLang, switchToRussian, switchToUzbek} from "../../redux/modules/la
 
 const Header = () => {
     const dispatch = useDispatch();
+    const [isRed, setIsRed] = useState(true);
+    const [blue, setBlue] = useState(false);
+
+
     const state = useSelector((state) => state);
     const lang = state.lang;
     const cart = state.cart;
     const { UZBEK, RUSSIAN } = langs;
+
+
+    const  func = () => {
+        const handleClick = () => {
+            setIsRed(prevState => !prevState);
+            setBlue(false)
+        };
+
+        handleClick()
+        dispatch(switchToRussian())
+    }
+    const  langFunc = () => {
+        const handleTwo = () => {
+            setBlue(prevState => !prevState);
+            setIsRed(false)
+
+        };
+
+        handleTwo()
+        dispatch(switchToUzbek())
+    }
 
   return (
     <HeaderWrapper>
@@ -37,10 +62,10 @@ const Header = () => {
             <LogoSvg />
           </Logo>
           <LangButtonWrapper  >
-            <LangButton onClick={() => dispatch(switchToUzbek())}>
+            <LangButton isRed={isRed} onClick={func}>
                 UZ
             </LangButton>
-            <LangSecondBnt onClick={() => dispatch(switchToRussian())}>
+            <LangSecondBnt blue={blue} onClick={langFunc} >
                 RU
             </LangSecondBnt>
           </LangButtonWrapper>
