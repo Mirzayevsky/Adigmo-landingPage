@@ -27,7 +27,6 @@ const Header = () => {
     const state = useSelector((state) => state);
     const lang = state.lang;
     const cart = state.cart;
-
     const { UZBEK, RUSSIAN } = langs;
 
   return (

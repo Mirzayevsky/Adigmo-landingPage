@@ -86,6 +86,7 @@ export const HearderInner = styled.div`
     font-weight: 500;
     padding: 7px 20px;
     line-height: 28px;
+    
   }
 `;
 export const HeaderButton = styled.div`
@@ -107,6 +108,7 @@ export const HeaderButton = styled.div`
     height: fit-content;
     width: fit-content;
     margin: 10px;
+    margin-left: 20px;
   }
   
 `;
