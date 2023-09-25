@@ -2,11 +2,9 @@ import styled from "styled-components";
 export const RoasWrapper =styled.div`
 padding: 100px 0;
   @media screen and (max-width: 700px){
-    padding: 40px 0;
+    padding: 0px 0;
     width: 100vw;
     //overflow-x: hidden;
-    
-    
   }
 `;
 export const Content =styled.div`
@@ -24,10 +22,7 @@ export const Content =styled.div`
     margin: auto;
     height: fit-content;
     overflow-x: hidden;
-    
-    
   }
-
 `;
 
 export const RoasHeader =styled.div`
@@ -138,11 +133,32 @@ export const RoasCarouselWrapper =styled.div`
   justify-content: center;
   flex-direction: column;
   width: 100% ;
+  padding: 20px 0;
+   .keen-slider__slide{
+    max-width: 348px !important;
+    min-width: 348px !important;
+    min-height:230px !important;
+    max-height: 230px !important;
+    margin: 10px 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    //border-radius: 21px;
+    border-radius: 21px !important;
+     -webkit-box-shadow: -17px 8px 20px -4px rgba(34, 60, 80, 0.09) !important;
+     -moz-box-shadow: -17px 8px 20px -4px rgba(34, 60, 80, 0.09) !important;
+     box-shadow: -17px 8px 20px -4px rgba(34, 60, 80, 0.09) !important;
+    .container{
+      width: 308px !important;
+      min-height:230px !important;
+    }
+  }
+
   @media screen and (max-width: 700px) {
     .keen-slider{
       min-width: 1200px !important;
     }
-    .keen-slider_slide{
+    .keen-slider__slide{
       min-width: 348px;
       height: 230px;
       
@@ -159,16 +175,7 @@ export const  CardWrapper = styled.div`
   
 `;
 export const RoasCarouselCard =styled.div`
-  width: 348px;
-  height: 230px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  border-radius: 21px;
-  border-radius: 21px;
-  background: #FFF;
-  box-shadow: 0px 8px 34px -3px rgba(0, 0, 0, 0.38);
-  //box-shadow: 0px 8px 34px -3px #00000040;
+  
   .container {
     width: 80%;
     margin: auto;
@@ -220,11 +227,12 @@ export const RoasButton = styled.div`
     padding: 10px 60px;
   }
   @media screen and (max-width: 700px){
+    width: 60%;
     margin: 20px auto;
     font-size: 18px;
     font-weight: 500;
     line-height: 24px;
-    padding: 13px 55px;
+    padding: 14px 55px;
   }
 
 

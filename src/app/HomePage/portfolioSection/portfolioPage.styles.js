@@ -41,8 +41,8 @@ export const Title = styled.div`
     width: fit-content;
     margin: auto;
     height: fit-content;
-    padding: 30px 0;
-    padding-bottom: 25px;
+    padding: 35px 0;
+    padding-bottom: 0px;
     
     
   }
@@ -175,6 +175,8 @@ width: 100%;
     }
     @media screen and (max-width: 600px) {
       width: 80%;
+      font-size: 14px;
+      line-height: 20px;
       margin: auto;
       padding: 20px;
       margin: 0;

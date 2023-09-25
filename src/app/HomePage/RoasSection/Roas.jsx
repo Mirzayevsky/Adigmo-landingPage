@@ -25,6 +25,34 @@ const Roas = () => {
             s.moveToIdx(s.track.details.abs + 5, true, animation)
         },
     })
+    const data = [
+        {
+            id:0,
+            title:"Raqobatchilarni O`rganish",
+            text:"Bozorni analiz qilish, Raqobatchilarni taklifini tahlil qilamiz"
+        },
+        {
+            id:1,
+            title:"Raqobatchilarni O`rganish",
+            text:"Bozorni analiz qilish, Raqobatchilarni taklifini tahlil qilamiz"
+        },
+        {
+            id:2,
+            title:"Raqobatchilarni O`rganish",
+            text:"Bozorni analiz qilish, Raqobatchilarni taklifini tahlil qilamiz"
+        },
+        {
+            id:3,
+            title:"Raqobatchilarni O`rganish",
+            text:"Bozorni analiz  qilish, Raqobatchilarni taklifini tahlil qilamiz"
+        },
+        {
+            id:4,
+            title:"Raqobatchilarni O`rganish",
+            text:"Bozorni analiz qilish, Raqobatchilarni taklifini tahlil qilamiz"
+        },
+    ]
+
     return(
       <RoasWrapper>
        <Content>
@@ -39,104 +67,18 @@ const Roas = () => {
                    <p className={'text'}>Reklamaga sarflangan</p>
                </div>
            </RoasHeader>
+
            <RoasCarouselWrapper>
                <div ref={sliderRef} className="keen-slider">
                    <div className="keen-slider__slide number-slide1 animation-one">
-                       <RoasCarouselCard>
                          <div className={'container'}>
                              <p className={'title'}>
-                                 Raqobatchilarni
-                                 O`rganish
+
                              </p>
                              <p className={'text'}>
-                                 Bozorni analiz qilish,
-                                 Raqobatchilarni taklifini tahlil
-                                 qilamiz
+
                              </p>
                          </div>
-                       </RoasCarouselCard>
-                   </div>
-                   <div className="keen-slider__slide number-slide2 animation-one">
-                       <RoasCarouselCard>
-                           <div className={"container"}><p className={'title'}>
-                               Reklama kompaniya
-                               larini yaratish
-                           </p>
-                               <p className={'text'}>
-                                   Google va Yandexda Semantika
-                                   to`plash, maqsadli auditoriyani
-                                   topish, reklamalarni tayyorlash,
-                                   web analitikani ulash
-                               </p></div>
-                       </RoasCarouselCard>
-
-                       </div>
-                   <div className="keen-slider__slide number-slide3 animation-one">
-                       <RoasCarouselCard>
-                         <div className={'container'}>
-                             <p className={'title'}>
-                                 Optimizatsiya
-                             </p>
-                             <p className={'text'}>
-                                 Reklama yoqilganidan keyn
-                                 biz uni o`z holiga tashlab
-                                 qo`ymaymiz, Uni optimizatsiya
-                                 orqali reklamani to`g`ri tahlil
-                                 qilib, uni kuchaytiramiz
-                             </p>
-                         </div>
-                       </RoasCarouselCard>
-
-                   </div>
-                   <div className="keen-slider__slide number-slide4 animation-one">
-                       <RoasCarouselCard>
-                           <div className={'container'}>
-                               <p className={'title'}>
-                                   Remarketing &
-                                   Retarget
-                               </p>
-                               <p className={'text'}>
-                                   Saytingizga kirgan yoki
-                                   Instagram, Facebook akkount
-                                   tingizga qiziqish bildirgan lekin
-                                   sotib olmagan mijozlarni rekla
-                                   ma orqali taqib qilamiz
-                               </p>
-                           </div>
-                       </RoasCarouselCard>
-
-                   </div>
-                   <div className="keen-slider__slide number-slide5 animation-one">
-                       <RoasCarouselCard>
-                           <div className={'container'}>
-                               <p className={'title'}>
-                                   Raqobatchilarni
-                                   O`rganish
-                               </p>
-                               <p className={'text'}>
-                                   Bozorni analiz qilish,
-                                   Raqobatchilarni taklifini tahlil
-                                   qilamiz
-                               </p>
-                           </div>
-                       </RoasCarouselCard>
-
-                   </div>
-                   <div className="keen-slider__slide number-slide6 animation-one">
-                       <RoasCarouselCard>
-                           <div className={'container'}>
-                               <p className={'title'}>
-                                   Raqobatchilarni
-                                   O`rganish
-                               </p>
-                               <p className={'text'}>
-                                   Bozorni analiz qilish,
-                                   Raqobatchilarni taklifini tahlil
-                                   qilamiz
-                               </p>
-                           </div>
-                       </RoasCarouselCard>
-
                    </div>
                </div>
            </RoasCarouselWrapper>
