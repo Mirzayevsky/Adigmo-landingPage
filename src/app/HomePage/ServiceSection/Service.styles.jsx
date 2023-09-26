@@ -15,7 +15,7 @@ height: fit-content;
   @media screen and (max-width: 700px){
     max-width: 100vw;
     padding: 0;
-    padding-bottom: 55px;
+    padding-bottom: 60px;
     
     //background-color: red;
   }
@@ -78,7 +78,7 @@ export  const FirstCarouselWrapper = styled.div`
         font-size: 16px;
         //z-index: 99999999999999999 !important;
        padding: 3px 15px;
-        padding-right: 20px;
+        padding-right: 28px;
         svg{
           height: 24px;
         }
