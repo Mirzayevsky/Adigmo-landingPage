@@ -75,11 +75,13 @@ export const Title = styled.div`
  align-items: center;
 justify-content: center;
  @media  screen and  (max-width: 700px){
-  font-size:22px;
+  font-size:18px;
+  font-weight: 600;
   width: 100%;
+  border-radius: 15px;
   width: 100%;
-  height: 90px;
-  margin: 70px auto;
+  height: 60px;
+  margin: 50px auto;
 
  }
  

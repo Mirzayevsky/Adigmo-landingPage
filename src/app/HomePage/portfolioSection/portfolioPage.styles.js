@@ -89,6 +89,7 @@ export const FirstWrapper = styled.div`
       width: 80%;
     }
     @media screen and (max-width: 600px) {
+      width: 90%;
       font-size: 14px;
       padding: 0;
     }
@@ -109,6 +110,7 @@ export const FirstWrapper = styled.div`
       font-size: 16px;
     }
     @media screen and (max-width: 600px) {
+      width: 90%;
       font-size: 14px;
       line-height: 20px;
       text-align: left;
@@ -181,7 +183,7 @@ export const SecondWrapper = styled.div`
       line-height: 20px;
       font-weight: 500;
       margin: auto;
-      padding: 20px;
+      padding: 10px;
       margin: 0;
       br{
         display: none;
