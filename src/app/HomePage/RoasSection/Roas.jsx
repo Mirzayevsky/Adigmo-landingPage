@@ -80,6 +80,27 @@ const Roas = () => {
                              </p>
                          </div>
                    </div>
+                   <div className="keen-slider__slide number-slide1 animation-one">
+                       <div className={'container'}>
+                           <p className={'title'}>
+
+                           </p>
+                           <p className={'text'}>
+
+                           </p>
+                       </div>
+                   </div>
+                   <div className="keen-slider__slide number-slide1 animation-one">
+                       <div className={'container'}>
+                           <p className={'title'}>
+
+                           </p>
+                           <p className={'text'}>
+
+                           </p>
+                       </div>
+                   </div>
+
                </div>
            </RoasCarouselWrapper>
            <RoasButton>

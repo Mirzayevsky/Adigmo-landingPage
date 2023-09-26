@@ -81,13 +81,14 @@ export const TopWrapper = styled.div`
     margin-right: 10px;
     text-align: left;
     @media screen and (max-width: 600px) {
-      width: 80%;
+      width: 90%;
       height: fit-content;
-      margin: 10px auto;
+      margin: 0px auto;
       font-size: 18px;
       font-weight: 500;
       text-align: center;
       letter-spacing: 0;
+      border-radius: 15px;
 
     }
     .inner-text {
@@ -95,7 +96,6 @@ export const TopWrapper = styled.div`
   }
 `;
 export const AmongWrapper = styled.div`
-  
   .inner-wrap {
     display: flex;
     flex-direction: row;
@@ -206,7 +206,9 @@ export const AmongWrapper = styled.div`
       font-size:16px;
       line-height: 24px;
       width: 80%;
+      text-align: center;
       margin: auto;
+      padding-top: 10px;
       br{
         display: none;
       }
