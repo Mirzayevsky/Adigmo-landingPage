@@ -5,7 +5,7 @@ import lang from "../../../constants/lang";
 const { UZBEK, RUSSIAN } = lang;
 const { SWITCH_TO_UZBEK, SWITCH_TO_RUSSIAN, SWITCH_LANG } = actionTypes;
 
-export const langReducer = (state = RUSSIAN, { type }) => {
+export const langReducer = (state = UZBEK, { type }) => {
   switch (type) {
     case SWITCH_TO_UZBEK:
       return UZBEK;

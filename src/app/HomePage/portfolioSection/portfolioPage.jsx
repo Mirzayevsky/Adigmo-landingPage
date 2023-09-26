@@ -53,6 +53,7 @@ const PortfolioPage = () => {
             <Text id={"swedin"}/>
           </div>
         </FirstWrapper>
+
         <SecondWrapper>
           <div className="second-wrapper-text">
             <Text id={"gratBritain"}/>

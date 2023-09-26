@@ -30,10 +30,16 @@ const Header = () => {
 
     const state = useSelector((state) => state);
     const lang = state.lang;
-    const cart = state.cart;
     const { UZBEK, RUSSIAN } = langs;
 
-
+    const  langFunc = () => {
+        const handleTwo = () => {
+            setBlue(prevState => !prevState);
+            setIsRed(false)
+        };
+        handleTwo()
+        dispatch(switchToUzbek())
+    }
     const  func = () => {
         const handleClick = () => {
             setIsRed(prevState => !prevState);
@@ -42,16 +48,6 @@ const Header = () => {
 
         handleClick()
         dispatch(switchToRussian())
-    }
-    const  langFunc = () => {
-        const handleTwo = () => {
-            setBlue(prevState => !prevState);
-            setIsRed(false)
-
-        };
-
-        handleTwo()
-        dispatch(switchToUzbek())
     }
 
   return (
@@ -62,10 +58,10 @@ const Header = () => {
             <LogoSvg />
           </Logo>
           <LangButtonWrapper  >
-            <LangButton isRed={isRed} onClick={func}>
+            <LangButton isRed={isRed} onClick={langFunc}>
                 UZ
             </LangButton>
-            <LangSecondBnt blue={blue} onClick={langFunc} >
+            <LangSecondBnt blue={blue} onClick={func} >
                 RU
             </LangSecondBnt>
           </LangButtonWrapper>

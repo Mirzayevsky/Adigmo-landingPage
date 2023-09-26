@@ -66,15 +66,17 @@ export const FirstWrapper = styled.div`
   .img-wrapper {
     width: 55%;  
     @media screen and (max-width: 600px) {
-   width: initial;
+       width: 100%;
+      margin: auto;
   }
+    
     
     img {
       width: 100%;
       height: fit-content;;
       @media screen and (max-width: 600px) {
-        width: 370px;
-        height: 230px;
+        width:100%;
+        height: fit-content;
         margin: auto;
       }
     }
@@ -142,7 +144,7 @@ export const FirstWrapper = styled.div`
 `;
 
 export const SecondWrapper = styled.div`
-width: 100%;
+   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -174,9 +176,10 @@ width: 100%;
       
     }
     @media screen and (max-width: 600px) {
-      width: 80%;
+      width: 90%;
       font-size: 14px;
       line-height: 20px;
+      font-weight: 500;
       margin: auto;
       padding: 20px;
       margin: 0;
@@ -209,7 +212,7 @@ width: 100%;
     @media screen and (max-width: 600px) {
       width: 100%;
       display: flex;
-      flex-direction: row-reverse;
+      flex-direction: column-reverse;
       justify-content: center;
     }
    
@@ -221,8 +224,8 @@ width: 100%;
         height: 400px;
         border-radius: 18px;
       @media screen and (max-width: 600px) {
-        width:370px;
-        height: 230px;
+        width:100%;
+        height: fit-content;
         
       }
     }

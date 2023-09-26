@@ -53,6 +53,15 @@ export const TopWrapper = styled.div`
       //padding: 10px 0;
       margin-bottom: 20px;
     }
+    @media screen and (max-width: 400px) {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 30px;
+      text-align: center;
+      letter-spacing: 0;
+      //padding: 10px 0;
+      margin-bottom: 20px;
+    }
   }
   .sales {
     font-family: Roboto;
