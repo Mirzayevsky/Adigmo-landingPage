@@ -12,6 +12,13 @@ height: fit-content;
     padding-bottom: 70px;
     //background-color: red;
   }
+  @media screen and (max-width: 700px){
+    max-width: 100vw;
+    padding: 0;
+    padding-bottom: 55px;
+    
+    //background-color: red;
+  }
 
 `;
 export const Wrapper = styled.div`
