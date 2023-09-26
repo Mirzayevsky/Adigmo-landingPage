@@ -112,7 +112,7 @@ export const OurService = styled.div`
   text-align: center;
   width: 100%;
   margin: auto;
-  
+  padding-bottom: 0;
  }
 
 `;
@@ -178,8 +178,8 @@ export  const  ContentTitle = styled.div`
  width: 80%;
  @media  screen and  (max-width: 700px){
   text-align: center;
-  font-size: 20px;
-  width: 100%;
+  font-size: 18px;
+  width: 90%;
   line-height: 28px;
   margin: auto;
  }
@@ -196,10 +196,11 @@ export  const  ContentSubTitle = styled.div`
  width: 80%;
  @media  screen and  (max-width: 700px){
   text-align: center;
-  font-size: 17px;
-  padding: 15px 0;
+  font-size: 15px;
+  padding: 5px 0;
   width: 90%;
   margin: auto;
+  padding-bottom: 20px;
  }
 
 `;
@@ -224,6 +225,7 @@ cursor: pointer;
    border-radius: 52px !important;
   @media  screen and  (max-width: 700px){
    width: 90%;
+   text-align: center;
   }
  `;
  export const InnerContainer = styled.div`

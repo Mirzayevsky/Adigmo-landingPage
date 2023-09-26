@@ -32,6 +32,7 @@ export  const FirstCarouselWrapper = styled.div`
     }
   }
   @media screen and (max-width: 700px) {
+    margin-top: 20px;
     .keen-slider {
       //min-width: 1700px !important;
       //margin-right: 40px !important;
@@ -69,7 +70,8 @@ export  const FirstCarouselWrapper = styled.div`
         align-items: center;
         font-size: 16px;
         //z-index: 99999999999999999 !important;
-       padding: 2px 15px;
+       padding: 3px 15px;
+        padding-right: 20px;
         svg{
           height: 24px;
         }
@@ -114,9 +116,10 @@ margin-right: auto;
     font-weight: 600;
     width: fit-content;
     margin: auto;
-    line-height: 38px;
+    line-height: 30px;
     padding: 0;
     text-align: center;
+    padding-top: 0;
     padding-bottom: 20px;
     br{
       display: none;

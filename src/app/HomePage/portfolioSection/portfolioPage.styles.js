@@ -35,15 +35,14 @@ export const Title = styled.div`
   padding-bottom: 20px;
   padding-top: 100px;
   @media screen and (max-width: 600px) {
-    font-size: 32px;
+    font-size:28px;
     font-weight: 700;
     line-height: 40px;
     width: fit-content;
     margin: auto;
     height: fit-content;
-    padding: 35px 0;
-    padding-bottom: 0px;
-    
+    padding: 45px 0;
+    padding-bottom: 5px;
     
   }
 `;
@@ -113,6 +112,7 @@ export const FirstWrapper = styled.div`
       font-size: 14px;
       line-height: 20px;
       text-align: left;
+margin-top: 5px;
     }
     div {
       text-align: center;
