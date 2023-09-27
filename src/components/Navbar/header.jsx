@@ -22,6 +22,7 @@ import langs from "../../constants/lang"
 import Text from "../../language/langManager";
 import {switchLang, switchToRussian, switchToUzbek} from "../../redux/modules/lang/langAction";
 import PopUp from "../popUp";
+import {ReactComponent as MainLogo} from "../../source/logo/logo (1).svg";
 
 const Header = () => {
     const dispatch = useDispatch();
@@ -64,7 +65,7 @@ const Header = () => {
       <Container>
         <HeaderTop>
           <Logo>
-            <LogoSvg />
+            <MainLogo/>
           </Logo>
           <LangButtonWrapper  >
             <LangButton isRed={isRed} onClick={langFunc}>

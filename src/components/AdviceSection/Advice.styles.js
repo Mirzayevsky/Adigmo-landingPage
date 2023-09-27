@@ -141,6 +141,7 @@ export const AdviceForm = styled.form`
     color: #fff;
     margin-top: 40px;
     cursor: pointer;
+    border: 0;
     @media screen and (max-width: 700px){
       width: 93%;
       height: 60px;

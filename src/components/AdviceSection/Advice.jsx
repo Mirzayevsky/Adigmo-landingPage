@@ -50,7 +50,7 @@ const Advice = () => {
                         }).showToast();
                         navigate(`/success`)
 
-                        console.log(`Message sent successfully to chat ID: ${chatId}`);
+                        console.log(`Message sent successfully to chat ID: `);
                         setNameValue("")
                         setNumberValue("")
                     } else {
@@ -85,14 +85,14 @@ const Advice = () => {
                         <>
                             <PatternFormat
                                 className={"num-for"}
-                                format="+998 (##) ###-##-##"
-                                valueIsNumericString={true}
+                                format="+998(##)###-##-##"
                                 placeholder={"+998 (00) 000-00-00"}
                                 value={numberValue}
                                  onChange={handleNumberChange}
+
                             />
 
-                            <Input placeholder={"Text"}
+                            <Input placeholder={"Name"}
                                    value={nameValue}
                                    onChange={handleNameChange}
                             />

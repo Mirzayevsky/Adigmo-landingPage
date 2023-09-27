@@ -48,7 +48,7 @@ const PopUp = ({popUp,setPopUp}) => {
                     }).showToast();
                     navigate('/success');
 
-                    console.log(`Message sent successfully to chat ID: ${chatId}`);
+                    console.log(`Message sent successfully to chat ID: `);
                     setNameValue("")
                     setNumberValue("")
                     setPopUp(false)
@@ -76,7 +76,7 @@ const PopUp = ({popUp,setPopUp}) => {
     };
     return(
        <PopUpWrapper>
-           <AdviceWrapper>
+           <AdviceWrapper >
                <ExitSvg className={"svg-one"} onClick={() => setPopUp(false)}/>
                <Container>
                    <Title>
@@ -86,10 +86,10 @@ const PopUp = ({popUp,setPopUp}) => {
                        <>
                            <PatternFormat
                                className={"num-for"}
-                               format="+998 (##) ###-##-##"
-                               valueIsNumericString={true}
-                               placeholder={"+998 (00) 000-00-00"}
+                               format="+998(##)###-##-##"
                                value={numberValue}
+                               allowEmptyFormatting
+                               mask="_"
                                onChange={handleNumberChange}
                            />
 

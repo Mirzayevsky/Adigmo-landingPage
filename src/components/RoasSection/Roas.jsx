@@ -1,9 +1,14 @@
-import React from "react";
+import React, {useState} from "react";
 import {Content, RoasButton,  RoasCarouselWrapper, RoasHeader, RoasWrapper} from "./Roas.styles";
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
 import Text from "../../language/langManager";
+import PopUp from "../popUp";
 const Roas = () => {
+    const [popUp, setPopUp]=useState(false)
+    const popChange = () =>{
+        setPopUp(!popUp)
+    }
     const data = [
         {
             id:0,
@@ -59,6 +64,8 @@ const Roas = () => {
 
     return(
       <RoasWrapper>
+          { popUp === true ? <PopUp popUp={popUp} setPopUp={setPopUp}/> :""
+          }
        <Content>
            <RoasHeader>
                <p className={'title'}>
@@ -103,7 +110,7 @@ const Roas = () => {
                </div>
 
            </RoasCarouselWrapper>
-           <RoasButton>
+           <RoasButton onClick={popChange}>
                <Text id={"roasBtnOne"}/>
                 <br/>
                <Text id={"roasBtnTwo"}/>
