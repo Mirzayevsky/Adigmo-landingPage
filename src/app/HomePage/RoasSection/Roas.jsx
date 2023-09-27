@@ -1,30 +1,8 @@
 import React from "react";
-import {Content, RoasButton, RoasCarouselCard, RoasCarouselWrapper, RoasHeader, RoasWrapper} from "./Roas.styles";
+import {Content, RoasButton,  RoasCarouselWrapper, RoasHeader, RoasWrapper} from "./Roas.styles";
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
-
 const Roas = () => {
-    const animation = { duration: 20000, easing: (t) => t }
-    const [sliderRef] = useKeenSlider({
-        loop: true,
-        mode: "free",
-
-
-        slides: { origin: "center", perView: 3, spacing: 10 },
-        // range: {
-        //     min: -5,
-        //     max: 5,
-        // },
-        created(s) {
-            s.moveToIdx(5, true, animation)
-        },
-        updated(s) {
-            s.moveToIdx(s.track.details.abs + 5, true, animation)
-        },
-        animationEnded(s) {
-            s.moveToIdx(s.track.details.abs + 5, true, animation)
-        },
-    })
     const data = [
         {
             id:0,
@@ -33,25 +11,50 @@ const Roas = () => {
         },
         {
             id:1,
-            title:"Raqobatchilarni O`rganish",
-            text:"Bozorni analiz qilish, Raqobatchilarni taklifini tahlil qilamiz"
+            title:"Reklama kompaniyalarini yaratish",
+            text:"Google va Yandexda Semantika  to`plash, maqsadli auditoriyani topish, reklamalarni tayyorlash web analitikani ulash, "
         },
         {
             id:2,
-            title:"Raqobatchilarni O`rganish",
-            text:"Bozorni analiz qilish, Raqobatchilarni taklifini tahlil qilamiz"
+            title:"Optimizatsiya",
+            text:"Reklama yoqilganidan keyn biz uni o`z holiga tashlab qo`ymaymiz, Uni optimizatsiya orqali reklamani to`g`ri tahlil qilib, uni kuchaytiramiz"
         },
         {
             id:3,
-            title:"Raqobatchilarni O`rganish",
-            text:"Bozorni analiz  qilish, Raqobatchilarni taklifini tahlil qilamiz"
+            title:"Remarketing & Retarget",
+            text:"Saytingizga kirgan yoki Instagram, Facebook akkountingizga qiziqish bildirgan lekin sotib olmagan mijozlarni reklama orqali taqib qilamiz "
         },
         {
             id:4,
-            title:"Raqobatchilarni O`rganish",
-            text:"Bozorni analiz qilish, Raqobatchilarni taklifini tahlil qilamiz"
+            title:"Web analitika",
+            text:"Google tag manager, Google analytics, Yandex Metrica.Ushbu qurilmalar orqali web saytingizni analiz qilamiz"
         },
     ]
+
+    const carousel = (slider) => {
+        const z = 300
+        function rotate() {
+            const deg = 360 * slider.track.details.progress
+            slider.container.style.transform = `translateZ(-${z}px) rotateY(${-deg}deg)`
+        }
+        slider.on("created", () => {
+            const deg = 360 / slider.slides.length
+            slider.slides.forEach((element, idx) => {
+                element.style.transform = `rotateY(${deg * idx}deg) translateZ(${z}px)`
+            })
+            rotate()
+        })
+        slider.on("detailsChanged", rotate)
+    }
+    const [sliderRef] = useKeenSlider(
+        {
+            loop: true,
+            selector: ".carousel__cell",
+            renderMode: "custom",
+            mode: "free-snap",
+        },
+        [carousel]
+    )
 
     return(
       <RoasWrapper>
@@ -69,40 +72,34 @@ const Roas = () => {
            </RoasHeader>
 
            <RoasCarouselWrapper>
-               <div ref={sliderRef} className="keen-slider">
-                   <div className="keen-slider__slide number-slide1 animation-one">
-                         <div className={'container'}>
-                             <p className={'title'}>
+               <div className="wrapper">
+                   <div className="scene">
+                       <div className="carousel keen-slider" ref={sliderRef}>
+                           {
+                               data.map(({id,title,text})=>{
+                                   return(
+                                       <div key={id} className="carousel__cell number-slide1 ">
+                                           <div className={"container"}>
+                                               <div>
+                                                   <p className={"title"}>
+                                                       {title}
+                                                   </p>
+                                                   <p className={"text"}>
+                                                       {text}
+                                                   </p>
+                                               </div>
+                                           </div>
+                                       </div>
+                                   )
+                               })
+                           }
 
-                             </p>
-                             <p className={'text'}>
-
-                             </p>
-                         </div>
-                   </div>
-                   <div className="keen-slider__slide number-slide1 animation-one">
-                       <div className={'container'}>
-                           <p className={'title'}>
-
-                           </p>
-                           <p className={'text'}>
-
-                           </p>
                        </div>
                    </div>
-                   <div className="keen-slider__slide number-slide1 animation-one">
-                       <div className={'container'}>
-                           <p className={'title'}>
-
-                           </p>
-                           <p className={'text'}>
-
-                           </p>
-                       </div>
-                   </div>
-
                </div>
+
            </RoasCarouselWrapper>
+
            <RoasButton>
                5x  ROASdan <br/> Foydalanmoqchiman
            </RoasButton>

@@ -103,11 +103,7 @@ export const RoasHeader =styled.div`
           margin: 2px auto;
         }
       }
-        
     }
-
-    
-
    
 .text{
   font-family: Roboto;
@@ -122,86 +118,86 @@ export const RoasHeader =styled.div`
     width: fit-content;
     margin: auto;
   }
-
 }
   
 `;
 export const RoasCarouselWrapper =styled.div`
-    display: flex;
-  margin: 60px 0;
+  display: flex;
+  margin: 50px 0;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   width: 100% ;
-  padding: 20px 0;
-   .keen-slider__slide{
-    max-width: 348px !important;
-    min-width: 348px !important;
-    min-height:230px !important;
-    max-height: 230px !important;
-    margin: 10px 20px;
+  margin-bottom: 0;
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    //border-radius: 21px;
-    border-radius: 21px !important;
-     -webkit-box-shadow: -17px 8px 20px -4px rgba(34, 60, 80, 0.09) !important;
-     -moz-box-shadow: -17px 8px 20px -4px rgba(34, 60, 80, 0.09) !important;
-     box-shadow: -17px 8px 20px -4px rgba(34, 60, 80, 0.09) !important;
-    .container{
-      width: 308px !important;
-      min-height:230px !important;
+    justify-content: center;
+  @media screen and (max-width: 700px){
+    margin:0;
+    padding: 20px 0;
+  
+  }
+  .scene {
+    width: 310px;
+    height: 310px;
+    perspective: 1000px;
+    position: relative;
+    @media screen and (max-width: 700px){
+      //width: 260px;
+      height: 260px;
     }
   }
-
-  @media screen and (max-width: 700px) {
-    .keen-slider{
-      min-width: 1200px !important;
+  .scene .carousel.keen-slider {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: visible;
+    transform: translateZ(-288px);
+    transform-style: preserve-3d;
+  }
+  .carousel__cell {
+    position: absolute;
+    width: 360px;
+    left: 10px;
+    height: 260px;
+    background-color: #fff;
+    border-radius: 16px;
+    -webkit-box-shadow: 0px -1px 30px -10px rgba(32, 33, 34, 0.27);
+    -moz-box-shadow: 0px -1px 30px -10px rgba(32, 33, 34, 0.27);
+    box-shadow: 0px -1px 30px -10px rgba(32, 33, 34, 0.27);
+    @media screen and (max-width: 700px){
+      width: 310px;
+      height:260px;
     }
-    .keen-slider__slide{
-      min-width: 348px;
-      height: 230px;
-      
+    .container{
+      height: 100%;
+      width: 80%;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      .title{
+        font-size: 24px;
+        font-weight: 600;
+      }
+      .text{
+        font-size: 18px;
+        font-weight: 500;
+        padding: 15px 0;
+      }
     }
     
   }
+  .number-slide1 {
+    background: rgb(64, 175, 255);
+    background: linear-gradient(
+            128deg,
+            rgba(64, 175, 255, 1) 0%,
+            rgba(63, 97, 255, 1) 100%
+    );
+  }
+
+  
+
  
-  
-  
-  
  
-`;
-export const  CardWrapper = styled.div`
-  
-`;
-export const RoasCarouselCard =styled.div`
-  
-  .container {
-    width: 80%;
-    margin: auto;
-  }
-
-  .title {
-    font-family: Roboto;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 30px;
-    letter-spacing: 0em;
-    text-align: left;
-    padding: 5px 0;
-
-  }
-
-  .text {
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 23px;
-    letter-spacing: 0em;
-    text-align: left;
-
-  }
-
 `;
 
 export const RoasButton = styled.div`
@@ -219,8 +215,8 @@ export const RoasButton = styled.div`
   color: #FFFFFF;
   padding: 15px 120px;
   margin-left: auto;
-  margin-top: 160px;
-  margin-right: 120px;
+  margin-top: 100px;
+  margin-right: 160px;
   @media screen and (max-width: 1700px){
     margin:30px auto;
     font-size: 28px;
