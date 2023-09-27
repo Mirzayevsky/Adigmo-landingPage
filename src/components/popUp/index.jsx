@@ -5,6 +5,7 @@ import Toastify from 'toastify-js'
 import "toastify-js/src/toastify.css"
 import Text from "../../language/langManager";
 import {ReactComponent as ExitSvg} from '../../source/logo/x-symbol-svgrepo-com.svg';
+import {useNavigate} from 'react-router-dom';
 const PopUp = ({popUp,setPopUp}) => {
     const [nameValue, setNameValue] = useState("");
     const [numberValue, setNumberValue] = useState("");
@@ -14,7 +15,7 @@ const PopUp = ({popUp,setPopUp}) => {
      Name: ${nameValue},
      Number:${numberValue}
     `;
-
+    const navigate = useNavigate();
     const handleSubmit = async (event) => {
         event.preventDefault();
 
@@ -45,6 +46,8 @@ const PopUp = ({popUp,setPopUp}) => {
                             background: "linear-gradient(93.12deg, #1F5AFF 1.37%, #392ED6 54.75%, #1A2032 119.16%)",
                         }
                     }).showToast();
+                    navigate('/success');
+
                     console.log(`Message sent successfully to chat ID: ${chatId}`);
                     setNameValue("")
                     setNumberValue("")
@@ -90,7 +93,7 @@ const PopUp = ({popUp,setPopUp}) => {
                                onChange={handleNumberChange}
                            />
 
-                           <Input placeholder={"Text"}
+                           <Input placeholder={"Name"}
                                   value={nameValue}
                                   onChange={handleNameChange}
                            />

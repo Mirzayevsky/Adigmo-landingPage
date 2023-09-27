@@ -2,7 +2,7 @@ import React from "react";
 import {Content, RoasButton,  RoasCarouselWrapper, RoasHeader, RoasWrapper} from "./Roas.styles";
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
-import Text from "../../../language/langManager";
+import Text from "../../language/langManager";
 const Roas = () => {
     const data = [
         {

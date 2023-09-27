@@ -91,6 +91,9 @@ const uzbek = {
   footerLocTwo:"Chilonzor tumani, Zuhur palvon 3-uy",
   footerPhone:"Telefon",
   allCustomer:"Mijozlar",
+  successTitle:"Xabaringiz “Adigmo” MChJga yuborildi",
+  successSubtitle:"Xabar tez orada Adigmo xodimlari tomonidan ko'rib chiqiladi.",
+  successSubtitleTwo:"Agar siz zudlik bilan bog'lanmoqchi bo'lsangiz, kompaniyamiz raqami bu yerda "
 
 
 

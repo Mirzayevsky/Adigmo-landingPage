@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const CarouselWrapper = styled.div`
 padding: 150px 0;
 display: flex;
+ position: relative;
   @media screen and (max-width: 600px ){
     padding: 0;
     height: fit-content;

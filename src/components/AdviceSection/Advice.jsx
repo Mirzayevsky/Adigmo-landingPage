@@ -1,13 +1,16 @@
 import React, { useEffect, useState } from "react";
-
 import {AdviceForm, AdviceWrapper, Container, Title,Input} from "./Advice.styles";
 import { PatternFormat } from 'react-number-format';
-import Text from "../../../language/langManager";
+import Text from "../../language/langManager";
 import Toastify from 'toastify-js'
 import "toastify-js/src/toastify.css"
+import {useNavigate} from 'react-router-dom';
+
 const Advice = () => {
     const [nameValue, setNameValue] = useState("");
     const [numberValue, setNumberValue] = useState("");
+    const navigate = useNavigate();
+
     const TELEGRAM_API = `https://api.telegram.org/bot6161161153:AAFoEJSlXC6yT0nnudy478cBCWorsnA7T2s/sendMessage`;
     const chatIds = [6090223711]; // Add the additional chat IDs you want to send the message to
     const message = `
@@ -45,6 +48,8 @@ const Advice = () => {
                                 background: "linear-gradient(93.12deg, #1F5AFF 1.37%, #392ED6 54.75%, #1A2032 119.16%)",
                             }
                         }).showToast();
+                        navigate(`/success`)
+
                         console.log(`Message sent successfully to chat ID: ${chatId}`);
                         setNameValue("")
                         setNumberValue("")

@@ -1,29 +1,18 @@
 import { AppWrapper } from "./App.styles";
-import CarouselMain from "./app/HomePage/carouselSection/corouselPage";
-import Header from "./components/Navbar/header";
-import PortfolioPage from "./app/HomePage/portfolioSection/portfolioPage";
-import SecondPage from "./app/HomePage/ShowcaseSection/SecondPage";
-import Service from "./app/HomePage/ServiceSection/Service";
-import Roas from "./app/HomePage/RoasSection/Roas";
-import Customer from "./app/HomePage/Customers/Customer";
-import Advice from "./app/HomePage/AdviceSection/Advice";
-import Footer from "./components/footer";
 import { Provider } from "react-redux";
 import { store } from "./redux/store/store";
+import { Route, Routes } from "react-router-dom";
+import HomePage from "./pages/home";
+import Success from "./pages/success";
 
 function App() {
   return (
         <AppWrapper>
             <Provider store={store}>
-                <Header/>
-                <SecondPage/>
-                <PortfolioPage/>
-                <CarouselMain/>
-                <Service/>
-                <Roas/>
-                <Customer/>
-                <Advice/>
-                <Footer/>
+                <Routes>
+                    <Route path={"/"} element={<HomePage/>}/>
+                    <Route path="/success" element={<Success/>} />
+                </Routes>
             </Provider>
         </AppWrapper>
   )

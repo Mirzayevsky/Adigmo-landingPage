@@ -6,12 +6,18 @@ import {
     ImageSide, InnerContainer, LeftSide, OurService, RightSide, Tab, TabContentWrapper, TabSide, TabWrapper,
     Title, Wrapper,Main
 } from "./corouselPage.style";
-import Images from "../../../components/TabNative";
-import Text from "../../../language/langManager";
+import Images from "../TabNative";
+import Text from "../../language/langManager";
+import PopUp from "../popUp";
+import popUp from "../popUp";
 
 const CarouselMain = () => {
     const [activeTab, setActiveTab] = useState({numb:1});
     const [color,setColor] = useState(false)
+    const [popUp, setPopUp]=useState(false)
+    const popChange = () =>{
+        setPopUp(!popUp)
+    }
     const data = [
         {
             id:1,
@@ -120,8 +126,9 @@ const CarouselMain = () => {
 
 return(
    <CarouselWrapper>
+       {popUp === true ? <PopUp popUp={popUp} setPopUp={setPopUp}/> : ""}
     <Container>
-        <Title>
+        <Title onClick={popChange}>
             <>
                 <Text id={"usingRoas"}/>
             </>
@@ -132,7 +139,7 @@ return(
                <Images activeTab={activeTab.numb}/>
            </ImageSide>
           <Main>
-              <OurService>
+              <OurService >
                   <Text id={"ourServiceOne"}/>
               </OurService>
               <TabSide>

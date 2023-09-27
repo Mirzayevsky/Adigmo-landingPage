@@ -6,7 +6,7 @@ import {
   TopWrapper,
   AmongWrapper,
 } from "./SecondPage.styles";
-import Text from "../../../language/langManager";
+import Text from "../../language/langManager";
 
 const SecondPage = () => {
   return (
