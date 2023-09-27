@@ -3,7 +3,8 @@ import React, { useEffect, useState } from "react";
 import {AdviceForm, AdviceWrapper, Container, Title,Input} from "./Advice.styles";
 import { PatternFormat } from 'react-number-format';
 import Text from "../../../language/langManager";
-
+import Toastify from 'toastify-js'
+import "toastify-js/src/toastify.css"
 const Advice = () => {
     const [nameValue, setNameValue] = useState("");
     const [numberValue, setNumberValue] = useState("");
@@ -37,14 +38,24 @@ const Advice = () => {
                     });
                     const data = await response.json();
                     if (data.ok) {
+                        Toastify({
+                            text: "Данные успешно отправлены",
+                            className: "info",
+                            style: {
+                                background: "linear-gradient(93.12deg, #1F5AFF 1.37%, #392ED6 54.75%, #1A2032 119.16%)",
+                            }
+                        }).showToast();
                         console.log(`Message sent successfully to chat ID: ${chatId}`);
+                        setNameValue("")
+                        setNumberValue("")
                     } else {
+                        alert("Данные не отправляются")
                         console.log(
+
                             Error (`sending message to chat ID ${chatId}: ${data.description}`)
                             );
                     }
                 }
-                window.location.reload();
             } catch (error) {
                 console.log("Error:", error);
             }

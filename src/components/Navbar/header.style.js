@@ -2,6 +2,7 @@ import styled from "styled-components";
 export const HeaderWrapper = styled.div`
   height: 100vh;
   width: 100%;
+  position: relative;
   @media screen and (max-width: 700px){
     height: 95vh;
   }

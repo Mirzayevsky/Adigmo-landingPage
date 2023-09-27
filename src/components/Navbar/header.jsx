@@ -21,16 +21,21 @@ import { useSelector } from "react-redux";
 import langs from "../../constants/lang"
 import Text from "../../language/langManager";
 import {switchLang, switchToRussian, switchToUzbek} from "../../redux/modules/lang/langAction";
+import PopUp from "../popUp";
 
 const Header = () => {
     const dispatch = useDispatch();
     const [isRed, setIsRed] = useState(true);
     const [blue, setBlue] = useState(false);
+    const [popUp, setPopUp]=useState(false)
 
 
     const state = useSelector((state) => state);
     const lang = state.lang;
     const { UZBEK, RUSSIAN } = langs;
+    const popChange = () =>{
+        setPopUp(!popUp)
+    }
 
     const  langFunc = () => {
         const handleTwo = () => {
@@ -52,9 +57,10 @@ const Header = () => {
         handleClick()
         dispatch(switchToRussian())
     }
-
   return (
     <HeaderWrapper>
+        { popUp === true ? <PopUp popUp={popUp} setPopUp={setPopUp}/> :""
+        }
       <Container>
         <HeaderTop>
           <Logo>
@@ -78,7 +84,7 @@ const Header = () => {
              <Text id={"barobarga"}/>
              <br /> <Text id={"oshiring"}/>
           </Title>
-          <HeaderButton>
+          <HeaderButton onClick={popChange}>
             <HearderInner>
                 <Text id={"bepulMaslaxat"}/>
             </HearderInner>
