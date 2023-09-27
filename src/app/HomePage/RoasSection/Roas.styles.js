@@ -174,14 +174,21 @@ export const RoasCarouselWrapper =styled.div`
       margin: auto;
       display: flex;
       align-items: center;
+      
       .title{
         font-size: 24px;
         font-weight: 600;
+        @media screen and (max-width: 400px){
+         font-size: 22px;
+        }
       }
       .text{
         font-size: 18px;
         font-weight: 500;
         padding: 15px 0;
+        @media screen and (max-width: 400px){
+          font-size: 16px;
+        }
       }
     }
     
