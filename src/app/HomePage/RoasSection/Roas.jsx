@@ -2,32 +2,33 @@ import React from "react";
 import {Content, RoasButton,  RoasCarouselWrapper, RoasHeader, RoasWrapper} from "./Roas.styles";
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
+import Text from "../../../language/langManager";
 const Roas = () => {
     const data = [
         {
             id:0,
-            title:"Raqobatchilarni O`rganish",
-            text:"Bozorni analiz qilish, Raqobatchilarni taklifini tahlil qilamiz"
+            title:"titleRoasOne",
+            text:"subtitleRoasOne"
         },
         {
             id:1,
-            title:"Reklama kompaniyalarini yaratish",
-            text:"Google va Yandexda Semantika  to`plash, maqsadli auditoriyani topish, reklamalarni tayyorlash web analitikani ulash, "
+            title:"titleRoasTwo",
+            text:"subtitleRoasTwo"
         },
         {
             id:2,
-            title:"Optimizatsiya",
-            text:"Reklama yoqilganidan keyn biz uni o`z holiga tashlab qo`ymaymiz, Uni optimizatsiya orqali reklamani to`g`ri tahlil qilib, uni kuchaytiramiz"
+            title:"titleRoasThird",
+            text:"subtitleRoasThird"
         },
         {
             id:3,
-            title:"Remarketing & Retarget",
-            text:"Saytingizga kirgan yoki Instagram, Facebook akkountingizga qiziqish bildirgan lekin sotib olmagan mijozlarni reklama orqali taqib qilamiz "
+            title:"titleRoasFourth",
+            text:"subtitleRoasFourth"
         },
         {
             id:4,
-            title:"Web analitika",
-            text:"Google tag manager, Google analytics, Yandex Metrica.Ushbu qurilmalar orqali web saytingizni analiz qilamiz"
+            title:"titleRoasFifth",
+            text:"subtitleRoasFifth"
         },
     ]
 
@@ -61,16 +62,19 @@ const Roas = () => {
        <Content>
            <RoasHeader>
                <p className={'title'}>
-                   5x  ROAS QANDAY <br/>
-                   ISHLAYDI ?
+                   <Text id={"roasTitle"}/>
                </p>
                <div className={'show'}>
-                   <p className={'mini-title'}>100+ mijoz <br/>
-                       $64 mln</p>
-                   <p className={'text'}>Reklamaga sarflangan</p>
+                   <p className={'mini-title'}>
+                       <Text id={"customerOne"}/>
+                       <br/>
+                       <Text id={"customertwo"}/>
+                      </p>
+                   <p className={'text'}>
+                       <Text id={"priceThatspentToReklame"}/>
+                   </p>
                </div>
            </RoasHeader>
-
            <RoasCarouselWrapper>
                <div className="wrapper">
                    <div className="scene">
@@ -82,10 +86,10 @@ const Roas = () => {
                                            <div className={"container"}>
                                                <div>
                                                    <p className={"title"}>
-                                                       {title}
+                                                       <Text id={title}/>
                                                    </p>
                                                    <p className={"text"}>
-                                                       {text}
+                                                       <Text id={text}/>
                                                    </p>
                                                </div>
                                            </div>
@@ -99,9 +103,11 @@ const Roas = () => {
                </div>
 
            </RoasCarouselWrapper>
-
            <RoasButton>
-               5x  ROASdan <br/> Foydalanmoqchiman
+               <Text id={"roasBtnOne"}/>
+                <br/>
+               <Text id={"roasBtnTwo"}/>
+
            </RoasButton>
        </Content>
 

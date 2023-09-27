@@ -7,6 +7,7 @@ import {
     Title, Wrapper,Main
 } from "./corouselPage.style";
 import Images from "../../../components/TabNative";
+import Text from "../../../language/langManager";
 
 const CarouselMain = () => {
     const [activeTab, setActiveTab] = useState({numb:1});
@@ -15,29 +16,29 @@ const CarouselMain = () => {
         {
             id:1,
             img:"",
-            title:"Raqobatchilaringizdan oldinda bo`ling!",
-            subtitle:"Kalit so`zlar orqali Topga chiqing",
+            title:"titleOne",
+            subtitle:"subtitleTwo",
             button:
                [
                         {
                             id:1,
-                            title:"Togri kalit so'zlarini topish"
+                            title:"btnOne"
                         },
                         {
                             id:2,
-                            title:"Web analitika"
+                            title:"btnTwo"
                         },
                         {
                             id:3,
-                            title:"Qidiruvda TOP da turish"
+                            title:"btnThird"
                         },
                         {
                             id:4,
-                            title:"reklamani optimizatsiya qilish"
+                            title:"btnFourth"
                         },
                         {
                             id:5,
-                            title:"Togri kalit so'zlarini topish"
+                            title:"btnFifth"
                         },
                     ]
 
@@ -46,54 +47,53 @@ const CarouselMain = () => {
         {
             id:2,
             img:"",
-            title:"Instagram & Facebook orqali sotuvingizni  oshiring!",
-            subtitle:"O`z potensial Mijozlaringizga ega bo`ling va savdoni oshiring",
+            title:"titleSecond",
+            subtitle:"subtitleOne",
             button:
                 [
                     {
                         id:1,
-                        title:"Raqobatchilarni o'rganish"
+                        title:"buttonTitleOne"
                     },
                     {
                         id:2,
-                        title:"Copyrighting"
+                        title:"buttonTitleSecond"
                     },
                     {
                         id:3,
-                        title:"Bannerlar yaratish"
+                        title:"buttonTitleThird"
                     },
                     {
                         id:4,
-                        title:"Kuchli taklif yaratish"
+                        title:"buttonTitleFourth"
                     },
                     {
                         id:5,
-                        title:"Optimizatisiya "
+                        title:"buttonTitleFifth"
                     },
                 ]
         },
         {
             id: 3,
-            img: "",
-            title: "Potensial auditoriyangizni Sotuvchi Sayt orqali mijozga aylantiring",
-            subtitle: "Sotuvchi Sayt orqali potensial auditoriyangizga mahsulot xizmatingizni Soting.",
+            title: "titleThird",
+            subtitle: "subtitleEx",
             button:
                 [
                     {
                         id:1,
-                        title:"Copyrighting"
+                        title:"btnSix"
                     },
                     {
                         id:2,
-                        title:"UX&UI"
+                        title:"btnSeven"
                     },
                     {
                         id:3,
-                        title:"Saytni optimizatsiya qilish"
+                        title:"btnNine"
                     },
                     {
                         id:4,
-                        title:"Kuchli sarlavha yaratish"
+                        title:"btnTen"
                     },
 
                 ]
@@ -103,15 +103,15 @@ const CarouselMain = () => {
     const dataTab =[
         {
             id:1,
-            title:"Reklama Google & Yandex"
+            title:"tabOne"
         },
         {
             id:2,
-            title:"Target Reklama Meta Instagram & Facebook "
+            title:"tabSecond"
         },
         {
             id:3,
-            title:"Sotuvchi Sayt (Landing Page)"
+            title:"tabThird"
         },
     ]
 
@@ -122,7 +122,9 @@ return(
    <CarouselWrapper>
     <Container>
         <Title>
-            <>5x  ROASdan Foydalanish</>
+            <>
+                <Text id={"usingRoas"}/>
+            </>
         </Title>
 
        <Wrapper>
@@ -130,7 +132,9 @@ return(
                <Images activeTab={activeTab.numb}/>
            </ImageSide>
           <Main>
-              <OurService> Bizning Xizmatlar </OurService>
+              <OurService>
+                  <Text id={"ourServiceOne"}/>
+              </OurService>
               <TabSide>
                   <TabWrapper>
                       {dataTab.map(({id,title})=>{
@@ -145,7 +149,9 @@ return(
                                         }
                                     }
                               >
-                                  <p>{title}</p>
+                                  <p>
+                                      <Text id={title}/>
+                                  </p>
                               </Tab>
                           )
                       })}
@@ -159,10 +165,10 @@ return(
                                   return(
                                       <LeftSide key={id} isActive={activeTab.numb === id}>
                                           <ContentTitle>
-                                              {title}
+                                              <Text id={title}/>
                                           </ContentTitle>
                                           <ContentSubTitle>
-                                              {subtitle}
+                                              <Text id={subtitle}/>
                                           </ContentSubTitle>
                                       </LeftSide>
                                   )
@@ -178,7 +184,7 @@ return(
                                                   button.map(({id,title})=>{
                                                       return (
                                                           <Button key={id}>
-                                                              {title}
+                                                              <Text id={title}/>
                                                           </Button>
                                                       )
                                                   })

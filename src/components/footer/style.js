@@ -20,6 +20,11 @@ export const FooterWrapper = styled.div`
   background-repeat: no-repeat;
   z-index: 1;
   //position: relative;
+  a{
+    color: #fff;
+    text-decoration: none;
+    
+  }
   
   @media screen and (max-width: 1700px){
     height: fit-content;

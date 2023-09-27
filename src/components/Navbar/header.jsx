@@ -34,16 +34,19 @@ const Header = () => {
 
     const  langFunc = () => {
         const handleTwo = () => {
-            setBlue(prevState => !prevState);
-            setIsRed(false)
+            setIsRed(prevState => !prevState);
+            setBlue(
+                lang === UZBEK ? false : ""
+            )
         };
         handleTwo()
         dispatch(switchToUzbek())
     }
     const  func = () => {
         const handleClick = () => {
-            setIsRed(prevState => !prevState);
-            setBlue(false)
+            setBlue(prevState => !prevState);
+            setIsRed(false)
+
         };
 
         handleClick()

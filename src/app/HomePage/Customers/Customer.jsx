@@ -19,6 +19,7 @@ import img8 from "../../../source/assets/customers/Final_LL_Logo_715d5aca-af44-4
 import img9 from "../../../source/assets/customers/qwe.png"
 import ImgDirector from "../../../source/assets/customers/compdir.png"
 import imgRec from  "../../../source/assets/customers/Rectangle 1611.png"
+import Text from "../../../language/langManager";
 
 
 
@@ -27,7 +28,9 @@ const Customer = () => {
         <CustomerWrapper>
             <MainCustomerWrapper>
                 <Container>
-                    <div className={'title'}>Mijozlar</div>
+                    <div className={'title'}>
+                        <Text id={"allCustomer"}/>
+                    </div>
                     <div className={'wrapper'}>
                         <div className={'svg-wrapper'}>
                             <img src={img1}/>
@@ -66,9 +69,10 @@ const Customer = () => {
 
             <CompanyShowcaseWrapper>
                <Header>
-                   <MainTitle>SHAXBOZ <br/>
-                       SIDIKOV</MainTitle>
-                   <SubTitle>ADIGMO Agency asoschisi</SubTitle>
+                   <MainTitle>SHAXBOZ SIDIKOV</MainTitle>
+                   <SubTitle>
+                       <Text id={"CompDirNAme"}/>
+                   </SubTitle>
                </Header>
 
                 <ShowcaseInfo>
@@ -77,11 +81,7 @@ const Customer = () => {
                            <img src={ImgDirector}/>
                        </div>
                        <div className={"text"}>
-                           SHAXBOZ SIDIQOV - Digital Marketing sohasida 17 yillik tajribaga ega
-                           mutaxassis. Hozirgi kunda Upwork.comda digtial marketing yo’nalishida
-                           top 1%ga kiruvchi freelancer. Faoliyati davomida $63 milliondan ortiq
-                           reklama mablag’ini boshqargan, 100 000$+ daromadga ega freelancer
-                           va yuqori natijlaraga erishgan.
+                           <Text id={"basicText"}/>
                        </div>
                        <div className={"footer"}>
                            <div className={"footer-wrapper"}>
@@ -89,41 +89,31 @@ const Customer = () => {
                                    <img src={imgRec}/>
                                </div>
                                <div className={"footer-text"}>
-                                   Upwork.comda 1%ga kiruvchi
-                                  <br/> $63 miliondan reklama mablag`ini
-                                   boshqargan freelancer
+                                 <Text id={"bottomTexOne"}/>
                                </div>
                            </div>
                            <div className={"footer-wrapper"}>
                                <div className={"icon"}>
                                    <img src={imgRec}/>
-
                                </div>
                                <div className={"footer-text"}>
-                                   Digital Marketing sohasida
-                                   17 yillik tajribaga ega Mutaxassis
+                                   <Text id={"bottomTexTwo"}/>
                                </div>
                            </div>
                            <div className={"footer-wrapper"}>
                                <div className={"icon"}>
                                    <img src={imgRec}/>
-
                                </div>
                                <div className={"footer-text"}>
-                                   Saxo Bank, UNHCR, Trustpilot
-                                   hamda O’zbekistonda Agrobankda
-                                   faoliyat ko'rsatgan
+                                   <Text id={"bottomTexThree"}/>
                                </div>
-
                            </div>
                            <div className={"footer-wrapper"}>
                                <div className={"icon"}>
                                    <img src={imgRec}/>
-
                                </div>
                                <div className={"footer-text"}>
-                                   Daniyada Marketing sohasida
-                                   15 yillik malaka
+                                   <Text id={"bottomTexFour"}/>
                                </div>
 
                            </div>

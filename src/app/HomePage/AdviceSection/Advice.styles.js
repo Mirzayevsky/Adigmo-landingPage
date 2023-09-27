@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { NumericFormat } from 'react-number-format';
 export const AdviceWrapper = styled.div`
     height: 502px;
   width: 80%;
@@ -58,12 +59,61 @@ export const Title = styled.div`
     text-align:center;
   }
 `;
+export const Input = styled.input`
+    color: #000;
+    width: 438px;
+    height: 72px;
+    border-radius: 13px;
+    border: 1px;
+    border-color: #3338DF !important;
+    border: 1px solid #3338DF;
+    margin:10px 0;
+    font-size:24px;
+    font-family: Roboto;
+    padding: 0 20px;
+    font-weight: 500;
+    @media screen and (max-width: 700px){
+      font-size: 16px;
+      width: 80%;
+      height: 40px;
+      border-radius: 7px;
+      margin: 10px auto;
+      &:nth-child(1){
+        margin-top: 30px;
+      }
+    }
+`;
 export const AdviceForm = styled.form`
   width: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-top: 70px;
+  .num-for{
+    color: grey;
+    
+    width: 438px;
+    height: 72px;
+    border-radius: 13px;
+    border: 1px;
+    border-color: #3338DF !important;
+    border: 1px solid #3338DF;
+    margin:10px 0;
+    font-size:24px;
+    font-family: Roboto;
+    padding: 0 20px;
+    font-weight: 500;
+    @media screen and (max-width: 700px){
+      font-size: 16px;
+      width: 80%;
+      height: 40px;
+      border-radius: 7px;
+      margin: 10px auto;
+      &:nth-child(1){
+        margin-top: 30px;
+      }
+    }
+  }
   
   @media screen and (max-width: 1700px){
     margin: auto;
@@ -74,29 +124,7 @@ export const AdviceForm = styled.form`
   margin: auto;
   margin-top: 30px;
 }
-    input{
-      width: 438px;
-      height: 72px;
-      border-radius: 13px;
-      border: 1px;
-      border-color: #3338DF !important;
-      border: 1px solid #3338DF;
-      margin:10px 0;
-      font-size:24px;
-      font-family: Roboto;
-      padding: 0 20px;
-      font-weight: 500;
-      @media screen and (max-width: 700px){
-        font-size: 16px;
-        width: 80%;
-        height: 40px;
-        border-radius: 7px;
-        margin: 10px auto;
-        &:nth-child(1){
-          margin-top: 30px;
-        }
-      }
-    }
+    
   button{
     width: 438px;
     height: 85px;
