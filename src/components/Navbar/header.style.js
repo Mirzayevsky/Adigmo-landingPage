@@ -19,13 +19,17 @@ export const Container = styled.div`
 `;
 export const Logo = styled.div`
   color: black;
+  height: 65px;
+  width: fit-content;
+  img{
+    height: 100%;
+    width: fit-content;
+  }
   @media screen and (max-width: 600px) {
-    height: 70px;
-    width: 200px;
-    
-    svg{
-      width: 120px;
-      height: 80px;
+    height: 45px;
+    img{
+      width: fit-content;;
+      height: 100%;
     }
   }
 `;
@@ -61,13 +65,14 @@ export const Title = styled.div`
     line-height: 70px;
     width: 100%;
   }
-  @media screen and (max-width: 600px) {
-    font-size: 24px;
+  @media screen and (max-width: 700px) {
+    font-size: 22px;
     line-height: 29px;
-    width: 90%;
+    width: 100%;
     margin:  auto;
     padding: 10px 0;
     padding-top: 80px;
+    text-align: center;
     br{
       display: none;
     }
@@ -82,7 +87,7 @@ export const HearderInner = styled.div`
   letter-spacing: 0em;
   text-align: left;
   cursor: pointer;
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 700px) {
     font-size: 16px;
     font-weight: 500;
     padding: 7px 20px;
@@ -98,6 +103,11 @@ export const HeaderButton = styled.div`
   align-items: center;
   justify-content: center;
   margin-top: 50px;
+  cursor: pointer;
+  &:hover {
+    transition: 0.5s;
+    background: linear-gradient(94.24deg,rgba(31,90,255,0.66) -32.1%, rgba(57, 46, 214, 0.61) 52.24%, #1a2032 136.58%);
+  }
 
   background: linear-gradient(
     93.47deg,
@@ -107,9 +117,10 @@ export const HeaderButton = styled.div`
   );
   @media screen and (max-width: 600px) {
     height: fit-content;
-    width: fit-content;
-    margin: 10px;
-    margin-left: 20px;
+    width: 70%;
+    margin: 8px auto;
+    padding: 5px 0;
+    border-radius: 15px;
   }
   
 `;
@@ -135,7 +146,12 @@ export const LangButton = styled.div`
   margin-right: 30px;
   cursor: pointer;
   background: linear-gradient(94.24deg,#1f5aff -32.1%, #392ed6 52.24%, #1a2032 136.58%);
-  background: ${({ isRed }) => (isRed ? "linear-gradient(94.24deg,#1f5aff -32.1%, #392ed6 52.24%, #1a2032 136.58%)" : '#ccc')};
+  background: ${({isRed}) => (isRed ? "linear-gradient(94.24deg,#1f5aff -32.1%, #392ed6 52.24%, #1a2032 136.58%)" : '#ccc')};
+  &:hover {
+    transition: 0.5s;
+    background: linear-gradient(94.24deg,rgba(31,90,255,0.66) -32.1%, rgba(57, 46, 214, 0.61) 52.24%, #1a2032 136.58%);
+  }
+
   @media screen and (max-width: 600px) {
     padding: 0px 15px;
     font-size: 17px;
@@ -164,8 +180,12 @@ export const LangSecondBnt = styled.div`
   justify-content: center;
   margin-right: 50px;
   color: #fff;
+  cursor: pointer;
+  &:hover {
+    transition: 0.5s;
+    background: linear-gradient(94.24deg,rgba(31,90,255,0.66) -32.1%, rgba(57, 46, 214, 0.61) 52.24%, #1a2032 136.58%);
+  }
   background: ${({ blue}) => (blue ? "linear-gradient(94.24deg,#1f5aff -32.1%, #392ed6 52.24%, #1a2032 136.58%)" : '#ccc')};
-  
   
   @media screen and (max-width: 600px) {
     padding: 0px 15px;
@@ -178,6 +198,9 @@ export const LangSecondBnt = styled.div`
 `;
 
 export const RightWrapper = styled.div`
+  @media screen and (max-width: 600px){
+    width: 100%;
+  }
 `
 export const LeftImgWrapper = styled.div`
   margin-right: 20px;

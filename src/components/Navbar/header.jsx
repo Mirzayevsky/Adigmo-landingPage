@@ -14,7 +14,6 @@ import {
   RightWrapper,
   Title,
 } from "./header.style";
-import { ReactComponent as LogoSvg } from "../../source/logo/ALogo.svg";
 import ceoImg from '../../source/assets/images/qqq.png'
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
@@ -22,7 +21,7 @@ import langs from "../../constants/lang"
 import Text from "../../language/langManager";
 import {switchLang, switchToRussian, switchToUzbek} from "../../redux/modules/lang/langAction";
 import PopUp from "../popUp";
-import {ReactComponent as MainLogo} from "../../source/logo/logo (1).svg";
+import LogoMain  from "../../source/logo/1.1 adigmo logo.png"
 
 const Header = () => {
     const dispatch = useDispatch();
@@ -40,7 +39,7 @@ const Header = () => {
 
     const  langFunc = () => {
         const handleTwo = () => {
-            setIsRed(prevState => !prevState);
+            setIsRed(true);
             setBlue(
                 lang === UZBEK ? false : ""
             )
@@ -50,7 +49,7 @@ const Header = () => {
     }
     const  func = () => {
         const handleClick = () => {
-            setBlue(prevState => !prevState);
+            setBlue(true);
             setIsRed(false)
 
         };
@@ -65,7 +64,7 @@ const Header = () => {
       <Container>
         <HeaderTop>
           <Logo>
-            <MainLogo/>
+            <img src={LogoMain} alt="logo"/>
           </Logo>
           <LangButtonWrapper  >
             <LangButton isRed={isRed} onClick={langFunc}>

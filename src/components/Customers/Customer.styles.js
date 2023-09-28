@@ -151,10 +151,11 @@ export const  ShowcaseInfo = styled.div`
     right: 3%;
     @media screen and (max-width: 700px){
       margin: auto;
+      width: fit-content;
     }
     img{
       height: 100%;
-      width: 100%;
+      width: fit-content;
     }
   }
   .text{

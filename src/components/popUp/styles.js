@@ -45,7 +45,7 @@ export const AdviceWrapper = styled.div`
 export  const Container = styled.div`
   width: 80%;
   margin: auto;
-  margin-top:50px;
+  margin-top:20px;
   @media screen and (max-width: 1700px){
    flex-direction: column;
   }
@@ -165,6 +165,10 @@ export const AdviceForm = styled.form`
     margin-top: 40px;
     cursor: pointer;
     border: 0;
+    &:hover {
+      transition: 0.5s;
+      background: linear-gradient(94.24deg,rgba(31,90,255,0.66) -32.1%, rgba(57, 46, 214, 0.61) 52.24%, #1a2032 136.58%);
+    }
     @media screen and (max-width: 700px){
       width: 93%;
       height: 60px;

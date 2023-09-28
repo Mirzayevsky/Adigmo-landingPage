@@ -89,45 +89,46 @@ export const AdviceForm = styled.form`
   flex-direction: column;
   justify-content: center;
   margin-top: 70px;
-  .num-for{
+
+  .num-for {
     color: grey;
-    
+
     width: 438px;
     height: 72px;
     border-radius: 13px;
     border: 1px;
     border-color: #3338DF !important;
     border: 1px solid #3338DF;
-    margin:10px 0;
-    font-size:24px;
+    margin: 10px 0;
+    font-size: 24px;
     font-family: Roboto;
     padding: 0 20px;
     font-weight: 500;
-    @media screen and (max-width: 700px){
+    @media screen and (max-width: 700px) {
       font-size: 16px;
       width: 80%;
       height: 40px;
       border-radius: 7px;
       margin: 10px auto;
-      &:nth-child(1){
+      &:nth-child(1) {
         margin-top: 30px;
       }
     }
   }
-  
-  @media screen and (max-width: 1700px){
+
+  @media screen and (max-width: 1700px) {
     margin: auto;
     margin-top: 50px;
   }
-@media screen and (max-width: 700px){
-  width: 80%;
-  margin: auto;
-  margin-top: 30px;
-}
-    
-  button{
-    width: 438px;
-    height: 85px;
+  @media screen and (max-width: 700px) {
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+  }
+
+  button {
+    width: 100%;
+    height: 79px;
     border-radius: 13px;
     background: linear-gradient(93.12deg, #1F5AFF 1.37%, #392ED6 54.75%, #1A2032 119.16%);
     box-shadow: 0px -2px 3px 0px #9F9D9D40 inset;
@@ -142,7 +143,14 @@ export const AdviceForm = styled.form`
     margin-top: 40px;
     cursor: pointer;
     border: 0;
-    @media screen and (max-width: 700px){
+    letter-spacing: 1px;
+transition: 0.5s ease;
+    &:hover {
+      background: linear-gradient(93.12deg, rgba(31, 90, 255, 0.68) 1.37%, rgba(57, 46, 214, 0.69) 54.75%, #1A2032 119.16%);
+
+    }
+
+    @media screen and (max-width: 700px) {
       width: 93%;
       height: 60px;
       font-size: 20px;
@@ -152,6 +160,6 @@ export const AdviceForm = styled.form`
       outline: none;
     }
   }
-  
+
 
 `;

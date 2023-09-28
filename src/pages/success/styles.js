@@ -11,6 +11,15 @@ export const Container = styled.div`
   margin: auto;
   display: flex;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  .main{
+    width: fit-content;
+    padding: 100px;
+    @media screen and (max-width: 700px){
+      width: 100%;
+    }
+  }
 `;
 export const Title = styled.div`
   color: #222;
