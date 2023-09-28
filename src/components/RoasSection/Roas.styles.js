@@ -53,10 +53,10 @@ export const RoasHeader =styled.div`
     }
         
     @media screen and (max-width: 700px){
-     font-size: 24px;
+     font-size: 22px;
       line-height: 30px;
       padding: 0px 0;
-      padding-bottom: 40px;
+      padding-bottom: 0px;
       br{
         display: none;
       }
@@ -79,7 +79,7 @@ export const RoasHeader =styled.div`
 
     }
     @media screen and (max-width: 700px){
-      padding: 15px 20px;
+      padding: 10px;
       width: 80%;
       flex-direction: column;
     }
