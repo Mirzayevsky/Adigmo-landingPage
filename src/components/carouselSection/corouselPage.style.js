@@ -75,10 +75,6 @@ export const Title = styled.div`
  display: flex;
  align-items: center;
 justify-content: center;
- cursor: pointer;
- &:hover {
-  background: linear-gradient(93.12deg, rgba(31, 90, 255, 0.8) 1.37%, rgba(57, 46, 214, 0.75) 54.75%, #1A2032 119.16%);
- }
  @media  screen and  (max-width: 700px){
   font-size:18px;
   font-weight: 600;

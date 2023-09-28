@@ -1,13 +1,11 @@
 import React from "react";
 import {Container, SubTitle, Title, Wrapper} from "./styles";
 import Text from "../../language/langManager";
-import MessageTik from "../../components/MessageTik";
 const Success = () =>{
     return(
         <Wrapper>
             <Container>
-                <MessageTik/>
-               <div className={"main"}>
+               <div>
                    <Title>
                        <Text id={"successTitle"}/>
                    </Title>

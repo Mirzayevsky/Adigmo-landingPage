@@ -45,7 +45,7 @@ export const AdviceWrapper = styled.div`
 export  const Container = styled.div`
   width: 80%;
   margin: auto;
-  margin-top:20px;
+  margin-top:50px;
   @media screen and (max-width: 1700px){
    flex-direction: column;
   }
@@ -111,44 +111,44 @@ export const AdviceForm = styled.form`
   justify-content: center;
   margin: auto;
   margin-top: 20px;
-
-  .num-for {
+  
+  .num-for{
     color: grey;
-
+    
     width: 438px;
     height: 72px;
     border-radius: 13px;
     border: 1px;
     border-color: #3338DF !important;
     border: 1px solid #3338DF;
-    margin: 10px 0;
-    font-size: 24px;
+    margin:10px 0;
+    font-size:24px;
     font-family: Roboto;
     padding: 0 20px;
     font-weight: 500;
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 700px){
       font-size: 16px;
       width: 80%;
       height: 40px;
       border-radius: 7px;
       margin: 10px auto;
-      &:nth-child(1) {
+      &:nth-child(1){
         margin-top: 30px;
       }
     }
   }
-
-  @media screen and (max-width: 1700px) {
+  
+  @media screen and (max-width: 1700px){
     margin: auto;
     margin-top: 50px;
   }
-  @media screen and (max-width: 700px) {
-    width: 80%;
-    margin: auto;
-    margin-top: 30px;
-  }
-
-  button {
+@media screen and (max-width: 700px){
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+}
+    
+  button{
     width: 100%;
     height: 85px;
     border-radius: 13px;
@@ -165,11 +165,7 @@ export const AdviceForm = styled.form`
     margin-top: 40px;
     cursor: pointer;
     border: 0;
-    &:hover {
-      background: linear-gradient(93.12deg, rgba(31, 90, 255, 0.8) 1.37%, rgba(57, 46, 214, 0.75) 54.75%, #1A2032 119.16%);
-    }
-
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 700px){
       width: 93%;
       height: 60px;
       font-size: 20px;
@@ -179,6 +175,6 @@ export const AdviceForm = styled.form`
       outline: none;
     }
   }
-
+  
 
 `;

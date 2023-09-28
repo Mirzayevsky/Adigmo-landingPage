@@ -21,7 +21,7 @@ const PopUp = ({popUp,setPopUp}) => {
 
         // Check if the input values meet the required length
         if (nameValue.length < 5 || numberValue.length < 7) {
-            alert("Пожалуйста, заполните форму");
+            alert("Name must be at least 5 characters and number must be at least 7 digits");
             return; // Don't proceed with sending the message
         }
 

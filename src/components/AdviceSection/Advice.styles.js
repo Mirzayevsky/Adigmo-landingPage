@@ -126,7 +126,7 @@ export const AdviceForm = styled.form`
 }
     
   button{
-    width: 100%;
+    width: 438px;
     height: 85px;
     border-radius: 13px;
     background: linear-gradient(93.12deg, #1F5AFF 1.37%, #392ED6 54.75%, #1A2032 119.16%);
@@ -140,12 +140,8 @@ export const AdviceForm = styled.form`
     text-align: center;
     color: #fff;
     margin-top: 40px;
-    border: 0;
     cursor: pointer;
-    letter-spacing: 1px;
-    &:hover {
-      background: linear-gradient(93.12deg, rgba(31, 90, 255, 0.8) 1.37%, rgba(57, 46, 214, 0.75) 54.75%, #1A2032 119.16%);
-    }
+    border: 0;
     @media screen and (max-width: 700px){
       width: 93%;
       height: 60px;
