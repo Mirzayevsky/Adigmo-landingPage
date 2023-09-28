@@ -65,13 +65,14 @@ export const Title = styled.div`
     line-height: 70px;
     width: 100%;
   }
-  @media screen and (max-width: 600px) {
-    font-size: 24px;
+  @media screen and (max-width: 700px) {
+    font-size: 22px;
     line-height: 29px;
-    width: 90%;
+    width: 100%;
     margin:  auto;
     padding: 10px 0;
     padding-top: 80px;
+    text-align: center;
     br{
       display: none;
     }
@@ -86,7 +87,7 @@ export const HearderInner = styled.div`
   letter-spacing: 0em;
   text-align: left;
   cursor: pointer;
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 700px) {
     font-size: 16px;
     font-weight: 500;
     padding: 7px 20px;
@@ -111,9 +112,10 @@ export const HeaderButton = styled.div`
   );
   @media screen and (max-width: 600px) {
     height: fit-content;
-    width: fit-content;
-    margin: 10px;
-    margin-left: 20px;
+    width: 70%;
+    margin: 8px auto;
+    padding: 5px 0;
+    border-radius: 15px;
   }
   
 `;
@@ -170,7 +172,6 @@ export const LangSecondBnt = styled.div`
   color: #fff;
   background: ${({ blue}) => (blue ? "linear-gradient(94.24deg,#1f5aff -32.1%, #392ed6 52.24%, #1a2032 136.58%)" : '#ccc')};
   
-  
   @media screen and (max-width: 600px) {
     padding: 0px 15px;
     font-size: 17px;
@@ -182,6 +183,9 @@ export const LangSecondBnt = styled.div`
 `;
 
 export const RightWrapper = styled.div`
+  @media screen and (max-width: 600px){
+    width: 100%;
+  }
 `
 export const LeftImgWrapper = styled.div`
   margin-right: 20px;
