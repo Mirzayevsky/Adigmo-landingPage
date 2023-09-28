@@ -187,7 +187,8 @@ export const AmongWrapper = styled.div`
     @media screen and (max-width: 600px) {
       font-size: 20px;
       text-align: center;
-      padding: 10px 0;
+      padding: 0px 0;
+      margin-top: 20px;
     }
     
   }
@@ -205,10 +206,10 @@ export const AmongWrapper = styled.div`
     @media screen and (max-width: 600px) {
       font-size:16px;
       line-height: 24px;
+      padding-top: 0;
       width: 80%;
       text-align: center;
       margin: auto;
-      padding-top: 10px;
       br{
         display: none;
       }

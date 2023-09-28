@@ -170,7 +170,7 @@ export const RoasCarouselWrapper =styled.div`
     //}
     @media screen and (max-width: 700px){
       width: 310px;
-      height:220px;
+      height:250px;
       left: 0;
     }
     .container{

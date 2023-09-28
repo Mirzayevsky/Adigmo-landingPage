@@ -141,6 +141,9 @@ export const  ShowcaseInfo = styled.div`
     .container{
       width: 80%;
       margin: auto;
+      @media screen and (max-width: 700px){
+        width: 90%;
+      }
     }
   .img{
     width: 350px;
@@ -148,10 +151,11 @@ export const  ShowcaseInfo = styled.div`
     border-radius: 33px;
     position: absolute;
     top: -150px;
-    right: 3%;
+    right: 2.5%;
     @media screen and (max-width: 700px){
       margin: auto;
-      width: fit-content;
+      height: 260px;
+      width:fit-content;
     }
     img{
       height: 100%;
@@ -174,7 +178,7 @@ export const  ShowcaseInfo = styled.div`
       line-height: 25px;
       margin:auto;
       margin-top: 100px;
-      text-align: left;
+      text-align:left;
     }
   }
   .footer{

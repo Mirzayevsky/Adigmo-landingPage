@@ -50,7 +50,6 @@ const SecondPage = () => {
             <div className="bottom-text">
               <Text id={"roasTextOne"}/> <br/>
               <Text id={"roasTextTwo"}/>
-
             </div>
           </AmongWrapper>
 
