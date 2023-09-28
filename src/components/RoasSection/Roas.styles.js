@@ -163,6 +163,7 @@ export const RoasCarouselWrapper =styled.div`
     -webkit-box-shadow: 0px -1px 30px -10px rgba(32, 33, 34, 0.27);
     -moz-box-shadow: 0px -1px 30px -10px rgba(32, 33, 34, 0.27);
     box-shadow: 0px -1px 30px -10px rgba(32, 33, 34, 0.27);
+    cursor: pointer;
     @media screen and (max-width: 700px){
       width: 310px;
       height:260px;
@@ -225,6 +226,10 @@ export const RoasButton = styled.div`
   margin-left: auto;
   margin-top: 100px;
   margin-right: 160px;
+  cursor: pointer;
+  &:hover {
+    background: linear-gradient(93.12deg, rgba(31, 90, 255, 0.8) 1.37%, rgba(57, 46, 214, 0.75) 54.75%, #1A2032 119.16%);
+  }
   @media screen and (max-width: 1700px){
     margin:30px auto;
     font-size: 28px;

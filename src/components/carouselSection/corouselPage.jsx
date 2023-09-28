@@ -121,9 +121,6 @@ const CarouselMain = () => {
         },
     ]
 
-
-
-
 return(
    <CarouselWrapper>
        {popUp === true ? <PopUp popUp={popUp} setPopUp={setPopUp}/> : ""}

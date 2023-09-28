@@ -40,6 +40,8 @@ export const FooterWrapper = styled.div`
 
 `;
 export const Logo = styled.div`
+  height: 70px;
+  
 `;
 export const Wrapper = styled.div`
  width: 80%;

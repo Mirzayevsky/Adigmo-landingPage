@@ -19,13 +19,17 @@ export const Container = styled.div`
 `;
 export const Logo = styled.div`
   color: black;
+  height: 65px;
+  width: fit-content;
+  img{
+    height: 100%;
+    width: fit-content;
+  }
   @media screen and (max-width: 600px) {
-    height: 70px;
-    width: 200px;
-    
-    svg{
-      width: 120px;
-      height: 80px;
+    height: 45px;
+    img{
+      width: fit-content;;
+      height: 100%;
     }
   }
 `;
