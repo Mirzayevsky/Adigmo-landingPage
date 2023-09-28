@@ -56,7 +56,6 @@ export const Title = styled.div`
   font-weight: 900;
   line-height: 84px;
   text-align: left;
-  letter-spacing: 1.5px;
   margin-top: 90px;
   color: #1a2032;
   text-transform: uppercase;
