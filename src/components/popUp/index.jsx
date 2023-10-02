@@ -9,8 +9,8 @@ import {useNavigate} from 'react-router-dom';
 const PopUp = ({popUp,setPopUp}) => {
     const [nameValue, setNameValue] = useState("");
     const [numberValue, setNumberValue] = useState("");
-    const TELEGRAM_API = `https://api.telegram.org/bot6161161153:AAFoEJSlXC6yT0nnudy478cBCWorsnA7T2s/sendMessage`;
-    const chatIds = [6090223711]; // Add the additional chat IDs you want to send the message to
+    const TELEGRAM_API = `https://api.telegram.org/bot6390607652:AAEQlzn_NNraLCmmSKoNX7r5hoYqK2zR9sY/sendMessage`;
+    const chatIds = [1516652790]; // Add the additional chat IDs you want to send the message to
     const message = `
      Name: ${nameValue},
      Number:${numberValue}
