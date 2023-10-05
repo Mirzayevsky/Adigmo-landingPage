@@ -2,9 +2,9 @@
   font-family: "Roboto";
   src: url("./source/fonts/roboto/Roboto-Medium.ttf");
   }
-   ::-webkit-scrollbar {
+   /* ::-webkit-scrollbar {
     display: none;
-}
+} */
 
 *{
   padding: 0;
