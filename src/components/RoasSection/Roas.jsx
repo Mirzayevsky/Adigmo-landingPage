@@ -11,8 +11,6 @@ import {
 } from "./Roas.styles";
 import Text from "../../language/langManager";
 import PopUp from "../popUp";
-import "~slick-carousel/slick/slick.css"; 
-import "~slick-carousel/slick/slick-theme.css";
 
 
 
