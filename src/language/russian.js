@@ -2,7 +2,7 @@ const russian = {
   sotuvingiznibiz: "Увеличьте ВАШИ ",
   barobarga:"ПРОДАЖИ в 2-3 РАЗА",
   oshiring:"С НАШЕЙ ПОМОЩЬЮ!",
-  bepulMaslaxat:"Бесплатный Совет!",
+  bepulMaslaxat:"Бесплатный Совет !",
   natijagayonaltirilgan:"17-ЛЕТНИЙ ОПЫТ,",
   tajriba:"ОРИЕНТИРОВАННЫЙ НА РЕЗУЛЬТАТ.",
   spSales:"Продажи = $3000",

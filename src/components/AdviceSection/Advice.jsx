@@ -86,7 +86,7 @@ const Advice = () => {
                             <PatternFormat
                                 className={"num-for"}
                                 format="+998(##)###-##-##"
-                                placeholder={"+998 (00) 000-00-00"}
+                                // placeholder={}<Text id={"advise"}/>
                                 value={numberValue}
                                  onChange={handleNumberChange}
 

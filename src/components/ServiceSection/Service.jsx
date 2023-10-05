@@ -5,14 +5,14 @@ import "keen-slider/keen-slider.min.css"
 import {FirstWrapper} from "../portfolioSection/portfolioPage.styles";
 import {ReactComponent as SvgOne} from "../../source/assets/services items/Y (1).svg";
 import {ReactComponent as SvgSecond} from "../../source/assets/services items/Y.svg";
-import {ReactComponent as Svgthird} from "../../source/assets/services items/\uD83E\uDD86 icon _chart 1_.svg";
-import {ReactComponent as Svgfourth} from "../../source/assets/services items/\uD83E\uDD86 icon _diagram_.svg";
-import {ReactComponent as Svgfifth} from "../../source/assets/services items/\uD83E\uDD86 icon _google 1_.svg";
-import {ReactComponent as SvgSix} from "../../source/assets/services items/\uD83E\uDD86 icon _instagram_.svg";
-import {ReactComponent as SvgSeven} from "../../source/assets/services items/\uD83E\uDD86 icon _refresh 2_.svg";
-import {ReactComponent as SvgNine} from "../../source/assets/services items/\uD83E\uDD86 icon _shopping cart_.svg";
-import {ReactComponent as SvgTen} from "../../source/assets/services items/\uD83E\uDD86 icon _star_.svg";
-import {ReactComponent as SvgVerify} from "../../source/assets/services items/\uD83E\uDD86 icon _verify_.svg";
+import {ReactComponent as Svgthird} from "../../source/assets/services items/icon _chart 1_.svg";
+import {ReactComponent as Svgfourth} from "../../source/assets/services items/icon _diagram_.svg";
+import {ReactComponent as Svgfifth} from "../../source/assets/services items/icon _google 1_.svg";
+import {ReactComponent as SvgSix} from "../../source/assets/services items/icon _instagram_.svg";
+import {ReactComponent as SvgSeven} from "../../source/assets/services items/icon _refresh 2_.svg";
+import {ReactComponent as SvgNine} from "../../source/assets/services items/icon _shopping cart_.svg";
+import {ReactComponent as SvgTen} from "../../source/assets/services items/icon _star_.svg";
+import {ReactComponent as SvgVerify} from "../../source/assets/services items/icon _verify_.svg";
 import Text from "../../language/langManager";
 
 

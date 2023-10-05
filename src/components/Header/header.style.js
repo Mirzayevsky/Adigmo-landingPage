@@ -208,7 +208,7 @@ export const LeftImgWrapper = styled.div`
     //display:none;
     margin: 0 auto;
     padding-right: 30px;
-    margin-top: 20px;
+    margin-top: 30px;
     img{
       height: 280px;
       width: 220px;

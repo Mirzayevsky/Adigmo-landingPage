@@ -14,7 +14,7 @@ import {
   RightWrapper,
   Title,
 } from "./header.style";
-import ceoImg from '../../source/assets/images/qqq.png'
+import ceoImg from '../../source/assets/images/Mask group.png'
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 import langs from "../../constants/lang"

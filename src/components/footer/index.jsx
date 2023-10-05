@@ -28,9 +28,9 @@ const  Footer = ()=> {
                 </Header>
 
             </Wrapper>
-
+            .
             <FooterBottom>
-                © 2023. Все права защищены Adigmo.uz.
+                © 2023. All rights reserved by Adigmo.uz
             </FooterBottom>
         </FooterWrapper>
     )
