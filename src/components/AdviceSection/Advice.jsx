@@ -83,20 +83,20 @@ const Advice = () => {
                 </Title>
                 <AdviceForm onSubmit={handleSubmit}>
                         <>
-                            <PatternFormat
+                           
+
+                            <Input placeholder={Text({ id: "inputName" })}
+                                   value={nameValue}
+                                   onChange={handleNameChange}
+                            />
+                             <PatternFormat
                                 className={"num-for"}
                                 format="+998(##)###-##-##"
-                                // placeholder={}<Text id={"advise"}/>
+                                placeholder={Text({ id: "inputPhone" })}
                                 value={numberValue}
                                  onChange={handleNumberChange}
 
                             />
-
-                            <Input placeholder={"Name"}
-                                   value={nameValue}
-                                   onChange={handleNameChange}
-                            />
-                            {/*<Text id="inputText"/>*/}
                         </>
                         <button >
                             <Text id={"freeBtn"}

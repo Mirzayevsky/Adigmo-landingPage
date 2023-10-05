@@ -39,7 +39,7 @@ export  const Container = styled.div`
 `;
 export const Title = styled.div`
   font-family: Roboto;
-  font-size: 64px;
+  font-size: 56px;
   font-weight: 700;
   line-height: 75px;
   letter-spacing: 2px;

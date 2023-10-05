@@ -93,10 +93,10 @@ const uzbek = {
   allCustomer:"Mijozlar",
   successTitle:"Xabaringiz “Adigmo” MChJga yuborildi",
   successSubtitle:"Xabar tez orada Adigmo xodimlari tomonidan ko'rib chiqiladi.",
-  successSubtitleTwo:"Agar siz zudlik bilan bog'lanmoqchi bo'lsangiz, kompaniyamiz raqami bu yerda "
-
-
-
+  successSubtitleTwo:"Agar siz zudlik bilan bog'lanmoqchi bo'lsangiz, kompaniyamiz raqami bu yerda ",
+  inputName:"Ism",
+  inputPhone:"Telefon raqam",
+  
 };
 
 export default uzbek;
