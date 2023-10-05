@@ -1,124 +1,117 @@
-import React, {useState} from "react";
-import {Content, RoasButton,  RoasCarouselWrapper, RoasHeader, RoasWrapper} from "./Roas.styles";
-import { useKeenSlider } from "keen-slider/react"
-import "keen-slider/keen-slider.min.css"
+import React, { useState } from "react";
+import Slider from "react-slick";
+import {
+  Card,
+  Content,
+  RoasButton,
+  RoasCarouselWrapper,
+  RoasHeader,
+  RoasWrapper,
+  ShowWrapper,
+} from "./Roas.styles";
 import Text from "../../language/langManager";
 import PopUp from "../popUp";
+import "~slick-carousel/slick/slick.css"; 
+import "~slick-carousel/slick/slick-theme.css";
+
+
+
 const Roas = () => {
-    const [popUp, setPopUp]=useState(false)
-    const popChange = () =>{
-        setPopUp(!popUp)
-    }
-    const data = [
-        {
-            id:0,
-            title:"titleRoasOne",
-            text:"subtitleRoasOne"
-        },
-        {
-            id:1,
-            title:"titleRoasTwo",
-            text:"subtitleRoasTwo"
-        },
-        {
-            id:2,
-            title:"titleRoasThird",
-            text:"subtitleRoasThird"
-        },
-        {
-            id:3,
-            title:"titleRoasFourth",
-            text:"subtitleRoasFourth"
-        },
-        {
-            id:4,
-            title:"titleRoasFifth",
-            text:"subtitleRoasFifth"
-        },
-    ]
+    
+  const [popUp, setPopUp] = useState(false);
+  const popChange = () => {
+    setPopUp(!popUp);
+  };
 
-    const carousel = (slider) => {
-        const z = 300
-        function rotate() {
-            const deg = 360 * slider.track.details.progress
-            slider.container.style.transform = `translateZ(-${z}px) rotateY(${-deg}deg)`
-        }
-        slider.on("created", () => {
-            const deg = 360 / slider.slides.length
-            slider.slides.forEach((element, idx) => {
-                element.style.transform = `rotateY(${deg * idx}deg) translateZ(${z}px)`
-            })
-            rotate()
-        })
-        slider.on("detailsChanged", rotate)
-    }
-    const [sliderRef] = useKeenSlider(
-        {
-            loop: true,
-            selector: ".carousel__cell",
-            renderMode: "custom",
-            mode: "free-snap",
-        },
-        [carousel]
-    )
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+  };
 
-    return(
-      <RoasWrapper>
-          { popUp === true ? <PopUp popUp={popUp} setPopUp={setPopUp}/> :""
-          }
-       <Content>
-           <RoasHeader>
-               <p className={'title'}>
-                   <Text id={"roasTitle"}/>
-               </p>
-               <div className={'show'}>
-                   <p className={'mini-title'}>
-                       <Text id={"customerOne"}/>
-                       <br/>
-                       <Text id={"customertwo"}/>
-                      </p>
-                   <p className={'text'}>
-                       <Text id={"priceThatspentToReklame"}/>
-                   </p>
-               </div>
-           </RoasHeader>
-           <RoasCarouselWrapper>
-               <div className="wrapper">
-                   <div className="scene">
-                       <div className="carousel keen-slider" ref={sliderRef}>
-                           {
-                               data.map(({id,title,text})=>{
-                                   return(
-                                       <div key={id} className="carousel__cell number-slide1 ">
-                                           <div className={"container"}>
-                                               <div>
-                                                   <p className={"title"}>
-                                                       <Text id={title}/>
-                                                   </p>
-                                                   <p className={"text"}>
-                                                       <Text id={text}/>
-                                                   </p>
-                                               </div>
-                                           </div>
-                                       </div>
-                                   )
-                               })
-                           }
+  const data = [
+    {
+      id: 0,
+      title: "titleRoasOne",
+      text: "subtitleRoasOne",
+    },
+    {
+      id: 1,
+      title: "titleRoasTwo",
+      text: "subtitleRoasTwo",
+    },
+    {
+      id: 2,
+      title: "titleRoasThird",
+      text: "subtitleRoasThird",
+    },
+    {
+      id: 3,
+      title: "titleRoasFourth",
+      text: "subtitleRoasFourth",
+    },
+    {
+      id: 4,
+      title: "titleRoasFifth",
+      text: "subtitleRoasFifth",
+    },
+  ];
 
-                       </div>
-                   </div>
-               </div>
+  return (
+    <RoasWrapper>
+      {popUp === true ? <PopUp popUp={popUp} setPopUp={setPopUp} /> : ""}
+      <Content>
+        <RoasHeader>
+          <p className={"title"}>
+            <Text id={"roasTitle"} />
+          </p>
 
-           </RoasCarouselWrapper>
-           <RoasButton onClick={popChange}>
-               <Text id={"roasBtnOne"}/>
-                <br/>
-               <Text id={"roasBtnTwo"}/>
+          <ShowWrapper>
+            <div className="up">
+              <Text id={"customerOne"} />
+            </div>
 
-           </RoasButton>
-       </Content>
-
-      </RoasWrapper>
-    )
-}
-export default Roas
+            <div className="down">
+              <p className="pl-one">
+                <Text id={"customertwo"} />
+              </p>
+              <p className="pl">
+                <Text id={"priceThatspentToReklame"} />
+              </p>
+            </div>
+          </ShowWrapper>
+        </RoasHeader>
+        <RoasCarouselWrapper>
+          <Slider {...settings}>
+            <div>
+            <h3>1</h3>
+          </div>
+          <div>
+            <h3>2</h3>
+          </div>
+          <div>
+            <h3>3</h3>
+          </div>
+          <div>
+            <h3>4</h3>
+          </div>
+          <div>
+            <h3>5</h3>
+          </div>
+          <div>
+            <h3>6</h3>
+          </div>
+          </Slider>
+        </RoasCarouselWrapper>
+        <RoasButton onClick={popChange}>
+          <Text id={"roasBtnOne"} />
+          <br />
+          <Text id={"roasBtnTwo"} />
+        </RoasButton>
+      </Content>
+    </RoasWrapper>
+  );
+};
+export default Roas;

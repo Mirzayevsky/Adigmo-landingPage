@@ -40,14 +40,14 @@ export const HeaderTop = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 100px;
+  padding-top: 50px;
+  
   @media screen and (max-width: 600px) {
     height: 80px;
     margin: auto;
     padding: 0;
     align-items: center;
     padding-top: 10px;
-    
   }
 `;
 export const Title = styled.div`
@@ -56,7 +56,7 @@ export const Title = styled.div`
   font-weight: 900;
   line-height: 84px;
   text-align: left;
-  margin-top: 90px;
+  margin-top: 50px;
   color: #1a2032;
   text-transform: uppercase;
   @media screen and (max-width: 1700px) {
@@ -78,6 +78,7 @@ export const Title = styled.div`
   }
 `;
 export const HearderInner = styled.div`
+width: fit-content;
   color: #fff;
   font-family: Roboto;
   font-size: 35px;
@@ -95,7 +96,7 @@ export const HearderInner = styled.div`
   }
 `;
 export const HeaderButton = styled.div`
-  width: 383px;
+  width: fit-content;
   height: 86px;
   border-radius: 24px;
   display: flex;
@@ -103,6 +104,8 @@ export const HeaderButton = styled.div`
   justify-content: center;
   margin-top: 50px;
   cursor: pointer;
+  padding: 0px 35px;
+  word-wrap: break-word;
   &:hover {
     transition: 0.5s;
     background: linear-gradient(94.24deg,rgba(31,90,255,0.66) -32.1%, rgba(57, 46, 214, 0.61) 52.24%, #1a2032 136.58%);
@@ -219,6 +222,7 @@ export const MainWrapper = styled.div`
 display: flex;
 justify-content: space-between;
 margin: 0 30px;
+padding-top: 50px;
 //margin-top: 100px;
   @media screen and (max-width: 600px) {
     flex-direction: column-reverse;
