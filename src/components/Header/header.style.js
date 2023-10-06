@@ -70,11 +70,8 @@ export const Title = styled.div`
     width: 100%;
     margin:  auto;
     padding: 10px 0;
-    padding-top: 40px;
-    text-align: center;
-    br{
-      display: none;
-    }
+    padding-top: 30px;
+    
   }
 `;
 export const HearderInner = styled.div`
@@ -119,10 +116,10 @@ export const HeaderButton = styled.div`
   );
   @media screen and (max-width: 600px) {
     height: fit-content;
-    width: 70%;
-    margin: 8px auto;
-    padding: 5px 0;
-    border-radius: 15px;
+    width: fit-content;
+    margin: 4px 0;
+    padding: 0px 0;
+    border-radius: 13px;
   }
   
 `;
@@ -209,12 +206,14 @@ export const LeftImgWrapper = styled.div`
   
   @media screen and (max-width: 600px) {
     //display:none;
+    height: 280px;
+width: fit-content;
     margin: 0 auto;
     padding-right: 30px;
     margin-top: 0px;
     img{
-      height: 280px;
-      width: 220px;
+      height: 100%;
+      width: fit-content;
     }
   }
 `
@@ -228,6 +227,6 @@ padding-top: 50px;
     flex-direction: column-reverse;
     width: 100%;
     margin: 0;
-    margin-top: 25px;
+    margin-top: 30px;
   }
 `
