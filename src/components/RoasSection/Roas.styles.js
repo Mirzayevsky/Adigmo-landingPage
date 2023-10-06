@@ -134,6 +134,8 @@ export const RoasHeader = styled.div`
       }
     }
     @media screen and (max-width: 500px) {
+      width: 90%;
+      margin: auto;
       text-align: center;
       font-size: 20px;
       line-height: 26px;
