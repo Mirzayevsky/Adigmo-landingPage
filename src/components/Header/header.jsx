@@ -94,9 +94,7 @@ const Header = () => {
           </HeaderButton>
          </RightWrapper>
           <LeftImgWrapper>
-           {
-            window.innerWidth < 600 ? <img alt="ceoimg" src={ceoImg2}/> : <img alt="ceoimg" src={ceoImg}/>
-           }
+          <img alt="ceoimg" src={ceoImg}/>
           </LeftImgWrapper>
         </MainWrapper>
       </Container>

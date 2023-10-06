@@ -4,7 +4,7 @@ export const HeaderWrapper = styled.div`
   width: 100%;
   position: relative;
   @media screen and (max-width: 700px){
-    height: 100vh;
+    height: fit-content;
   }
   `;
 export const Container = styled.div`
@@ -65,13 +65,13 @@ export const Title = styled.div`
     width: 100%;
   }
   @media screen and (max-width: 700px) {
-    font-size: 22px;
-    line-height: 29px;
+    font-size: 25px;
+    line-height: 36px;
+    font-weight: 700;
     width: 100%;
     margin:  auto;
-    padding: 10px 0;
-    padding-top: 30px;
-    
+    padding-top: 0px;
+    text-align: center;
   }
 `;
 export const HearderInner = styled.div`
@@ -117,7 +117,7 @@ export const HeaderButton = styled.div`
   @media screen and (max-width: 600px) {
     height: fit-content;
     width: fit-content;
-    margin: 4px 0;
+    margin: 20px auto;
     padding: 0px 0;
     border-radius: 13px;
   }
@@ -208,6 +208,7 @@ export const LeftImgWrapper = styled.div`
     //display:none;
     height: 280px;
 width: fit-content;
+display: none;
     margin: 0 auto;
     padding-right: 30px;
     margin-top: 0px;
@@ -227,6 +228,6 @@ padding-top: 50px;
     flex-direction: column-reverse;
     width: 100%;
     margin: 0;
-    margin-top: 30px;
+    margin-top: 20px;
   }
 `
