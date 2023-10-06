@@ -62,7 +62,7 @@ export  const FirstCarouselWrapper = styled.div`
       flex-direction: row;
       align-items: center;
       justify-content: space-around;
-      padding: 25px 50px ;
+      padding: 12px 20px ;
       font-size:17px;
       font-weight: 600;
       svg{
@@ -75,10 +75,11 @@ export  const FirstCarouselWrapper = styled.div`
         min-height: 52px;
         justify-content: center;
         align-items: center;
-        font-size: 16px;
+        font-size: 18px;
         //z-index: 99999999999999999 !important;
        padding: 3px 15px;
         padding-right: 28px;
+        margin: 5px 10px;
         svg{
           height: 24px;
         }
