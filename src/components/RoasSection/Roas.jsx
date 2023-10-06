@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import {
   Card,
+  CardWrapper,
   Content,
   RoasButton,
   RoasCarouselWrapper,
@@ -11,6 +12,7 @@ import {
 import Text from "../../language/langManager";
 import PopUp from "../popUp";
 import ReactSlick from "../ReactSlick";
+import { Title } from "../popUp/styles";
 
 
 
@@ -75,6 +77,26 @@ const Roas = () => {
         </RoasHeader>
 
         <RoasCarouselWrapper>
+        <CardWrapper>
+          {
+            data.map(({id,title,text})=>{
+              {console.log(Text({id:title}))}
+              return(
+                <Card key={id}>
+                  <div className="inner-container">
+                  <div className="title">
+                    <Text id={title}/>
+                  </div>
+                  <div className="subtitless">
+                  <Text id={text}/>
+                  </div>
+                  </div>
+                </Card>
+              )
+            })
+          }
+         
+        </CardWrapper>
         </RoasCarouselWrapper>
 
         <RoasButton onClick={popChange}>

@@ -58,8 +58,9 @@ export const ShowWrapper = styled.div`
   }
   .down{
     display: flex;
+  @media only screen and (max-width: 600px) {
     padding-left: 20px;
-
+  }
     .pl-one{
     color: #303DE4;
     font-weight: 700;
@@ -68,6 +69,7 @@ export const ShowWrapper = styled.div`
     font-weight: 900;
     line-height: 28px;
     letter-spacing: 0em;
+    background-color: rebeccapurples;
     @media only screen and (max-width: 600px) {
       font-size: 20px;
       font-weight: 600;
@@ -136,7 +138,7 @@ export const RoasHeader = styled.div`
       font-size: 20px;
       line-height: 26px;
       font-weight: 600;
-      margin-bottom: 15px;
+      margin-bottom: 25px;
       
     }
   }
@@ -159,17 +161,60 @@ export const RoasHeader = styled.div`
 export const RoasCarouselWrapper = styled.div`
   width: 100%;
   height: 400px;
-  background-color: rebeccapurple;
-  margin: 20px 0;
-  margin-bottom: 30px;
   display: flex;
   align-items: center;
 `;
+export const CardWrapper = styled.div`
+display: flex;
+flex-direction: row;
+width: 100%;
+overflow: hidden;
+overflow-x: scroll;
+padding: 20px 0;
+
+`;
 export const Card = styled.div`
-height: 350px;
-width: 270px;
+height: 270px;
+min-width: 390px;
 background-color: #fff;
-margin: 0 10px;
+margin: 0 40px;
+border-radius: 16px;
+-webkit-box-shadow: -18px 18px 21px -6px rgba(82, 82, 82, 0.34);
+-moz-box-shadow: -18px 18px 21px -6px rgba(82, 82, 82, 0.34);
+box-shadow: -18px 18px 21px -6px rgba(82, 82, 82, 0.34);
+box-shadow: 0px 8px 34px -3px #00000040;
+@media only screen and (max-width: 600px) {
+  min-width: 90%;
+  height: 260px;
+}
+.inner-container{
+  width: 80%;
+  margin: auto;
+  padding: 20px 0;
+  height: 100%;
+  .title{
+    font-size: 28px;
+    font-weight: 600;
+    height: 30%;
+    display: flex;
+    align-items: start;
+    padding-top: 26px;
+    @media only screen and (max-width: 600px) {
+      font-size: 22px;
+      align-items: center;
+      justify-content: center;
+}
+  }
+  .subtitle{
+    font-size: 16px;
+    font-weight: 400px;
+    height: 70%;
+    display: flex;
+    align-self: start;
+
+    ;
+  }
+}
 `;
 
 export const RoasButton = styled.div`
