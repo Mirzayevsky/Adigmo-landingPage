@@ -28,7 +28,7 @@ const Service = () => {
         loop: true,
         // renderMode: "performance",
 
-        // drag: false,
+        drag: false,
         created(s) {
             s.moveToIdx(5, true, animation)
         },
@@ -43,6 +43,8 @@ const Service = () => {
         loop: true,
         // renderMode: "performance",
         renderMode:"precision",
+        drag: false,
+
         rtl:"true",
         // drag: false,
         created(s) {
@@ -60,7 +62,7 @@ const Service = () => {
         // renderMode: "performance",
         renderMode:"precision",
         // rtl:"true",
-        // drag: false,
+        drag: false,
         created(s) {
             s.moveToIdx(4, true, animationThird)
         },
