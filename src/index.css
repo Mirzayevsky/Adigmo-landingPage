@@ -2,10 +2,7 @@
   font-family: "Roboto";
   src: url("./source/fonts/roboto/Roboto-Medium.ttf");
   }
-   ::-webkit-scrollbar {
-    display: none;
-}
-
+ 
 *{
   padding: 0;
   margin: 0;

@@ -207,6 +207,9 @@ export const SecondWrapper = styled.div`
   }
   .img-wrapper {
     width: 52%;
+    @media screen and (max-width: 1600px) {
+      width: 60%;
+    }
     @media screen and (max-width: 992px) {
       margin: auto;
       width: 80%;
@@ -225,16 +228,23 @@ export const SecondWrapper = styled.div`
         width: fit-content;
         height: 400px;
         border-radius: 18px;
+        @media screen and (max-width: 1400px) {
+        height: 300px;
+        width: 100%;
+      }
       @media screen and (max-width: 600px) {
         width:100%;
         height: fit-content;
-        
       }
     }
     .img-bottom {
         width: fit-content;
         height: 325px;
         border-radius: 18px;
+        @media screen and (max-width: 1400px) {
+        height:s 300px;
+        width: 100%;
+      }
       @media screen and (max-width: 992px) {
         margin:30px auto;
         width: 100%;
