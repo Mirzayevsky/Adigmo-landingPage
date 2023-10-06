@@ -63,7 +63,6 @@ export const Title = styled.div`
   font-size: 32px;
   font-weight: 700;
   line-height: 75px;
-  letter-spacing: 2px;
   text-transform: uppercase;
   text-align: center;
   @media screen and (max-width: 1700px){

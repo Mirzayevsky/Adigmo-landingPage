@@ -84,19 +84,19 @@ const PopUp = ({popUp,setPopUp}) => {
                    </Title>
                    <AdviceForm onSubmit={handleSubmit}>
                        <>
-                           <PatternFormat
-                               className={"num-for"}
-                               format="+998(##)###-##-##"
-                               value={numberValue}
-                               allowEmptyFormatting
-                               mask="_"
-                               onChange={handleNumberChange}
-                           />
+                        
+                       <Input placeholder={Text({ id: "inputName" })}
+                                   value={nameValue}
+                                   onChange={handleNameChange}
+                            />
+                             <PatternFormat
+                                className={"num-for"}
+                                format="+998(##)###-##-##"
+                                placeholder={Text({ id: "inputPhone" })}
+                                value={numberValue}
+                                 onChange={handleNumberChange}
 
-                           <Input placeholder={"Name"}
-                                  value={nameValue}
-                                  onChange={handleNameChange}
-                           />
+                            />
                            {/*<Text id="inputText"/>*/}
                        </>
                        <button >

@@ -4,7 +4,7 @@ export const HeaderWrapper = styled.div`
   width: 100%;
   position: relative;
   @media screen and (max-width: 700px){
-    height: 95vh;
+    height: 100vh;
   }
   `;
 export const Container = styled.div`
@@ -70,7 +70,7 @@ export const Title = styled.div`
     width: 100%;
     margin:  auto;
     padding: 10px 0;
-    padding-top: 80px;
+    padding-top: 40px;
     text-align: center;
     br{
       display: none;
@@ -211,7 +211,7 @@ export const LeftImgWrapper = styled.div`
     //display:none;
     margin: 0 auto;
     padding-right: 30px;
-    margin-top: 30px;
+    margin-top: 0px;
     img{
       height: 280px;
       width: 220px;
@@ -228,6 +228,6 @@ padding-top: 50px;
     flex-direction: column-reverse;
     width: 100%;
     margin: 0;
-    margin-top: 50px;
+    margin-top: 25px;
   }
 `
