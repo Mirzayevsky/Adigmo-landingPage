@@ -75,7 +75,6 @@ const Roas = () => {
         </RoasHeader>
 
         <RoasCarouselWrapper>
-          <ReactSlick/>
         </RoasCarouselWrapper>
 
         <RoasButton onClick={popChange}>
