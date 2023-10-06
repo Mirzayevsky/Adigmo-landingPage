@@ -33,9 +33,14 @@ export const ShowWrapper = styled.div`
   padding: 5px 0px;
   padding-left: 20px;
   border-radius: 15px;
+  @media only screen and (max-width: 600px) {
+    width: 90%;
+    height: fit-content;
+    padding: 5px ;
+}
+ 
   .up {
     color: #303DE4;
-
     width: 100%;
     font-weight: 700;
     font-family: Roboto;
@@ -44,9 +49,17 @@ export const ShowWrapper = styled.div`
     line-height: 28px;
     letter-spacing: 0em;
     text-align: left;
+    @media only screen and (max-width: 600px) {
+      font-size: 20px;
+      font-weight: 600;
+    padding-left: 20px;
+
+}
   }
   .down{
     display: flex;
+    padding-left: 20px;
+
     .pl-one{
     color: #303DE4;
     font-weight: 700;
@@ -55,6 +68,10 @@ export const ShowWrapper = styled.div`
     font-weight: 900;
     line-height: 28px;
     letter-spacing: 0em;
+    @media only screen and (max-width: 600px) {
+      font-size: 20px;
+      font-weight: 600;
+}
     }
     .pl{
       color: #000000B2;
@@ -66,6 +83,13 @@ line-height: 23px;
 letter-spacing: 0em;
 text-align: right;
 padding-top: 4px;
+@media only screen and (max-width: 600px) {
+      font-size: 16px;
+      font-weight: 500;
+      margin-left: auto;
+      margin-right: 20px;
+
+}
 
     }
   }
@@ -82,14 +106,14 @@ export const RoasHeader = styled.div`
   }
   @media screen and (max-width: 700px) {
     flex-direction: column;
-    padding: 20px 0;
+    padding: 8px 0;
   }
   .title {
     font-family: Roboto;
     font-size: 64px;
     font-weight: 800;
     line-height: 75px;
-    letter-spacing: 0em;
+    letter-spacing: 0s;
     text-align: left;
     @media screen and (max-width: 1700px) {
       font-size: 50px;
@@ -106,6 +130,14 @@ export const RoasHeader = styled.div`
       br {
         display: none;
       }
+    }
+    @media screen and (max-width: 500px) {
+      text-align: center;
+      font-size: 20px;
+      line-height: 26px;
+      font-weight: 600;
+      margin-bottom: 15px;
+      
     }
   }
 
@@ -179,11 +211,12 @@ export const RoasButton = styled.div`
     padding: 10px 60px;
   }
   @media screen and (max-width: 700px) {
-    width: 60%;
-    margin: 20px auto;
+    width: fit-content;
+    margin: 10px auto;
     font-size: 18px;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 21px;
     padding: 14px 55px;
+    border-radius: 14px;
   }
 `;

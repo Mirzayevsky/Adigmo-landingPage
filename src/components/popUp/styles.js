@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { NumericFormat } from 'react-number-format';
+import langs from "../../constants/lang"
+
 export const PopUpWrapper = styled.div`
   height: 100vh;
   width: 100vw;
@@ -76,6 +78,15 @@ export const Title = styled.div`
   @media screen and (max-width: 700px){
     font-size: 28px;
     line-height: 40px;
+    text-align:center;
+    width: 90%;
+    margin: auto;
+  }
+  @media screen and (max-width: 500px){
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 40px;
+    line-height: 30px;
     text-align:center;
   }
 `;
@@ -177,6 +188,14 @@ export const AdviceForm = styled.form`
       margin-top: 25px;
       outline: none;
     }
+   @media screen and (max-width: 500px){
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 40px;
+    line-height: 30px;
+    text-align:center;
+  }
+  
   }
   
 

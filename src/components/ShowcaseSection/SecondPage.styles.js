@@ -53,11 +53,10 @@ export const TopWrapper = styled.div`
       margin-bottom: 20px;
     }
     @media screen and (max-width: 400px) {
-      font-size: 20px;
-      font-weight: 600;
+      font-size: 18px;
+      font-weight: 500;
       line-height: 30px;
       text-align: center;
-      letter-spacing: 0;
       //padding: 10px 0;
       margin-bottom: 20px;
     }
@@ -186,6 +185,7 @@ export const AmongWrapper = styled.div`
     @media screen and (max-width: 600px) {
       font-size: 20px;
       text-align: center;
+      font-weight: 500;
       padding: 0px 0;
       margin-top: 20px;
     }
