@@ -15,7 +15,7 @@ const uzbek = {
   portfolio:"PORTFOLIO",
   company:"Kompaniya",
   companyOne: " Seamosstransformation.com seamoss gel qo'shimchalari bo'yicha yetakchi hisoblanadi.",
-  problem:"Проблема", 
+  problem:"Muammo", 
   problemText:" Raqobat oshayotgan oziq-ovqat qo'shimchalari bozorida reklama investitsiyalaridan barqaror daromad olishga erishish.",
   carryOut:"Amalga oshirildi", 
   carryOutText:" Google Ads kontekst reklamasidan foydalanilgan holda mijozlar auditoriyasiga to’gri target qilindi va turli xil kreativlar va e’lonlar sinab ko'rildi.",

@@ -163,6 +163,10 @@ export const RoasCarouselWrapper = styled.div`
   height: 400px;
   display: flex;
   align-items: center;
+  @media only screen and (max-width: 600px) {
+    height: fit-content;
+    margin: 15px 0;
+  }
 `;
 export const CardWrapper = styled.div`
 display: flex;
@@ -171,6 +175,8 @@ width: 100%;
 overflow: hidden;
 overflow-x: scroll;
 padding: 20px 0;
+@media only screen and (max-width: 600px) {
+  }
 
 `;
 export const Card = styled.div`
@@ -186,6 +192,7 @@ box-shadow: 0px 8px 34px -3px #00000040;
 @media only screen and (max-width: 600px) {
   min-width: 90%;
   height: 260px;
+  margin-left: 20px;
 }
 .inner-container{
   width: 80%;

@@ -11,9 +11,6 @@ import {
 } from "./Roas.styles";
 import Text from "../../language/langManager";
 import PopUp from "../popUp";
-import ReactSlick from "../ReactSlick";
-import { Title } from "../popUp/styles";
-
 
 
 const Roas = () => {
@@ -80,14 +77,13 @@ const Roas = () => {
         <CardWrapper>
           {
             data.map(({id,title,text})=>{
-              {console.log(Text({id:title}))}
               return(
                 <Card key={id}>
                   <div className="inner-container">
                   <div className="title">
                     <Text id={title}/>
                   </div>
-                  <div className="subtitless">
+                  <div className="subtitle">
                   <Text id={text}/>
                   </div>
                   </div>
