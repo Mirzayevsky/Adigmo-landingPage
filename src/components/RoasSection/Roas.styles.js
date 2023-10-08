@@ -210,7 +210,6 @@ box-shadow: 0px 8px 34px -3px #00000040;
     padding-top: 26px;
     @media only screen and (max-width: 600px) {
       font-size: 22px;
-      align-items: center;
       justify-content: center;
 }
   }
