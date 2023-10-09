@@ -196,12 +196,14 @@ text-align: left;
   min-width: 90%;
   height: 260px;
   margin-left: 20px;
+  text-align: left;
 }
 .inner-container{
   width: 80%;
   margin: auto;
   padding: 20px 0;
   height: 100%;
+  text-align: left;
   .title{
     font-size: 28px;
     font-weight: 600;
@@ -209,6 +211,7 @@ text-align: left;
     display: flex;
     align-items: start;
     padding-top: 26px;
+    text-align: left;
     @media only screen and (max-width: 600px) {
       font-size: 22px;
       justify-content: center;
@@ -220,6 +223,7 @@ text-align: left;
     height: 70%;
     display: flex;
     align-self: start;
+    text-align: left;
 
     ;
   }
