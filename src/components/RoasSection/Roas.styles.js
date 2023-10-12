@@ -197,7 +197,11 @@ text-align: left;
   min-width: 90%;
   height: 240px;
   margin-left: 20px;
+<<<<<<< HEAD
   text-align: left;ss
+=======
+  text-align: left;
+>>>>>>> a5e5b1fc061781161e66116f4cce706a826ade6a
 }
 .inner-container{
   width: 80%;

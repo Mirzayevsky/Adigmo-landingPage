@@ -23,7 +23,7 @@ const uzbek = {
   resultText:"30 kunda 5X ROASga erishildi, reklamaga 88 000 AQSh dollar sarflab, 449 000 dollarlik savdo qilindi.",
   conclusion:"Xulosa",
   conclusionText:" To'g'ri strategiya va hamkorlik bilan barqaror va ajoyib natijalarga erishish mumkin",
-  diamondRoas:"Diamond Bedding companiyasi uchun 12x ROAS natija. Buyuk Britaniyada ko‘rpa va yostiqlar sotuvchi Diamond Bedding o‘zining onlayn savdosini oshirishga intilmoqda. Tajribamizdan foydalanib, biz 30 kun ichida 5000 funt sterlinglik Google Ads sarfini 61 000 funt sterling daromadga aylantirdik va reklama qaytimi ROASni 11 baravar oshirishga erishdik.",
+  diamondRoas:"Diamond Bedding companiyasi uchun 11x ROAS natija. Buyuk Britaniyada ko‘rpa va yostiqlar sotuvchi Diamond Bedding o‘zining onlayn savdosini oshirishga intilmoqda. Tajribamizdan foydalanib, biz 30 kun ichida 5000 funt sterlinglik Google Ads sarfini 61 000 funt sterling daromadga aylantirdik va reklama qaytimi ROASni 11 baravar oshirishga erishdik.",
   gratBritain:"Buyuk Britaniyaning “RDX” kompaniyasi uchun 18X ROAS! \"RDX\" Kampaniyasi Boks va UFC va boshqa Sport kiyimlari sotadigan yetakchi onlayn do'kon hisoblanadi, elektron tijorat orqali savdo hajmini oshirmoqchi edi. Biz Facebook Ads orqali 3 oy ichida 9 barobar savdo hajmiga erishdik. Oxirgi 15 kun ichida bu ko'rsatgich 20 barobarga oshdi!",
   swedin:"Shvetsiyaning “Ark of Sweden” kompaniyasi uchun 17X ROAS! \n Ark of Sweden, yangi avlod qo'shimchalari bo'yicha yetakchi, elektron tijorat orqali savdo hajmini oshirmoqchi edi. Biz Google Ads orqali 7 090 krona sarflab, atigi 90 kun ichida bu kompaniya uchun 126823 kronalik savdo hajmiga erishdik.Bu 17 barobar ROAS deganidir!",
   serviceTitle:"Sotuvingizni Oshrishga",
