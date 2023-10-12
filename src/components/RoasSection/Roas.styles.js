@@ -34,7 +34,8 @@ export const ShowWrapper = styled.div`
   padding-left: 20px;
   border-radius: 15px;
   @media only screen and (max-width: 600px) {
-    width: 90%;
+    width: 85%;
+    margin: auto;
     height: fit-content;
     padding: 5px ;
 }
@@ -191,16 +192,19 @@ border-radius: 16px;
 -moz-box-shadow: -18px 18px 21px -6px rgba(82, 82, 82, 0.34);
 box-shadow: -18px 18px 21px -6px rgba(82, 82, 82, 0.34);
 box-shadow: 0px 8px 34px -3px #00000040;
+text-align: left;
 @media only screen and (max-width: 600px) {
   min-width: 90%;
-  height: 260px;
+  height: 240px;
   margin-left: 20px;
+  text-align: left;ss
 }
 .inner-container{
   width: 80%;
   margin: auto;
   padding: 20px 0;
   height: 100%;
+  text-align: left;
   .title{
     font-size: 28px;
     font-weight: 600;
@@ -208,10 +212,11 @@ box-shadow: 0px 8px 34px -3px #00000040;
     display: flex;
     align-items: start;
     padding-top: 26px;
+    text-align: left;
     @media only screen and (max-width: 600px) {
       font-size: 22px;
-      align-items: center;
       justify-content: center;
+    width: fit-content;
 }
   }
   .subtitle{
@@ -220,8 +225,11 @@ box-shadow: 0px 8px 34px -3px #00000040;
     height: 70%;
     display: flex;
     align-self: start;
-
-    ;
+    text-align: left;
+    
+    @media only screen and (max-width: 600px) {
+      height: fit-content;
+    }
   }
 }
 `;

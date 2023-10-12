@@ -4,7 +4,7 @@ export const HeaderWrapper = styled.div`
   width: 100%;
   position: relative;
   @media screen and (max-width: 700px){
-    height: fit-content;
+    /* height: fit-content; */
   }
   `;
 export const Container = styled.div`
@@ -206,12 +206,12 @@ export const LeftImgWrapper = styled.div`
   
   @media screen and (max-width: 600px) {
     //display:none;
-    height: 280px;
+    height: 290px;
 width: fit-content;
-display: none;
-    margin: 0 auto;
+/* display: none; */
+    margin: 20px  auto;
     padding-right: 30px;
-    margin-top: 0px;
+    margin-top: 50px;
     img{
       height: 100%;
       width: fit-content;
