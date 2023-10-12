@@ -26,7 +26,7 @@ export const Logo = styled.div`
     width: fit-content;
   }
   @media screen and (max-width: 600px) {
-    height: 45px;
+    height: 50px;
     img{
       width: fit-content;;
       height: 100%;
