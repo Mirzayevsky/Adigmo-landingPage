@@ -191,7 +191,6 @@ border-radius: 16px;
 -moz-box-shadow: -18px 18px 21px -6px rgba(82, 82, 82, 0.34);
 box-shadow: -18px 18px 21px -6px rgba(82, 82, 82, 0.34);
 box-shadow: 0px 8px 34px -3px #00000040;
-text-align: left;
 @media only screen and (max-width: 600px) {
   min-width: 90%;
   height: 260px;
@@ -203,7 +202,6 @@ text-align: left;
   margin: auto;
   padding: 20px 0;
   height: 100%;
-  text-align: left;
   .title{
     font-size: 28px;
     font-weight: 600;
@@ -223,7 +221,6 @@ text-align: left;
     height: 70%;
     display: flex;
     align-self: start;
-    text-align: left;
 
     ;
   }
