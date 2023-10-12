@@ -53,8 +53,8 @@ export const TopWrapper = styled.div`
       margin-bottom: 20px;
     }
     @media screen and (max-width: 500px) {
-      font-size: 17px;
-      font-weight: 500;
+      font-size: 18px;
+      font-weight: 600;
       line-height: 24px;
       text-align: center;
       //padding: 10px 0;
