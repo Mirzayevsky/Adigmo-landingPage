@@ -42,7 +42,6 @@ export const Title = styled.div`
   font-size: 56px;
   font-weight: 700;
   line-height: 75px;
-  letter-spacing: 2px;
   text-align: left;
   text-transform: uppercase;
   @media screen and (max-width: 1700px){
@@ -57,6 +56,14 @@ export const Title = styled.div`
     font-size: 28px;
     line-height: 40px;
     text-align:center;
+  }
+  @media screen and (max-width: 600px){
+    width: 90%;
+    margin: auto;
+    font-size: 20px;
+    line-height: 32px;
+    text-align:center;
+    font-weight: 600;
   }
 `;
 export const Input = styled.input`
@@ -151,12 +158,15 @@ transition: 0.5s ease;
     }
 
     @media screen and (max-width: 700px) {
-      width: 93%;
-      height: 60px;
+      width: 95%;
+      height: fit-content;
       font-size: 20px;
+      padding: 13px 30px;
       font-weight: 500;
+      line-height: 25px;
       margin: auto;
       margin-top: 25px;
+      letter-spacing: 0;
       outline: none;
     }
   }

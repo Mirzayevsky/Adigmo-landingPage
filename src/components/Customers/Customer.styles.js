@@ -200,15 +200,18 @@ export const  ShowcaseInfo = styled.div`
       flex-direction: column;
       justify-content: left;
       @media screen and (max-width: 700px){
-        width: fit-content;
         width: 100%;
-        margin: auto;
+        width: fit-content;
+        flex-direction: row;
+        align-items: self-end;
+        justify-content: space-between;
+        margin: 0;
       }
       
       .icon{
         @media screen and (max-width: 700px){
           padding-right: 30px;
-          width: 90%;
+          width: fit-content;
           height: 60px;
           display: flex;
           margin: auto;
@@ -233,8 +236,10 @@ export const  ShowcaseInfo = styled.div`
         letter-spacing: 0em;
         padding-left: 32px;
         @media screen and (max-width: 700px){
-          line-height: 24px;
+          line-height: 20px;
           padding: 0;
+          padding: 0;
+          margin-top: 10px;
         }
       }
     }

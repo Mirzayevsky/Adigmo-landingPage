@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import {AdviceForm, AdviceWrapper, Container, Title, Input, PopUpWrapper} from "./styles";
+import {AdviceForm, AdviceWrapper, Container, Title, Input, PopUpWrapper, Cover} from "./styles";
 import { PatternFormat } from 'react-number-format';
 import Toastify from 'toastify-js'
 import "toastify-js/src/toastify.css"
@@ -75,10 +75,11 @@ const PopUp = ({popUp,setPopUp}) => {
         setNumberValue(newValue);
     };
     return(
-       <PopUpWrapper>
-           <AdviceWrapper >
+       <PopUpWrapper >
+        <Cover onClick={() => setPopUp(false)}/>
+           <AdviceWrapper  >
                <ExitSvg className={"svg-one"} onClick={() => setPopUp(false)}/>
-               <Container>
+               <Container >
                    <Title>
                        <Text id={"advise"}/>
                    </Title>

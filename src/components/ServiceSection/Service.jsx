@@ -30,13 +30,13 @@ const Service = () => {
 
         drag: false,
         created(s) {
-            s.moveToIdx(5, true, animation)
+            s.moveToIdx(2, true, animation)
         },
         updated(s) {
-            s.moveToIdx(s.track.details.abs + 5, true, animation)
+            s.moveToIdx(s.track.details.abs + 2, true, animation)
         },
         animationEnded(s) {
-            s.moveToIdx(s.track.details.abs + 5, true, animation)
+            s.moveToIdx(s.track.details.abs + 2, true, animation)
         },
     })
     const [sliderRef2] = useKeenSlider({
@@ -48,13 +48,13 @@ const Service = () => {
         rtl:"true",
         // drag: false,
         created(s) {
-            s.moveToIdx(4, true, animation)
+            s.moveToIdx(2, true, animation)
         },
         updated(s) {
-            s.moveToIdx(s.track.details.abs + 4, true, animationSecond)
+            s.moveToIdx(s.track.details.abs + 2, true, animationSecond)
         },
         animationEnded(s) {
-            s.moveToIdx(s.track.details.abs + 4, true, animationSecond)
+            s.moveToIdx(s.track.details.abs + 2, true, animationSecond)
         },
     })
     const [sliderRefRight] = useKeenSlider({
@@ -64,13 +64,13 @@ const Service = () => {
         // rtl:"true",
         drag: false,
         created(s) {
-            s.moveToIdx(4, true, animationThird)
+            s.moveToIdx(2, true, animationThird)
         },
         updated(s) {
-            s.moveToIdx(s.track.details.abs + 4, true,animationThird)
+            s.moveToIdx(s.track.details.abs + 2, true,animationThird)
         },
         animationEnded(s) {
-            s.moveToIdx(s.track.details.abs + 4, true, animationThird)
+            s.moveToIdx(s.track.details.abs + 2, true, animationThird)
         },
     })
     return(

@@ -210,7 +210,6 @@ export const LeftImgWrapper = styled.div`
 width: fit-content;
 /* display: none; */
     margin: 20px  auto;
-    padding-right: 30px;
     margin-top: 50px;
     img{
       height: 100%;

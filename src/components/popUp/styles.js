@@ -14,6 +14,15 @@ export const PopUpWrapper = styled.div`
   justify-content: center;
   z-index: 999999;
 `;
+export const Cover = styled.div`
+height: 100vh;
+width: 100%;
+backdrop-filter: blur(5px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+`;
 export const AdviceWrapper = styled.div`
     height: 50%;
   width: 50%;

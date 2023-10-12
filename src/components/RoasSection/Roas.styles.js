@@ -195,13 +195,12 @@ box-shadow: 0px 8px 34px -3px #00000040;
 text-align: left;
 @media only screen and (max-width: 600px) {
   min-width: 90%;
-  height: 240px;
+  height: 250px;
   margin-left: 20px;
-<<<<<<< HEAD
-  text-align: left;ss
-=======
   text-align: left;
->>>>>>> a5e5b1fc061781161e66116f4cce706a826ade6a
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .inner-container{
   width: 80%;
@@ -209,6 +208,9 @@ text-align: left;
   padding: 20px 0;
   height: 100%;
   text-align: left;
+  @media only screen and (max-width: 600px) {
+   height: fit-content;
+}
   .title{
     font-size: 28px;
     font-weight: 600;
@@ -219,8 +221,8 @@ text-align: left;
     text-align: left;
     @media only screen and (max-width: 600px) {
       font-size: 22px;
-      justify-content: center;
-    width: fit-content;
+    width: 100%;
+    padding-top: 0;
 }
   }
   .subtitle{
@@ -233,6 +235,7 @@ text-align: left;
     
     @media only screen and (max-width: 600px) {
       height: fit-content;
+      margin-top: 10px;
     }
   }
 }
