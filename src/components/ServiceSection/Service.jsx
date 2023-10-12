@@ -2,7 +2,6 @@ import React from "react";
 import {Container, FirstCarouselWrapper, ServiceTitle, ServiceWrapper} from "./Service.styles";
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
-import {FirstWrapper} from "../portfolioSection/portfolioPage.styles";
 import {ReactComponent as SvgOne} from "../../source/assets/services items/Y (1).svg";
 import {ReactComponent as SvgSecond} from "../../source/assets/services items/Y.svg";
 import {ReactComponent as Svgthird} from "../../source/assets/services items/🦆 icon _chart 1_.svg";

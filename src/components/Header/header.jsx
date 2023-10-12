@@ -15,7 +15,8 @@ import {
   Title,
 } from "./header.style";
 import ceoImg from '../../source/assets/images/Mask group.png'
-import ceoImg2 from '../../source/assets/images/mainone.png'
+import ceoImg2  from "../../source/logo/logoOne.png"
+
 
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
@@ -23,7 +24,7 @@ import langs from "../../constants/lang"
 import Text from "../../language/langManager";
 import {switchLang, switchToRussian, switchToUzbek} from "../../redux/modules/lang/langAction";
 import PopUp from "../popUp";
-import LogoMain  from "../../source/logo/1.1 adigmo logo.png"
+import LogoMain  from "../../source/logo/adig.png"
 
 
 const Header = () => {
@@ -94,7 +95,7 @@ const Header = () => {
           </HeaderButton>
          </RightWrapper>
           <LeftImgWrapper>
-          <img alt="ceoimg" src={ceoImg}/>
+          {window.innerWidth <= 600 ? <img alt="ceoimg" src={ceoImg2}/> : <img alt="ceoimg" src={ceoImg}/>}
           </LeftImgWrapper>
         </MainWrapper>
       </Container>
